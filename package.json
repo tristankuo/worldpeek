@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:staging": "GITHUB_PAGES=true vite build",
     "preview": "vite preview",
     "deploy:firebase": "npm run build && firebase deploy",
-    "deploy:github": "npm run build && gh-pages -d dist"
+    "deploy:staging": "npm run build:staging && gh-pages -d dist"
   },
   "keywords": [
     "webcam",
