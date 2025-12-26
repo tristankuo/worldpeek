@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { MapView } from './components/MapView';
-import { sampleWebcams } from './data/sampleWebcams';
+import { WEBCAMS } from './data/webcams';
 import { WebcamLocation } from './types/webcam';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="app">
       <MapView 
-        webcams={sampleWebcams}
+        webcams={WEBCAMS}
         onWebcamSelect={(webcam) => {
           setSelectedWebcam(webcam);
         }}
