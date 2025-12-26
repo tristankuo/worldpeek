@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Webcams collection - read only for public
+    match /webcams/{webcamId} {
+      allow read: if true;
+      allow write: if false; // Only allow writes from admin/scripts
+    }
+    
+    // User favorites
+    match /users/{userId}/favorites/{webcamId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Webcam statistics
+    match /stats/{statId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

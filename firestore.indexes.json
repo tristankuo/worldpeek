@@ -1,0 +1,29 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "webcams",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "category", "order": "ASCENDING" },
+        { "fieldPath": "isLive", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "webcams",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "country", "order": "ASCENDING" },
+        { "fieldPath": "isLive", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "webcams",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "coordinates.lat", "order": "ASCENDING" },
+        { "fieldPath": "coordinates.lng", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
