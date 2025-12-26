@@ -1,15 +1,25 @@
 {
-  "name": "peekplanet",
+  "name": "worldpeek",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "🌍 WorldPeek - Peek at the planet before you go. Live webcams from tourist destinations worldwide",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:firebase": "npm run build && firebase deploy",
+    "deploy:github": "npm run build && gh-pages -d dist"
   },
-  "keywords": [],
+  "keywords": [
+    "webcam",
+    "travel",
+    "tourism",
+    "live-stream",
+    "world-map",
+    "google-maps"
+  ],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "license": "MIT",
   "dependencies": {
     "firebase": "^12.7.0",
     "react": "^19.2.3",
