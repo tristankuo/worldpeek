@@ -18,15 +18,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-    
-    if (!apiKey || apiKey === 'your_google_maps_api_key') {
-      setError('Google Maps API key not configured. Add VITE_GOOGLE_MAPS_API_KEY to your .env file');
-      setIsLoading(false);
-      return;
-    }
-
-    loadGoogleMapsScript(apiKey)
+    loadGoogleMapsScript()
       .then(() => {
         if (mapRef.current) {
           initializeMap();
@@ -35,7 +27,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       })
       .catch((err) => {
         console.error('Failed to load Google Maps:', err);
-        setError('Failed to load Google Maps. Please check your API key.');
+        setError(err.message || 'Failed to load Google Maps. Please check your configuration.');
         setIsLoading(false);
       });
   }, []);
