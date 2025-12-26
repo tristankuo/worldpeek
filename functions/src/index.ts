@@ -19,7 +19,7 @@ dotenv.config();
 admin.initializeApp();
 
 // For cost control, set maximum number of containers
-setGlobalOptions({ maxInstances: 10 });
+setGlobalOptions({maxInstances: 10});
 
 // Allowed origins for CORS
 const ALLOWED_ORIGINS = [
@@ -57,7 +57,5 @@ export const getMapConfig = onCall(async (request) => {
   logger.info(`Map config requested from: ${origin}`);
 
   // Return API key only to authorized requests
-  return {
-    apiKey: apiKey,
-  };
+  return {apiKey: apiKey};
 });
