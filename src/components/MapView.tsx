@@ -14,6 +14,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const googleMapRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -42,7 +43,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     if (googleMapRef.current && !isLoading) {
       addWebcamMarkers();
     }
-  }, [webcams, isLoading]);
+  }, [webcams, isLoading, selectedCategory]);
 
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
@@ -168,7 +169,11 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     const map = googleMapRef.current;
     const bounds = new google.maps.LatLngBounds();
 
-    webcams.forEach(webcam => {
+    const filteredWebcams = selectedCategory 
+      ? webcams.filter(w => w.category === selectedCategory)
+      : webcams;
+
+    filteredWebcams.forEach(webcam => {
       const marker = new google.maps.Marker({
         position: webcam.coordinates,
         map: map,
@@ -206,7 +211,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       bounds.extend(webcam.coordinates);
     });
 
-    if (webcams.length > 0) {
+    if (filteredWebcams.length > 0) {
       map.fitBounds(bounds);
     }
   };
@@ -321,11 +326,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       </div>
       
       <div className="map-legend">
-        <div className="legend-item">🏖️ Beach</div>
-        <div className="legend-item">🏙️ City</div>
-        <div className="legend-item">🗼 Landmark</div>
-        <div className="legend-item">🏞️ Nature</div>
-        <div className="legend-item">⛰️ Mountain</div>
+        {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
+          <button
+            key={category}
+            className={`legend-item ${selectedCategory === category ? 'active' : ''}`}
+            onClick={() => setSelectedCategory(selectedCategory === category ? null : category)}
+          >
+            {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+          </button>
+        ))}
       </div>
     </div>
   );

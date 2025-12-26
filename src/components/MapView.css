@@ -111,6 +111,24 @@
   font-size: 14px;
   color: #666;
   white-space: nowrap;
+  background: none;
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.legend-item:hover {
+  background: #f0f0f0;
+}
+
+.legend-item.active {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-color: #bbdefb;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* Responsive Design */
