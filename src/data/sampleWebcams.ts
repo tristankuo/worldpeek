@@ -2,112 +2,279 @@ import { WebcamLocation } from '../types/webcam';
 
 // Curated list of active YouTube live webcams
 export const sampleWebcams: WebcamLocation[] = [
+  // --- Taiwan ---
   {
-    id: '1',
-    name: 'Times Square (EarthCam)',
-    coordinates: { lat: 40.7580, lng: -73.9855 },
-    city: 'New York',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/mRe-514tGLg?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/mRe-514tGLg/mqdefault_live.jpg',
-    category: 'city',
+    id: 'HzYW9k3qkSs',
+    name: 'Jiufen Old Street',
+    coordinates: { lat: 25.1099, lng: 121.8452 },
+    city: 'New Taipei City',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/HzYW9k3qkSs?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/HzYW9k3qkSs/mqdefault_live.jpg',
+    category: 'landmark',
     isLive: true,
-    description: 'Live view of Times Square in Manhattan, New York City',
-    provider: 'EarthCam'
-  },
-  {
-    id: '2',
-    name: 'Times Square (Live)',
-    coordinates: { lat: 40.7580, lng: -73.9855 },
-    city: 'New York',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/VGnFLdQW39A?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/VGnFLdQW39A/mqdefault_live.jpg',
-    category: 'city',
-    isLive: true,
-    description: 'Another angle of Times Square',
+    description: 'Live view of the historic Jiufen Old Street, famous for its tea houses and lantern-lit alleyways.',
     provider: 'YouTube'
   },
   {
-    id: '3',
-    name: 'Shibuya Crossing (ANN)',
+    id: 'GUCaVR88ZFU',
+    name: 'Hehuanshan',
+    coordinates: { lat: 24.1373, lng: 121.2757 },
+    city: 'Nantou',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/GUCaVR88ZFU?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/GUCaVR88ZFU/mqdefault_live.jpg',
+    category: 'mountain',
+    isLive: true,
+    description: 'Breathtaking views from Hehuanshan, one of Taiwan\'s highest accessible peaks.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'tD_a03trUvE',
+    name: 'Shiding Thousand Island Lake',
+    coordinates: { lat: 24.9333, lng: 121.6333 },
+    city: 'New Taipei City',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/tD_a03trUvE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/tD_a03trUvE/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Scenic view of the Thousand Island Lake in Shiding District.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'Ndo_8RuefH4',
+    name: 'Taipei 101 / Elephant Mountain',
+    coordinates: { lat: 25.0273, lng: 121.5707 },
+    city: 'Taipei',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/Ndo_8RuefH4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Ndo_8RuefH4/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Iconic view of Taipei 101 and the city skyline from Elephant Mountain.',
+    provider: 'YouTube'
+  },
+
+  // --- Japan ---
+  {
+    id: 'gFRtAAmiFbE',
+    name: 'Shibuya Crossing',
     coordinates: { lat: 35.6595, lng: 139.7004 },
     city: 'Tokyo',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/H43YhcuTqms?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/H43YhcuTqms/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/gFRtAAmiFbE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/gFRtAAmiFbE/mqdefault_live.jpg',
     category: 'city',
     isLive: true,
-    description: 'The famous Shibuya Crossing in Tokyo, Japan',
-    provider: 'ANN News'
+    description: 'Live feed of the world-famous Shibuya Crossing in Tokyo.',
+    provider: 'YouTube'
   },
   {
-    id: '4',
-    name: 'Shibuya Crossing (FNN)',
-    coordinates: { lat: 35.6595, lng: 139.7004 },
+    id: 'DjdUEyjx8GM',
+    name: 'Mt. Fuji (Lake Kawaguchi)',
+    coordinates: { lat: 35.5171, lng: 138.7518 },
+    city: 'Fujikawaguchiko',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/DjdUEyjx8GM?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/DjdUEyjx8GM/mqdefault_live.jpg',
+    category: 'mountain',
+    isLive: true,
+    description: 'Stunning view of Mount Fuji from Lake Kawaguchi.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'a-DmMSV2Bb4',
+    name: 'Tokyo Tower',
+    coordinates: { lat: 35.6586, lng: 139.7454 },
     city: 'Tokyo',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/dfVK7ld38Ys?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/dfVK7ld38Ys/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/a-DmMSV2Bb4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/a-DmMSV2Bb4/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Live view of the iconic Tokyo Tower.',
+    provider: 'YouTube'
+  },
+
+  // --- South Korea ---
+  {
+    id: '-JhoMGoAfFc',
+    name: 'N Seoul Tower',
+    coordinates: { lat: 37.5512, lng: 126.9882 },
+    city: 'Seoul',
+    country: 'South Korea',
+    streamUrl: 'https://www.youtube.com/embed/-JhoMGoAfFc?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/-JhoMGoAfFc/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Panoramic view of Seoul from N Seoul Tower.',
+    provider: 'YouTube'
+  },
+  {
+    id: '3Uf3w-UHB4U',
+    name: 'Haeundae Beach',
+    coordinates: { lat: 35.1587, lng: 129.1603 },
+    city: 'Busan',
+    country: 'South Korea',
+    streamUrl: 'https://www.youtube.com/embed/3Uf3w-UHB4U?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/3Uf3w-UHB4U/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Live cam of Haeundae Beach, South Korea\'s most famous beach.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'Piac-qj2Mbg',
+    name: 'Gwanghwamun Gate',
+    coordinates: { lat: 37.5759, lng: 126.9769 },
+    city: 'Seoul',
+    country: 'South Korea',
+    streamUrl: 'https://www.youtube.com/embed/Piac-qj2Mbg?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Piac-qj2Mbg/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'View of Gwanghwamun Gate and Gwanghwamun Square.',
+    provider: 'YouTube'
+  },
+
+  // --- Southeast Asia ---
+  {
+    id: 'vV7-D3HTo58',
+    name: 'Victoria Harbour',
+    coordinates: { lat: 22.2933, lng: 114.1717 },
+    city: 'Hong Kong',
+    country: 'Hong Kong',
+    streamUrl: 'https://www.youtube.com/embed/vV7-D3HTo58?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/vV7-D3HTo58/mqdefault_live.jpg',
     category: 'city',
     isLive: true,
-    description: 'FNN Live Feed of Shibuya Crossing',
-    provider: 'FNN'
-  },
-  {
-    id: '5',
-    name: 'Rialto Bridge',
-    coordinates: { lat: 45.4380, lng: 12.3359 },
-    city: 'Venice',
-    country: 'Italy',
-    streamUrl: 'https://www.youtube.com/embed/ph1vpnYIxJk?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/ph1vpnYIxJk/mqdefault_live.jpg',
-    category: 'landmark',
-    isLive: true,
-    description: 'Live view of the Rialto Bridge on the Grand Canal',
+    description: 'Live view of Victoria Harbour and the Hong Kong skyline.',
     provider: 'YouTube'
   },
   {
-    id: '6',
-    name: 'Rialto Bridge (View 2)',
-    coordinates: { lat: 45.4380, lng: 12.3359 },
-    city: 'Venice',
-    country: 'Italy',
-    streamUrl: 'https://www.youtube.com/embed/cqOYsTYDVcE?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/cqOYsTYDVcE/mqdefault_live.jpg',
-    category: 'landmark',
+    id: 'byhWzqNSsF0',
+    name: 'Pattaya Beach',
+    coordinates: { lat: 12.9276, lng: 100.8771 },
+    city: 'Pattaya',
+    country: 'Thailand',
+    streamUrl: 'https://www.youtube.com/embed/byhWzqNSsF0?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/byhWzqNSsF0/mqdefault_live.jpg',
+    category: 'beach',
     isLive: true,
-    description: 'Another view of the Rialto Bridge',
+    description: 'Live cam of Pattaya Beach.',
     provider: 'YouTube'
   },
   {
-    id: '7',
+    id: 'q6P4e_wK_60',
+    name: 'Bangkok City',
+    coordinates: { lat: 13.7563, lng: 100.5018 },
+    city: 'Bangkok',
+    country: 'Thailand',
+    streamUrl: 'https://www.youtube.com/embed/q6P4e_wK_60?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/q6P4e_wK_60/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the Bangkok city skyline.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'H7_tC35y6lE',
+    name: 'Marina Bay Sands',
+    coordinates: { lat: 1.2834, lng: 103.8607 },
+    city: 'Singapore',
+    country: 'Singapore',
+    streamUrl: 'https://www.youtube.com/embed/H7_tC35y6lE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/H7_tC35y6lE/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Iconic view of Marina Bay Sands and the Singapore skyline.',
+    provider: 'YouTube'
+  },
+
+  // --- Europe ---
+  {
+    id: 'LwihxyJ4V20',
+    name: 'Zermatt / Matterhorn',
+    coordinates: { lat: 46.0207, lng: 7.7491 },
+    city: 'Zermatt',
+    country: 'Switzerland',
+    streamUrl: 'https://www.youtube.com/embed/LwihxyJ4V20?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/LwihxyJ4V20/mqdefault_live.jpg',
+    category: 'mountain',
+    isLive: true,
+    description: 'Spectacular view of the Matterhorn from Zermatt.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'Cp4RRAEgpeU',
+    name: 'Venice Grand Canal',
+    coordinates: { lat: 45.4408, lng: 12.3155 },
+    city: 'Venice',
+    country: 'Italy',
+    streamUrl: 'https://www.youtube.com/embed/Cp4RRAEgpeU?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Cp4RRAEgpeU/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the Grand Canal and Rialto Bridge in Venice.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'rJ2IY6rp-G8',
     name: 'Eiffel Tower',
     coordinates: { lat: 48.8584, lng: 2.2945 },
     city: 'Paris',
     country: 'France',
-    streamUrl: 'https://www.youtube.com/embed/JkK8g6FMExe?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/JkK8g6FMExe/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/rJ2IY6rp-G8?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/rJ2IY6rp-G8/mqdefault_live.jpg',
     category: 'landmark',
     isLive: true,
-    description: 'Iconic Eiffel Tower in Paris, France',
+    description: 'Live cam of the Eiffel Tower in Paris.',
+    provider: 'YouTube'
+  },
+
+  // --- North America ---
+  {
+    id: '1-iS7LArMPA',
+    name: 'Times Square',
+    coordinates: { lat: 40.7580, lng: -73.9855 },
+    city: 'New York City',
+    country: 'USA',
+    streamUrl: 'https://www.youtube.com/embed/1-iS7LArMPA?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/1-iS7LArMPA/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'The bustling energy of Times Square, NYC.',
     provider: 'YouTube'
   },
   {
-    id: '8',
-    name: 'Eiffel Tower (View 2)',
-    coordinates: { lat: 48.8584, lng: 2.2945 },
-    city: 'Paris',
-    country: 'France',
-    streamUrl: 'https://www.youtube.com/embed/N5QyzhFDmAQ?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/N5QyzhFDmAQ/mqdefault_live.jpg',
-    category: 'landmark',
+    id: 'X08pW_7u4rM',
+    name: 'Niagara Falls',
+    coordinates: { lat: 43.0896, lng: -79.0849 },
+    city: 'Niagara Falls',
+    country: 'Canada',
+    streamUrl: 'https://www.youtube.com/embed/X08pW_7u4rM?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/X08pW_7u4rM/mqdefault_live.jpg',
+    category: 'nature',
     isLive: true,
-    description: 'Live view of the Eiffel Tower',
+    description: 'Live view of the majestic Niagara Falls.',
     provider: 'YouTube'
   },
   {
-    id: '9',
+    id: '683_h7A8XF4',
+    name: 'Banff & Lake Louise',
+    coordinates: { lat: 51.4254, lng: -116.1773 },
+    city: 'Banff',
+    country: 'Canada',
+    streamUrl: 'https://www.youtube.com/embed/683_h7A8XF4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/683_h7A8XF4/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Beautiful scenery of Banff National Park and Lake Louise.',
+    provider: 'YouTube'
+  },
+  {
+    id: '1EiC9bvVGnk',
     name: 'Jackson Hole Town Square',
     coordinates: { lat: 43.4799, lng: -110.7624 },
     city: 'Jackson',
@@ -119,21 +286,10 @@ export const sampleWebcams: WebcamLocation[] = [
     description: 'Live view of Jackson Hole Town Square, Wyoming',
     provider: 'YouTube'
   },
+
+  // --- Space & Nature ---
   {
-    id: '10',
-    name: 'Jackson Hole (Elk Antler Arches)',
-    coordinates: { lat: 43.4799, lng: -110.7624 },
-    city: 'Jackson',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/DoUOrTJbIu4?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/DoUOrTJbIu4/mqdefault_live.jpg',
-    category: 'city',
-    isLive: true,
-    description: 'View of the famous Elk Antler Arches',
-    provider: 'YouTube'
-  },
-  {
-    id: '11',
+    id: 'xRPjKQtRXR8',
     name: 'International Space Station',
     coordinates: { lat: 0, lng: 0 },
     city: 'Space',
@@ -146,20 +302,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'NASA'
   },
   {
-    id: '12',
-    name: 'ISS Live Feed 2',
-    coordinates: { lat: 0, lng: 0 },
-    city: 'Space',
-    country: 'Orbit',
-    streamUrl: 'https://www.youtube.com/embed/js_h8tCNH9s?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/js_h8tCNH9s/mqdefault_live.jpg',
-    category: 'other',
-    isLive: true,
-    description: 'Another live feed from the ISS',
-    provider: 'NASA'
-  },
-  {
-    id: '13',
+    id: 'ydYDqZQpim8',
     name: 'Namib Desert Waterhole',
     coordinates: { lat: -23.5616, lng: 15.0413 },
     city: 'Namib-Naukluft Park',
@@ -172,7 +315,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '14',
+    id: '4eK-i7vC-js',
     name: 'Tembe Elephant Park',
     coordinates: { lat: -27.0456, lng: 32.4199 },
     city: 'KwaZulu-Natal',
@@ -184,21 +327,10 @@ export const sampleWebcams: WebcamLocation[] = [
     description: 'Live elephant cam from Tembe Elephant Park',
     provider: 'YouTube'
   },
+
+  // --- Beaches ---
   {
-    id: '15',
-    name: 'Kalahari Salt Pan',
-    coordinates: { lat: -25.5000, lng: 20.5000 },
-    city: 'Kalahari',
-    country: 'South Africa',
-    streamUrl: 'https://www.youtube.com/embed/ZVRUiKmCs84?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/ZVRUiKmCs84/mqdefault_live.jpg',
-    category: 'nature',
-    isLive: true,
-    description: 'Live view from the Kalahari Salt Pan',
-    provider: 'YouTube'
-  },
-  {
-    id: '16',
+    id: 'p-rSdt0aFuw',
     name: 'Waikiki Beach',
     coordinates: { lat: 21.2761, lng: -157.8263 },
     city: 'Honolulu',
@@ -211,20 +343,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '17',
-    name: 'Waikiki Beach Marriott',
-    coordinates: { lat: 21.2769, lng: -157.8270 },
-    city: 'Honolulu',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/t6jF0uJhNbA?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/t6jF0uJhNbA/mqdefault_live.jpg',
-    category: 'beach',
-    isLive: true,
-    description: 'View from Waikiki Beach Marriott',
-    provider: 'YouTube'
-  },
-  {
-    id: '18',
+    id: 'AzZfgAJGEtw',
     name: 'Santa Monica Pier',
     coordinates: { lat: 34.0092, lng: -118.4976 },
     city: 'Santa Monica',
@@ -237,7 +356,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '19',
+    id: 'vvFullsC9LI',
     name: 'Venice Beach Boardwalk',
     coordinates: { lat: 33.9850, lng: -118.4695 },
     city: 'Los Angeles',
@@ -249,21 +368,10 @@ export const sampleWebcams: WebcamLocation[] = [
     description: 'Live view of Venice Beach Boardwalk',
     provider: 'YouTube'
   },
+
+  // --- Other ---
   {
-    id: '20',
-    name: 'Venice Beach Live',
-    coordinates: { lat: 33.9850, lng: -118.4695 },
-    city: 'Los Angeles',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/wuqkfyO82OA?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/wuqkfyO82OA/mqdefault_live.jpg',
-    category: 'beach',
-    isLive: true,
-    description: 'Another live view of Venice Beach',
-    provider: 'YouTube'
-  },
-  {
-    id: '21',
+    id: 'JE2PXYBv9FQ',
     name: 'Heathrow Airport',
     coordinates: { lat: 51.4700, lng: -0.4543 },
     city: 'London',
@@ -276,7 +384,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '22',
+    id: 'xIDzfP2Pjks',
     name: 'LAX Airport',
     coordinates: { lat: 33.9416, lng: -118.4085 },
     city: 'Los Angeles',
@@ -289,20 +397,7 @@ export const sampleWebcams: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '23',
-    name: 'Kearney Railcam',
-    coordinates: { lat: 40.6995, lng: -99.0815 },
-    city: 'Kearney',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/23tmCNeFh7A?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/23tmCNeFh7A/mqdefault_live.jpg',
-    category: 'other',
-    isLive: true,
-    description: 'Live railcam in Kearney, Nebraska',
-    provider: 'YouTube'
-  },
-  {
-    id: '24',
+    id: 'hRjpKBfIRwA',
     name: 'Mount Washington Ski',
     coordinates: { lat: 49.7422, lng: -125.3036 },
     city: 'Courtenay',
@@ -312,58 +407,6 @@ export const sampleWebcams: WebcamLocation[] = [
     category: 'mountain',
     isLive: true,
     description: 'Live view from Mount Washington Ski Resort',
-    provider: 'YouTube'
-  },
-  {
-    id: '25',
-    name: 'Okemo Mountain Resort',
-    coordinates: { lat: 43.4034, lng: -72.7170 },
-    city: 'Ludlow',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/gUWkGteFa1M?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/gUWkGteFa1M/mqdefault_live.jpg',
-    category: 'mountain',
-    isLive: true,
-    description: 'Live view from Okemo Mountain Resort',
-    provider: 'YouTube'
-  },
-  {
-    id: '26',
-    name: 'Nakiska Ski Resort',
-    coordinates: { lat: 50.9425, lng: -115.1514 },
-    city: 'Kananaskis',
-    country: 'Canada',
-    streamUrl: 'https://www.youtube.com/embed/7ZIdxdu8GPk?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/7ZIdxdu8GPk/mqdefault_live.jpg',
-    category: 'mountain',
-    isLive: true,
-    description: 'Live view from Nakiska Ski Resort',
-    provider: 'YouTube'
-  },
-  {
-    id: '27',
-    name: 'Cowboy Coaster',
-    coordinates: { lat: 43.4799, lng: -110.7624 },
-    city: 'Jackson',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/4j645lxCx4w?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/4j645lxCx4w/mqdefault_live.jpg',
-    category: 'city',
-    isLive: true,
-    description: 'Live view of the Cowboy Coaster in Jackson',
-    provider: 'YouTube'
-  },
-  {
-    id: '28',
-    name: 'International Market Place',
-    coordinates: { lat: 21.2769, lng: -157.8270 },
-    city: 'Honolulu',
-    country: 'United States',
-    streamUrl: 'https://www.youtube.com/embed/3mSIPxu8rk8?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/3mSIPxu8rk8/mqdefault_live.jpg',
-    category: 'city',
-    isLive: true,
-    description: 'Live view of International Market Place in Waikiki',
     provider: 'YouTube'
   }
 ];
