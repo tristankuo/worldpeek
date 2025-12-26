@@ -605,5 +605,85 @@ export const sampleWebcams: WebcamLocation[] = [
     isLive: true,
     description: 'Live webcam from Fuengirola beach, Spain.',
     provider: 'YouTube'
+  },
+
+  // --- New Additions (User Provided) ---
+  {
+    id: 'SnX8p5_g0t4',
+    name: 'Akihabara Electric Town',
+    coordinates: { lat: 35.6984, lng: 139.7730 },
+    city: 'Tokyo',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/SnX8p5_g0t4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/SnX8p5_g0t4/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the bustling Akihabara Electric Town, famous for electronics and anime culture.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'S0j1r1Wd3zE',
+    name: 'Panama Canal (Miraflores Locks)',
+    coordinates: { lat: 8.9967, lng: -79.5918 },
+    city: 'Panama City',
+    country: 'Panama',
+    streamUrl: 'https://www.youtube.com/embed/S0j1r1Wd3zE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/S0j1r1Wd3zE/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Live feed from the Miraflores Locks at the Panama Canal, watching ships pass through.',
+    provider: 'YouTube'
+  },
+  {
+    id: '3j1r1Wd3zE',
+    name: 'Whitby Harbour',
+    coordinates: { lat: 54.4883, lng: -0.6133 },
+    city: 'Whitby',
+    country: 'United Kingdom',
+    streamUrl: 'https://www.youtube.com/embed/3j1r1Wd3zE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/3j1r1Wd3zE/mqdefault_live.jpg',
+    category: 'other',
+    isLive: true,
+    description: 'Scenic view of Whitby Harbour, a historic seaside town in North Yorkshire.',
+    provider: 'YouTube'
+  },
+  {
+    id: '8w4q4hSSOo',
+    name: 'Railcam Helmond',
+    coordinates: { lat: 51.4817, lng: 5.6611 },
+    city: 'Helmond',
+    country: 'Netherlands',
+    streamUrl: 'https://www.youtube.com/embed/8w4q4hSSOo?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/8w4q4hSSOo/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live rail cam from Helmond, Netherlands, capturing train traffic.',
+    provider: 'YouTube'
+  },
+  {
+    id: '5j1r1Wd3zE',
+    name: 'Bourbon Street (EarthCam)',
+    coordinates: { lat: 29.9595, lng: -90.0656 },
+    city: 'New Orleans',
+    country: 'USA',
+    streamUrl: 'https://www.youtube.com/embed/5j1r1Wd3zE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/5j1r1Wd3zE/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the famous Bourbon Street in New Orleans.',
+    provider: 'YouTube'
+  },
+  {
+    id: '9w4q4hSSOo',
+    name: 'York RailCam',
+    coordinates: { lat: 53.9591, lng: -1.0815 },
+    city: 'York',
+    country: 'United Kingdom',
+    streamUrl: 'https://www.youtube.com/embed/9w4q4hSSOo?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/9w4q4hSSOo/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the railway lines in York, UK.',
+    provider: 'YouTube'
   }
 ];
