@@ -20,18 +20,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
 
   useEffect(() => {
-    // Add a small delay to ensure the component has rendered
-    setTimeout(() => {
-      loadGoogleMapsScript()
-        .then(() => {
-          setIsScriptLoaded(true);
-        })
-        .catch((err) => {
-          console.error('Failed to load Google Maps script:', err);
-          setError(err.message || 'Failed to load Google Maps. Please check your configuration.');
-          setIsLoading(false);
-        });
-    }, 100);
+    loadGoogleMapsScript()
+      .then(() => {
+        setIsScriptLoaded(true);
+      })
+      .catch((err) => {
+        console.error('Failed to load Google Maps script:', err);
+        setError(err.message || 'Failed to load Google Maps. Please check your configuration.');
+        setIsLoading(false);
+      });
   }, []);
 
   useEffect(() => {

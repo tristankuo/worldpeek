@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { MapView } from './components/MapView';
 import { sampleWebcams } from './data/sampleWebcams';
@@ -6,6 +6,11 @@ import { WebcamLocation } from './types/webcam';
 
 function App() {
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
+
+  useEffect(() => {
+    // Clear crash retry flag on successful load
+    sessionStorage.removeItem('app_crashed_retry');
+  }, []);
 
   return (
     <div className="app">
