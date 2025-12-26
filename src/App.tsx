@@ -13,8 +13,8 @@ function App() {
       {view === 'home' ? (
         <div className="home-container">
           <header className="header">
-            <h1 className="title">🌍 PeekPlanet</h1>
-            <p className="subtitle">Peek at the planet before you go</p>
+            <h1 className="title">🌍 WorldPeek</h1>
+            <p className="subtitle">Peek at the world before you go</p>
           </header>
 
           <main className="main-content">
