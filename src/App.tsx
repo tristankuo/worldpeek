@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
+import { MapView } from './components/MapView';
+import { sampleWebcams } from './data/sampleWebcams';
+import { WebcamLocation } from './types/webcam';
 
 function App() {
   const [view, setView] = useState<'home' | 'map'>('home');
+  const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
 
   return (
     <div className="app">
@@ -87,20 +91,15 @@ function App() {
           </footer>
         </div>
       ) : (
-        <div className="map-view">
-          <div className="map-header">
-            <button className="back-button" onClick={() => setView('home')}>
-              ← Back to Home
-            </button>
-            <h2>Map View</h2>
-          </div>
-          <div className="map-placeholder">
-            <p>🗺️ Map integration coming soon!</p>
-            <p style={{ fontSize: '14px', color: '#666', marginTop: '10px' }}>
-              Google Maps with webcam markers will appear here
-            </p>
-          </div>
-        </div>
+        <MapView 
+          webcams={sampleWebcams}
+          onWebcamSelect={(webcam) => {
+            setSelectedWebcam(webcam);
+            // Could open a modal or detail page here
+            console.log('Selected webcam:', webcam);
+          }}
+          onBack={() => setView('home')}
+        />
       )}
     </div>
   );
