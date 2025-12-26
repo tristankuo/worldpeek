@@ -17,20 +17,29 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
+
   useEffect(() => {
-    loadGoogleMapsScript()
-      .then(() => {
-        if (mapRef.current) {
-          initializeMap();
+    // Add a small delay to ensure the component has rendered
+    setTimeout(() => {
+      loadGoogleMapsScript()
+        .then(() => {
+          setIsScriptLoaded(true);
+        })
+        .catch((err) => {
+          console.error('Failed to load Google Maps script:', err);
+          setError(err.message || 'Failed to load Google Maps. Please check your configuration.');
           setIsLoading(false);
-        }
-      })
-      .catch((err) => {
-        console.error('Failed to load Google Maps:', err);
-        setError(err.message || 'Failed to load Google Maps. Please check your configuration.');
-        setIsLoading(false);
-      });
+        });
+    }, 100);
   }, []);
+
+  useEffect(() => {
+    if (isScriptLoaded && mapRef.current) {
+      initializeMap();
+      setIsLoading(false);
+    }
+  }, [isScriptLoaded]);
 
   useEffect(() => {
     if (googleMapRef.current && !isLoading) {
@@ -228,24 +237,19 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     };
   }, [webcams, onWebcamSelect]);
 
-  if (isLoading) {
-    return (
-      <div className="map-view">
-        <div className="map-header">
-          {onBack && (
-            <button className="back-button" onClick={onBack}>
-              ← Back to Home
-            </button>
-          )}
-          <h2>🗺️ World Map</h2>
-        </div>
-        <div className="map-loading">
-          <div className="loading-spinner"></div>
-          <p>Loading map...</p>
-        </div>
-      </div>
-    );
-  }
+  const resetView = () => {
+    if (googleMapRef.current) {
+      googleMapRef.current.setCenter({ lat: 20, lng: 0 });
+      googleMapRef.current.setZoom(3);
+      
+      // Close any open info windows
+      markersRef.current.forEach(m => {
+        const iw = (m as any).infoWindow;
+        if (iw) iw.close();
+      });
+      setSelectedWebcam(null);
+    }
+  };
 
   if (error) {
     return (
@@ -271,12 +275,23 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   return (
     <div className="map-view">
       <div className="map-header">
-        {onBack && (
-          <button className="back-button" onClick={onBack}>
-            ← Back to Home
-          </button>
-        )}
-        <h2>🗺️ Explore Webcams ({webcams.length})</h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginRight: 'auto' }}>
+          <h1 
+            onClick={resetView}
+            title="Reset to Global View"
+            style={{ 
+              fontSize: '24px', 
+              margin: 0, 
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+              WebkitBackgroundClip: 'text', 
+              WebkitTextFillColor: 'transparent',
+              cursor: 'pointer'
+            }}
+          >
+            🌍 WorldPeek
+          </h1>
+          <span style={{ color: '#666', fontSize: '14px', fontWeight: 500 }}>Explore {webcams.length} locations</span>
+        </div>
         
         {selectedWebcam && (
           <div className="selected-webcam-info">
@@ -286,7 +301,27 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         )}
       </div>
       
-      <div ref={mapRef} className="map-container" />
+      <div className="map-wrapper" style={{ position: 'relative', height: 'calc(100vh - 120px)' }}>
+        {isLoading && (
+          <div className="map-loading" style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(255,255,255,0.8)',
+            zIndex: 10,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <div className="loading-spinner"></div>
+            <p>Loading map...</p>
+          </div>
+        )}
+        <div ref={mapRef} className="map-container" style={{ height: '100%', width: '100%' }} />
+      </div>
       
       <div className="map-legend">
         <div className="legend-item">🏖️ Beach</div>
