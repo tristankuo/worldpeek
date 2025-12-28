@@ -23,7 +23,8 @@
   padding: 20px;
   border-radius: 12px;
   width: 100%;
-  max-width: 900px;
+  /* Constrain width so height fits in viewport (approx 140px for header/footer/padding) */
+  max-width: min(900px, calc((90vh - 140px) * 1.778));
   position: relative;
   box-shadow: 0 25px 50px -12px var(--shadow-color);
   transition: max-width 0.3s ease, width 0.3s ease;
@@ -31,8 +32,9 @@
 }
 
 .video-modal-content.expanded {
-  max-width: 95vw;
-  width: 95vw;
+  /* Constrain width so height fits in viewport */
+  max-width: min(95vw, calc((95vh - 140px) * 1.778));
+  width: 100%;
 }
 
 .close-modal, .resize-modal {
