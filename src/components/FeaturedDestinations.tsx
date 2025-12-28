@@ -36,7 +36,7 @@ export const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ onWe
       desc: "Transport yourself to the romantic waterways of Venice. This live stream offers a serene view of the Grand Canal, where gondolas and vaporettos navigate the historic waters. Admire the centuries-old architecture lining the canal banks and soak in the timeless beauty of this floating city, all from the comfort of your home." 
     },
     { 
-      id: 'rJ2IY6rp-G8', 
+      id: 'OzYp4NRZlwQ', 
       title: 'Eiffel Tower, Paris', 
       desc: "Gaze upon the Iron Lady in all her glory. This camera provides a breathtaking view of the Eiffel Tower, the enduring symbol of Paris and romance. Watch as it sparkles on the hour every evening, illuminating the Parisian skyline. It's a magical sight that captures the charm and elegance of the French capital." 
     },
@@ -46,7 +46,7 @@ export const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ onWe
       desc: "Immerse yourself in the spiritual atmosphere of Kyoto's Fushimi Inari Taisha. Famous for its thousands of vermilion torii gates, this shrine is a gateway to traditional Japan. Watch visitors ascend the sacred Mount Inari and experience the serene beauty of this historic landmark." 
     },
     { 
-      id: 'Cre_bPRQfOA', 
+      id: 'gn-vU9Ehe38', 
       title: 'Copacabana Beach, Rio de Janeiro', 
       desc: "Soak up the sun on one of the world's most famous beaches. Copacabana in Rio de Janeiro is a vibrant stretch of sand where the city meets the sea. Watch locals playing soccer and volleyball, tourists enjoying the waves, and the rhythmic energy of Brazilian beach culture unfold live." 
     },
