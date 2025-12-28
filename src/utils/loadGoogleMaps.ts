@@ -1,73 +1,74 @@
 import { getSecureMapConfig } from './getMapConfig';
 
+let loadingPromise: Promise<void> | null = null;
+
 export async function loadGoogleMapsScript(): Promise<void> {
   console.log('🗺️ loadGoogleMapsScript called');
   
-  // Check if already loaded immediately
   if (window.google && window.google.maps) {
     console.log('✅ Google Maps already loaded');
     return Promise.resolve();
   }
 
-  return new Promise(async (resolve, reject) => {
-    // Timeout to prevent hanging indefinitely
+  if (loadingPromise) {
+    console.log('⏳ Google Maps load already in progress');
+    return loadingPromise;
+  }
+
+  loadingPromise = new Promise(async (resolve, reject) => {
     const timeoutId = setTimeout(() => {
+      loadingPromise = null; // Reset on failure
       reject(new Error('Google Maps script load timed out'));
-    }, 10000); // 10 seconds timeout
-
-    const onScriptLoad = () => {
-      clearTimeout(timeoutId);
-      resolve();
-    };
-
-    const onScriptError = () => {
-      clearTimeout(timeoutId);
-      reject(new Error('Failed to load Google Maps script'));
-    };
-
-    // Check if script is already being loaded
-    const existingScript = document.querySelector('script[src*="maps.googleapis.com"]');
-    if (existingScript) {
-      console.log('🔄 Google Maps script already exists, attaching listeners');
-      existingScript.addEventListener('load', onScriptLoad);
-      existingScript.addEventListener('error', onScriptError);
-      
-      // If script is already loaded but window.google isn't ready yet, 
-      // or if we missed the load event, we might hang.
-      // Let's poll for window.google just in case.
-      const intervalId = setInterval(() => {
-        if (window.google && window.google.maps) {
-          clearInterval(intervalId);
-          clearTimeout(timeoutId);
-          existingScript.removeEventListener('load', onScriptLoad);
-          existingScript.removeEventListener('error', onScriptError);
-          resolve();
-        }
-      }, 500);
-      
-      return;
-    }
+    }, 10000);
 
     try {
-      // Get API key securely
+      const existingScript = document.querySelector('script[src*="maps.googleapis.com"]');
+      
+      if (existingScript) {
+        console.log('🔄 Google Maps script already exists, polling for readiness');
+        const intervalId = setInterval(() => {
+          if (window.google && window.google.maps) {
+            clearInterval(intervalId);
+            clearTimeout(timeoutId);
+            resolve();
+          }
+        }, 100);
+        return;
+      }
+
       console.log('🔑 Fetching map config...');
       const config = await getSecureMapConfig();
-      console.log('✅ Map config retrieved');
       
+      // Define global callback
+      const callbackName = 'initGoogleMapsCallback';
+      (window as any)[callbackName] = () => {
+        console.log('✅ Google Maps callback fired');
+        clearTimeout(timeoutId);
+        delete (window as any)[callbackName];
+        resolve();
+      };
+
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${config.apiKey}&loading=async`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${config.apiKey}&callback=${callbackName}`;
       script.async = true;
       script.defer = true;
       script.id = 'google-maps-script';
       
-      script.addEventListener('load', onScriptLoad);
-      script.addEventListener('error', onScriptError);
+      script.onerror = (error) => {
+        clearTimeout(timeoutId);
+        loadingPromise = null;
+        console.error('Failed to load Google Maps script:', error);
+        reject(new Error('Failed to load Google Maps script'));
+      };
       
       document.head.appendChild(script);
     } catch (error) {
       clearTimeout(timeoutId);
-      console.error('Failed to get map configuration:', error);
+      loadingPromise = null;
+      console.error('Failed to initialize Google Maps:', error);
       reject(error);
     }
   });
+
+  return loadingPromise;
 }
