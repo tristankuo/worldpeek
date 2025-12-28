@@ -1632,99 +1632,100 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: "zoo-sandiego-panda",
-    name: "Giant Panda Cam - San Diego Zoo",
+    id: "zoo-kc-penguin",
+    name: "Penguin Cam - Kansas City Zoo",
     coordinates: {
-      lat: 32.7353,
-      lng: -117.149
+      lat: 39.0067,
+      lng: -94.5289
     },
-    city: "San Diego",
+    city: "Kansas City",
     country: "USA",
-    streamUrl: "https://zoo.sandiegozoo.org/cams/giant-panda-cam",
-    thumbnailUrl: "https://zoo.sandiegozoo.org/sites/default/files/styles/hero_mobile_1x/public/2024-08/panda-cam-hero-mobile.jpg",
+    streamUrl: "https://www.youtube.com/embed/86e75x64t8c?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/86e75x64t8c/mqdefault_live.jpg",
     category: "zoo",
     isLive: true,
-    description: "Live view of the Giant Pandas at the San Diego Zoo.",
-    provider: "San Diego Zoo"
+    description: "Live view of the King Penguins at the Kansas City Zoo.",
+    provider: "YouTube"
   },
   {
-    id: "zoo-national-panda",
-    name: "Giant Panda Cam - National Zoo",
+    id: "zoo-wolong-panda",
+    name: "Giant Panda Cam - Wolong Grove",
     coordinates: {
-      lat: 38.9296,
-      lng: -77.0498
+      lat: 31.0255,
+      lng: 103.1653
     },
-    city: "Washington, D.C.",
-    country: "USA",
-    streamUrl: "https://nationalzoo.si.edu/webcams/panda-cam",
-    thumbnailUrl: "https://nationalzoo.si.edu/sites/default/files/styles/wide/public/2025-01/20250108-817A0742-13RP.jpg",
+    city: "Sichuan",
+    country: "China",
+    streamUrl: "https://www.youtube.com/embed/4993sBLAzGA?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/4993sBLAzGA/mqdefault_live.jpg",
     category: "zoo",
     isLive: true,
-    description: "Watch the Smithsonian's National Zoo's giant pandas, Qing Bao and Bao Li.",
-    provider: "Smithsonian National Zoo"
+    description: "Live view of Giant Pandas at the Wolong Grove.",
+    provider: "YouTube"
   },
   {
-    id: "aq-pacific-shark",
-    name: "Shark Lagoon Cam - Aquarium of the Pacific",
+    id: "aq-coral-city",
+    name: "Coral City Camera",
     coordinates: {
-      lat: 33.7621,
-      lng: -118.1969
+      lat: 25.7743,
+      lng: -80.1303
     },
-    city: "Long Beach",
+    city: "Miami",
     country: "USA",
-    streamUrl: "https://www.aquariumofpacific.org/exhibits/webcams/webcam_shark_lagoon",
-    thumbnailUrl: "https://www.aquariumofpacific.org/images/exhibits/Shark_Lagoon_900.jpg",
+    streamUrl: "https://www.youtube.com/embed/P2zQcah7Rwc?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/P2zQcah7Rwc/mqdefault_live.jpg",
     category: "aquarium",
     isLive: true,
-    description: "View of the large sharks and rays in the Shark Lagoon exhibit.",
-    provider: "Aquarium of the Pacific"
+    description: "An underwater camera filming the urban marine ecosystem in Miami.",
+    provider: "YouTube"
   },
   {
-    id: "aq-monterey-otter",
-    name: "Sea Otter Cam - Monterey Bay Aquarium",
+    id: "aq-monterey-jelly",
+    name: "Jelly Cam - Monterey Bay Aquarium",
     coordinates: {
       lat: 36.6183,
       lng: -121.9015
     },
     city: "Monterey",
     country: "USA",
-    streamUrl: "https://www.montereybayaquarium.org/animals/live-cams/sea-otter-cam",
-    thumbnailUrl: "https://www.montereybayaquarium.org/-/m/images/animal-guide/marine-mammals/sea-otter-mom-pup-sleeping-stomach-1600.jpg",
+    streamUrl: "https://www.youtube.com/embed/2g811Eo7K8U?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/2g811Eo7K8U/mqdefault_live.jpg",
     category: "aquarium",
     isLive: true,
-    description: "Live cam featuring the playful sea otters at the Monterey Bay Aquarium.",
-    provider: "Monterey Bay Aquarium"
+    description: "Live view of the Sea Nettles at the Monterey Bay Aquarium.",
+    provider: "YouTube"
   },
   {
-    id: "tp-universal-globe",
-    name: "Universal Studios Globe",
+    id: "tp-santa-monica",
+    name: "Santa Monica Pier Cam",
     coordinates: {
-      lat: 28.4743,
-      lng: -81.4678
+      lat: 34.0092,
+      lng: -118.4976
     },
-    city: "Orlando",
+    city: "Santa Monica",
     country: "USA",
-    streamUrl: "https://www.earthcam.com/usa/florida/orlando/universalstudios/?cam=universal_studios_globe",
-    thumbnailUrl: "https://static.earthcam.com/images/thumbs/universal_studios_globe_1200x675.jpg",
+    streamUrl: "https://www.youtube.com/embed/owb1k89Lq9A?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/owb1k89Lq9A/mqdefault_live.jpg",
     category: "theme-park",
     isLive: true,
-    description: "Live view of the iconic rotating globe at the entrance of Universal Studios Florida.",
-    provider: "EarthCam"
+    description: "Live view of Pacific Park on the Santa Monica Pier.",
+    provider: "YouTube"
   },
   {
-    id: "tp-cedar-point",
-    name: "Cedar Point Live Video",
+    id: "tp-disney-matterhorn",
+    name: "Matterhorn Cam (HoJo Anaheim)",
     coordinates: {
-      lat: 41.4822,
-      lng: -82.6835
+      lat: 33.8121,
+      lng: -117.919
     },
-    city: "Sandusky",
+    city: "Anaheim",
     country: "USA",
-    streamUrl: "https://www.sixflags.com/cedarpoint/live-video",
-    thumbnailUrl: "https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cp-en-us/blogs/2022/april/webcams-blog.jpg",
+    streamUrl: "https://www.youtube.com/embed/L_0-v1t_hCo?autoplay=1&mute=1",
+    thumbnailUrl: "https://i.ytimg.com/vi/L_0-v1t_hCo/mqdefault_live.jpg",
     category: "theme-park",
     isLive: true,
-    description: "Live views of the roller coaster capital of the world.",
-    provider: "Cedar Point"
+    description: "Live view of the Matterhorn Bobsleds at Disneyland Park.",
+    provider: "YouTube"
   }
+];
 ];
