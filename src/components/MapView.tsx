@@ -382,9 +382,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           <button 
             className="control-button"
             onClick={resetView}
-            title="Reset Map View"
+            title="Show Global View"
           >
-            🔄 Reset View
+            🌍 Global View
           </button>
 
           <button 
