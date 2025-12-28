@@ -1236,16 +1236,16 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: 'jooOQIgmJCw',
+    id: '5QtYqklmXaU',
     name: 'Koh Samui - Chaweng Beach',
     coordinates: { lat: 9.5316, lng: 100.0605 },
     city: 'Koh Samui',
     country: 'Thailand',
-    streamUrl: 'https://www.youtube.com/embed/jooOQIgmJCw?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/jooOQIgmJCw/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/5QtYqklmXaU?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/5QtYqklmXaU/mqdefault_live.jpg',
     category: 'beach',
     isLive: true,
-    description: 'Live view of Chaweng Beach from Muang Samui Spa Resort.',
+    description: 'Live view of Chaweng Beach from Monkey Bay Beach Bar.',
     provider: 'YouTube'
   },
   {
