@@ -143,7 +143,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       zoom: 3,
       center: { lat: 20, lng: 0 },
       mapTypeId: 'roadmap',
-      mapTypeControl: true,
+      mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: true,
       gestureHandling: 'greedy',
