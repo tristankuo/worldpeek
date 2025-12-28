@@ -1667,5 +1667,18 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live Sea Otter Cam from Toba Aquarium',
     provider: 'YouTube'
+  },
+  {
+    id: 'BSWhGNXxT9A',
+    name: 'San Francisco Bay',
+    coordinates: { lat: 37.8236, lng: -122.3706 },
+    city: 'San Francisco',
+    country: 'United States',
+    streamUrl: 'https://www.youtube.com/embed/BSWhGNXxT9A?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/BSWhGNXxT9A/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of San Francisco Skyline and Golden Gate Bridge from Treasure Island',
+    provider: 'YouTube'
   }
 ];
