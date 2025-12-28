@@ -1644,7 +1644,8 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://zoo.sandiegozoo.org/sites/default/files/styles/hero_mobile_1x/public/2024-08/panda-cam-hero-mobile.jpg",
     category: "zoo",
     isLive: true,
-    description: "Live view of the Giant Pandas at the San Diego Zoo."
+    description: "Live view of the Giant Pandas at the San Diego Zoo.",
+    provider: "San Diego Zoo"
   },
   {
     id: "zoo-national-panda",
@@ -1659,7 +1660,8 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://nationalzoo.si.edu/sites/default/files/styles/wide/public/2025-01/20250108-817A0742-13RP.jpg",
     category: "zoo",
     isLive: true,
-    description: "Watch the Smithsonian's National Zoo's giant pandas, Qing Bao and Bao Li."
+    description: "Watch the Smithsonian's National Zoo's giant pandas, Qing Bao and Bao Li.",
+    provider: "Smithsonian National Zoo"
   },
   {
     id: "aq-pacific-shark",
@@ -1674,7 +1676,8 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://www.aquariumofpacific.org/images/exhibits/Shark_Lagoon_900.jpg",
     category: "aquarium",
     isLive: true,
-    description: "View of the large sharks and rays in the Shark Lagoon exhibit."
+    description: "View of the large sharks and rays in the Shark Lagoon exhibit.",
+    provider: "Aquarium of the Pacific"
   },
   {
     id: "aq-monterey-otter",
@@ -1689,7 +1692,8 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://www.montereybayaquarium.org/-/m/images/animal-guide/marine-mammals/sea-otter-mom-pup-sleeping-stomach-1600.jpg",
     category: "aquarium",
     isLive: true,
-    description: "Live cam featuring the playful sea otters at the Monterey Bay Aquarium."
+    description: "Live cam featuring the playful sea otters at the Monterey Bay Aquarium.",
+    provider: "Monterey Bay Aquarium"
   },
   {
     id: "tp-universal-globe",
@@ -1704,7 +1708,8 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://static.earthcam.com/images/thumbs/universal_studios_globe_1200x675.jpg",
     category: "theme-park",
     isLive: true,
-    description: "Live view of the iconic rotating globe at the entrance of Universal Studios Florida."
+    description: "Live view of the iconic rotating globe at the entrance of Universal Studios Florida.",
+    provider: "EarthCam"
   },
   {
     id: "tp-cedar-point",
@@ -1719,6 +1724,7 @@ export const WEBCAMS: WebcamLocation[] = [
     thumbnailUrl: "https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cp-en-us/blogs/2022/april/webcams-blog.jpg",
     category: "theme-park",
     isLive: true,
-    description: "Live views of the roller coaster capital of the world."
+    description: "Live views of the roller coaster capital of the world.",
+    provider: "Cedar Point"
   }
 ];
