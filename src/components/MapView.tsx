@@ -110,23 +110,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       (position) => {
         const { latitude, longitude } = position.coords;
         
-        if (googleMapRef.current && window.google) {
-          const geocoder = new window.google.maps.Geocoder();
-          geocoder.geocode({ location: { lat: latitude, lng: longitude } }, (results, status) => {
-            if (status === 'OK' && results) {
-              const countryResult = results.find(r => r.types.includes('country'));
-              
-              if (countryResult && countryResult.geometry.viewport) {
-                googleMapRef.current?.fitBounds(countryResult.geometry.viewport);
-              } else {
-                googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
-                googleMapRef.current?.setZoom(5);
-              }
-            } else {
-              googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
-              googleMapRef.current?.setZoom(5);
-            }
-          });
+        if (googleMapRef.current) {
+          googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
+          googleMapRef.current.setZoom(8);
         }
       },
       (error) => {
@@ -326,9 +312,14 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   }, [webcams, onWebcamSelect]);
 
   const resetView = () => {
-    if (googleMapRef.current) {
-      googleMapRef.current.setCenter({ lat: 20, lng: 0 });
-      googleMapRef.current.setZoom(3);
+    if (googleMapRef.current && window.google) {
+      // Use fitBounds to ensure the world map fits within the viewport,
+      // regardless of screen aspect ratio (e.g. tall mobile screens)
+      const worldBounds = new window.google.maps.LatLngBounds(
+        { lat: -60, lng: -180 }, // SW
+        { lat: 85, lng: 180 }    // NE
+      );
+      googleMapRef.current.fitBounds(worldBounds);
       
       // Close any open info windows
       markersRef.current.forEach(m => {
