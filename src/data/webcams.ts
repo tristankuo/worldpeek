@@ -1728,4 +1728,3 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: "YouTube"
   }
 ];
-];
