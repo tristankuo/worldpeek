@@ -27,6 +27,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isLocating, setIsLocating] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -115,8 +116,11 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       return;
     }
 
+    setIsLocating(true);
+
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        setIsLocating(false);
         const { latitude, longitude } = position.coords;
         
         if (googleMapRef.current && window.google) {
@@ -145,13 +149,20 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         }
       },
       (error) => {
+        setIsLocating(false);
         console.error("Error getting location:", error);
-        if (!silent) alert("Unable to retrieve your location. Please ensure you have granted location permissions.");
+        if (!silent) {
+          let errorMessage = "Unable to retrieve your location.";
+          if (error.code === 1) errorMessage = "Location permission denied. Please enable location services for this site.";
+          else if (error.code === 2) errorMessage = "Location unavailable. Please check your GPS signal.";
+          else if (error.code === 3) errorMessage = "Location request timed out. Please try again.";
+          alert(errorMessage);
+        }
       },
       {
         enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 0
+        timeout: 15000,
+        maximumAge: 60000 // Allow cached position up to 1 minute old
       }
     );
   };
@@ -440,11 +451,12 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         
         <div className="header-controls">
           <button 
-            className="control-button"
+            className={`control-button ${isLocating ? 'locating' : ''}`}
             onClick={() => handleMyLocation(false)}
             title="My Location"
+            disabled={isLocating}
           >
-            📍
+            {isLocating ? '⏳' : '📍'}
           </button>
           {!isMobile && (
             <button 
