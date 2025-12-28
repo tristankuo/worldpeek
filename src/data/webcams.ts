@@ -2,6 +2,19 @@ import { WebcamLocation } from '../types/webcam';
 
 export const WEBCAMS: WebcamLocation[] = [
   {
+    id: '1phWWCgzXgM',
+    name: 'Amsterdam Stationseiland - Centraal Station',
+    coordinates: { lat: 52.3791, lng: 4.9003 },
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    streamUrl: 'https://www.youtube.com/embed/1phWWCgzXgM?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/1phWWCgzXgM/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of Stationseiland and Centraal Station in Amsterdam.',
+    provider: 'YouTube'
+  },
+  {
     "id": "5uZa3-RMFos",
     "name": "WebcamSydney 1 Live Stream of Harbour 24/7 (~4K)",
     "coordinates": {
@@ -764,7 +777,7 @@ export const WEBCAMS: WebcamLocation[] = [
   {    id: 'jvfNdQlAUtc',    name: 'Panama Canal (Miraflores Locks)',    coordinates: { lat: 8.9967, lng: -79.5918 },    city: 'Panama City',    country: 'Panama',    streamUrl: 'https://www.youtube.com/embed/jvfNdQlAUtc?autoplay=1&mute=1',    thumbnailUrl: 'https://i.ytimg.com/vi/jvfNdQlAUtc/mqdefault_live.jpg',    category: 'landmark',    isLive: true,    description: 'Live feed from the Miraflores Locks at the Panama Canal, watching ships pass through.',    provider: 'YouTube'  },
   */
   {    id: '3j1r1Wd3zE',    name: 'Whitby Harbour',    coordinates: { lat: 54.4883, lng: -0.6133 },    city: 'Whitby',    country: 'United Kingdom',    streamUrl: 'https://www.youtube.com/embed/3j1r1Wd3zE?autoplay=1&mute=1',    thumbnailUrl: 'https://i.ytimg.com/vi/3j1r1Wd3zE/mqdefault_live.jpg',    category: 'other',    isLive: true,    description: 'Scenic view of Whitby Harbour, a historic seaside town in North Yorkshire.',    provider: 'YouTube'  },
-  {    id: '8w4q4hSSOo',    name: 'Railcam Helmond',    coordinates: { lat: 51.4817, lng: 5.6611 },    city: 'Helmond',    country: 'Netherlands',    streamUrl: 'https://www.youtube.com/embed/8w4q4hSSOo?autoplay=1&mute=1',    thumbnailUrl: 'https://i.ytimg.com/vi/8w4q4hSSOo/mqdefault_live.jpg',    category: 'city',    isLive: true,    description: 'Live rail cam from Helmond, Netherlands, capturing train traffic.',    provider: 'YouTube'  },
+
   {    id: '9w4q4hSSOo',    name: 'York RailCam',    coordinates: { lat: 53.9591, lng: -1.0815 },    city: 'York',    country: 'United Kingdom',    streamUrl: 'https://www.youtube.com/embed/9w4q4hSSOo?autoplay=1&mute=1',    thumbnailUrl: 'https://i.ytimg.com/vi/9w4q4hSSOo/mqdefault_live.jpg',    category: 'city',    isLive: true,    description: 'Live view of the railway lines in York, UK.',    provider: 'YouTube'  },
   {
     id: 'jqtsC5BYlIk',
