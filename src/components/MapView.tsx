@@ -80,6 +80,8 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     if (isScriptLoaded && mapRef.current) {
       initializeMap();
       setIsLoading(false);
+      // Attempt to set view to user's location on startup
+      handleMyLocation(true);
     }
   }, [isScriptLoaded]);
 
@@ -97,9 +99,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     }
   }, [webcams, isLoading, selectedCategory]);
 
-  const handleMyLocation = () => {
+  const handleMyLocation = (silent = false) => {
     if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser");
+      if (!silent) alert("Geolocation is not supported by your browser");
       return;
     }
 
@@ -128,7 +130,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       },
       (error) => {
         console.error("Error getting location:", error);
-        alert("Unable to retrieve your location. Please ensure you have granted location permissions.");
+        if (!silent) alert("Unable to retrieve your location. Please ensure you have granted location permissions.");
       }
     );
   };
@@ -417,7 +419,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         <div className="header-controls">
           <button 
             className="control-button"
-            onClick={handleMyLocation}
+            onClick={() => handleMyLocation(false)}
             title="Zoom to My Location"
           >
             📍 My Location
