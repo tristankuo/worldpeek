@@ -50,7 +50,7 @@ function App() {
         toggleTheme={toggleTheme}
       />
       
-      <FeaturedDestinations />
+      <FeaturedDestinations onWebcamSelect={setSelectedWebcam} />
       
       {selectedWebcam && (
         <div className="video-modal-overlay" onClick={() => setSelectedWebcam(null)}>
