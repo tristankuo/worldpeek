@@ -160,9 +160,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         }
       },
       {
-        enableHighAccuracy: true,
-        timeout: 15000,
-        maximumAge: 60000 // Allow cached position up to 1 minute old
+        enableHighAccuracy: false,
+        timeout: 10000,
+        maximumAge: 300000 // Allow cached position up to 5 minutes old
       }
     );
   };
