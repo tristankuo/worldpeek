@@ -6,6 +6,7 @@ import { WebcamLocation } from './types/webcam';
 
 function App() {
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     try {
       const savedTheme = localStorage.getItem('theme');
@@ -24,6 +25,12 @@ function App() {
     // Clear crash retry flag on successful load
     sessionStorage.removeItem('app_crashed_retry');
   }, []);
+
+  useEffect(() => {
+    if (!selectedWebcam) {
+      setIsExpanded(false);
+    }
+  }, [selectedWebcam]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -51,7 +58,14 @@ function App() {
       
       {selectedWebcam && (
         <div className="video-modal-overlay" onClick={() => setSelectedWebcam(null)}>
-          <div className="video-modal-content" onClick={e => e.stopPropagation()}>
+          <div className={`video-modal-content ${isExpanded ? 'expanded' : ''}`} onClick={e => e.stopPropagation()}>
+            <button 
+              className="resize-modal" 
+              onClick={() => setIsExpanded(!isExpanded)}
+              title={isExpanded ? "Zoom Out" : "Zoom In"}
+            >
+              {isExpanded ? '➖' : '➕'}
+            </button>
             <button className="close-modal" onClick={() => setSelectedWebcam(null)}>×</button>
             <h3>{selectedWebcam.name}</h3>
             <div className="video-container">

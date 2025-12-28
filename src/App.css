@@ -15,6 +15,7 @@
   align-items: center;
   z-index: 2000;
   padding: 20px;
+  overflow-y: auto; /* Allow scrolling if content is tall */
 }
 
 .video-modal-content {
@@ -25,6 +26,13 @@
   max-width: 900px;
   position: relative;
   box-shadow: 0 25px 50px -12px var(--shadow-color);
+  transition: max-width 0.3s ease, width 0.3s ease;
+  margin: auto; /* Ensure centering when scrolling is needed */
+}
+
+.video-modal-content.expanded {
+  max-width: 95vw;
+  width: 95vw;
 }
 
 .close-modal {
@@ -40,8 +48,25 @@
   z-index: 10;
 }
 
-.close-modal:hover {
+.resize-modal {
+  position: absolute;
+  top: 15px;
+  right: 55px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  line-height: 1;
+  z-index: 10;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.close-modal:hover, .resize-modal:hover {
   color: var(--text-primary);
+  background-color: var(--bg-secondary);
 }
 
 .video-modal-content h3 {
