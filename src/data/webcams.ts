@@ -1641,5 +1641,18 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of the Nile River in Cairo.',
     provider: 'YouTube'
+  },
+  {
+    id: 'abbR-Ttd-cA',
+    name: 'Monterey Bay Aquarium',
+    coordinates: { lat: 36.6183, lng: -121.9015 },
+    city: 'Monterey',
+    country: 'United States',
+    streamUrl: 'https://www.youtube.com/embed/abbR-Ttd-cA?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/abbR-Ttd-cA/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Live Sea Otter Cam from Monterey Bay Aquarium',
+    provider: 'YouTube'
   }
 ];
