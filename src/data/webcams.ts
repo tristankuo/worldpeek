@@ -1414,5 +1414,83 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of Old Faithful Geyser in Yellowstone National Park.',
     provider: 'YouTube'
+  },
+  {
+    id: 'WKGK_hYnlGE',
+    name: 'London Street View',
+    coordinates: { lat: 51.5074, lng: -0.1278 },
+    city: 'London',
+    country: 'United Kingdom',
+    streamUrl: 'https://www.youtube.com/embed/WKGK_hYnlGE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/WKGK_hYnlGE/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live street view of London.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'dFBRpHHwQeg',
+    name: 'Venice - St. Mark\'s Basin',
+    coordinates: { lat: 45.4342, lng: 12.3385 },
+    city: 'Venice',
+    country: 'Italy',
+    streamUrl: 'https://www.youtube.com/embed/dFBRpHHwQeg?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/dFBRpHHwQeg/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Live view of St. Mark\'s Basin in Venice.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'utE1m8l33LU',
+    name: 'Santorini (Firostefani)',
+    coordinates: { lat: 36.4225, lng: 25.4279 },
+    city: 'Santorini',
+    country: 'Greece',
+    streamUrl: 'https://www.youtube.com/embed/utE1m8l33LU?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/utE1m8l33LU/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Stunning live view of Santorini, Greece.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'w7qiRBs7zDc',
+    name: 'Melbourne Skyline',
+    coordinates: { lat: -37.8136, lng: 144.9631 },
+    city: 'Melbourne',
+    country: 'Australia',
+    streamUrl: 'https://www.youtube.com/embed/w7qiRBs7zDc?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/w7qiRBs7zDc/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the Melbourne city skyline.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'eFZUgmJF5yg',
+    name: 'Queenstown Airport',
+    coordinates: { lat: -45.0210, lng: 168.7393 },
+    city: 'Queenstown',
+    country: 'New Zealand',
+    streamUrl: 'https://www.youtube.com/embed/eFZUgmJF5yg?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/eFZUgmJF5yg/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Live view from Queenstown Airport with mountain backdrop.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'LzoqdE76sqI',
+    name: 'Auckland Skyline',
+    coordinates: { lat: -36.8485, lng: 174.7633 },
+    city: 'Auckland',
+    country: 'New Zealand',
+    streamUrl: 'https://www.youtube.com/embed/LzoqdE76sqI?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/LzoqdE76sqI/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of Auckland city and harbour.',
+    provider: 'YouTube'
   }
 ];
