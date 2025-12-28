@@ -417,7 +417,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           </div>
         )}
         <div ref={mapRef} className="map-container" style={{ height: '100%', width: '100%' }} />
-      </div>
       
       <div className="map-legend">
         {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
@@ -437,6 +436,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
         <span className="separator">•</span>
         <a href="/terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms</a>
+      </div>
       </div>
     </div>
   );
