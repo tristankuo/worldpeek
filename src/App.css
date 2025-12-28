@@ -24,20 +24,14 @@
   border-radius: 12px;
   width: 100%;
   /* Constrain width so height fits in viewport (approx 140px for header/footer/padding) */
-  max-width: min(900px, calc((90vh - 140px) * 1.778));
+  max-width: min(95vw, calc((95vh - 140px) * 1.778));
   position: relative;
   box-shadow: 0 25px 50px -12px var(--shadow-color);
   transition: max-width 0.3s ease, width 0.3s ease;
   margin: auto; /* Ensure centering when scrolling is needed */
 }
 
-.video-modal-content.expanded {
-  /* Constrain width so height fits in viewport */
-  max-width: min(95vw, calc((95vh - 140px) * 1.778));
-  width: 100%;
-}
-
-.close-modal, .resize-modal {
+.close-modal {
   position: absolute;
   top: 10px;
   background: none;
@@ -60,12 +54,7 @@
   padding-bottom: 4px; /* Visual adjustment for x */
 }
 
-.resize-modal {
-  right: 55px;
-  font-size: 22px;
-}
-
-.close-modal:hover, .resize-modal:hover {
+.close-modal:hover {
   color: var(--text-primary);
   background-color: var(--bg-secondary);
 }
