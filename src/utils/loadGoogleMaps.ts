@@ -55,7 +55,7 @@ export async function loadGoogleMapsScript(): Promise<void> {
       console.log('✅ Map config retrieved');
       
       const script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${config.apiKey}&libraries=places&loading=async`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${config.apiKey}&loading=async`;
       script.async = true;
       script.defer = true;
       script.id = 'google-maps-script';

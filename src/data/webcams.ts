@@ -1240,5 +1240,57 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of Hallasan Mountain, the highest peak in South Korea.',
     provider: 'YouTube'
+  },
+  {
+    id: 'vcKpQQ-7INc',
+    name: 'Koh Samui - Chaweng Beach',
+    coordinates: { lat: 9.5316, lng: 100.0605 },
+    city: 'Koh Samui',
+    country: 'Thailand',
+    streamUrl: 'https://www.youtube.com/embed/vcKpQQ-7INc?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/vcKpQQ-7INc/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Live view of Chaweng Beach from Muang Samui Spa Resort.',
+    provider: 'YouTube'
+  },
+  {
+    id: '_D5KAIXTlug',
+    name: 'Bangkok - Asoke Intersection',
+    coordinates: { lat: 13.7370, lng: 100.5604 },
+    city: 'Bangkok',
+    country: 'Thailand',
+    streamUrl: 'https://www.youtube.com/embed/_D5KAIXTlug?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/_D5KAIXTlug/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live traffic and city view of the busy Asoke intersection in Bangkok.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'H-h4vyKVHrQ',
+    name: 'Pattaya Beach Road',
+    coordinates: { lat: 12.9346, lng: 100.8825 },
+    city: 'Pattaya',
+    country: 'Thailand',
+    streamUrl: 'https://www.youtube.com/embed/H-h4vyKVHrQ?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/H-h4vyKVHrQ/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Live view of the bustling Pattaya Beach Road.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'wPfTFOzj0k4',
+    name: 'Manila Skyline',
+    coordinates: { lat: 14.5547, lng: 121.0244 },
+    city: 'Manila',
+    country: 'Philippines',
+    streamUrl: 'https://www.youtube.com/embed/wPfTFOzj0k4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/wPfTFOzj0k4/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the Metro Manila skyline.',
+    provider: 'YouTube'
   }
 ];
