@@ -430,6 +430,14 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           </button>
         ))}
       </div>
+
+      <div className="map-footer-links">
+        <a href="/about.html" target="_blank" rel="noopener noreferrer">About</a>
+        <span className="separator">•</span>
+        <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+        <span className="separator">•</span>
+        <a href="/terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms</a>
+      </div>
     </div>
   );
 };

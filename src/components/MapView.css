@@ -267,7 +267,7 @@
 
 .map-legend {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -278,6 +278,40 @@
   gap: 16px;
   flex-wrap: wrap;
   z-index: 5;
+}
+
+.map-footer-links {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+[data-theme='dark'] .map-footer-links {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.map-footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.map-footer-links a:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.map-footer-links .separator {
+  color: var(--border-color);
 }
 
 .theme-toggle {
@@ -361,7 +395,7 @@
   }
 
   .map-legend {
-    bottom: 10px;
+    bottom: 40px;
     right: 10px;
     left: 10px;
     padding: 10px 12px;
@@ -369,6 +403,17 @@
     font-size: 13px;
     overflow-x: auto;
     justify-content: flex-start;
+  }
+
+  .map-footer-links {
+    bottom: 5px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+    background: var(--bg-primary);
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--shadow-color);
   }
 
   .legend-item {
