@@ -145,6 +145,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       mapTypeControl: true,
       streetViewControl: false,
       fullscreenControl: true,
+      gestureHandling: 'greedy',
       styles: theme === 'dark' ? darkMapStyle : lightMapStyle
     });
 

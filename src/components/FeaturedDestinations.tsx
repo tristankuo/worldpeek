@@ -31,7 +31,7 @@ export const FeaturedDestinations: React.FC<FeaturedDestinationsProps> = ({ onWe
       desc: "Witness the organized chaos of the world's busiest pedestrian crossing. Located in Tokyo, Japan, Shibuya Crossing is a mesmerizing spectacle of humanity. When the lights turn red, vehicles stop, and a sea of people floods the intersection from all directions. It's a perfect example of Tokyo's fast-paced yet orderly urban life." 
     },
     { 
-      id: 'Cp4RRAEgpeU', 
+      id: 'HpZAez2oYsA', 
       title: 'Venice Grand Canal, Italy', 
       desc: "Transport yourself to the romantic waterways of Venice. This live stream offers a serene view of the Grand Canal, where gondolas and vaporettos navigate the historic waters. Admire the centuries-old architecture lining the canal banks and soak in the timeless beauty of this floating city, all from the comfort of your home." 
     },
