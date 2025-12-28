@@ -35,33 +35,32 @@
   width: 95vw;
 }
 
-.close-modal {
+.close-modal, .resize-modal {
   position: absolute;
   top: 10px;
-  right: 15px;
   background: none;
   border: none;
-  font-size: 32px;
   cursor: pointer;
   color: var(--text-secondary);
-  line-height: 1;
   z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.close-modal {
+  right: 10px;
+  font-size: 28px;
+  padding-bottom: 4px; /* Visual adjustment for x */
 }
 
 .resize-modal {
-  position: absolute;
-  top: 15px;
   right: 55px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: var(--text-secondary);
-  line-height: 1;
-  z-index: 10;
-  padding: 4px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
+  font-size: 22px;
 }
 
 .close-modal:hover, .resize-modal:hover {

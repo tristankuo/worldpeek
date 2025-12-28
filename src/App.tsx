@@ -62,9 +62,9 @@ function App() {
             <button 
               className="resize-modal" 
               onClick={() => setIsExpanded(!isExpanded)}
-              title={isExpanded ? "Zoom Out" : "Zoom In"}
+              title={isExpanded ? "Restore" : "Maximize"}
             >
-              {isExpanded ? '➖' : '➕'}
+              {isExpanded ? '−' : '□'}
             </button>
             <button className="close-modal" onClick={() => setSelectedWebcam(null)}>×</button>
             <h3>{selectedWebcam.name}</h3>
