@@ -1654,5 +1654,18 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live Sea Otter Cam from Monterey Bay Aquarium',
     provider: 'YouTube'
+  },
+  {
+    id: 'M--DaeXPHAM',
+    name: 'Toba Aquarium',
+    coordinates: { lat: 34.4817, lng: 136.8436 },
+    city: 'Toba',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/M--DaeXPHAM?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/M--DaeXPHAM/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Live Sea Otter Cam from Toba Aquarium',
+    provider: 'YouTube'
   }
 ];
