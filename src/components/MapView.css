@@ -341,50 +341,46 @@
   transform: scale(1.05);
 }
 
-/* Map Controls Bar */
-.map-controls-bar {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--bg-primary);
-  padding: 8px 16px;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+/* Map Controls Bar - Removed as controls moved to header */
+
+/* Header Controls */
+.header-controls {
   display: flex;
-  gap: 16px;
-  z-index: 1000;
   align-items: center;
+  gap: 12px;
 }
 
-.map-controls-bar .control-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+.header-controls .control-button {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   padding: 8px;
   border-radius: 50%;
-  transition: background 0.2s;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
   color: var(--text-primary);
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }
 
-.map-controls-bar .control-button:hover {
-  background: var(--bg-secondary);
+.header-controls .control-button:hover {
+  background: var(--border-color);
+  transform: scale(1.05);
 }
 
-.map-controls-bar .control-button.active {
+.header-controls .control-button.active {
   background: #e3f2fd;
   color: #1976d2;
+  border-color: #90caf9;
 }
 
-[data-theme='dark'] .map-controls-bar .control-button.active {
+[data-theme='dark'] .header-controls .control-button.active {
   background: #1565c0;
   color: #e3f2fd;
+  border-color: #42a5f5;
 }
 
 /* Filter Menu */
@@ -394,10 +390,9 @@
 
 .filter-menu {
   position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 12px;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
   background: var(--bg-primary);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -406,6 +401,7 @@
   flex-direction: column;
   gap: 4px;
   min-width: 160px;
+  z-index: 1000;
 }
 
 .filter-menu button {
@@ -470,16 +466,11 @@
     height: calc(100vh - 180px) !important;
   }
 
-  .map-controls-bar {
-    bottom: 20px;
-    padding: 6px 12px;
-    gap: 12px;
-  }
-  
-  .map-controls-bar .control-button {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
+  .header-controls {
+    width: 100%;
+    justify-content: space-between;
+    order: 2;
+    padding: 0 10px;
   }
 
   .map-footer-links {

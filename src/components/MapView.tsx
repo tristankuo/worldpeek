@@ -420,6 +420,48 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         
         <div className="header-controls">
           <button 
+            className="control-button"
+            onClick={() => handleMyLocation(false)}
+            title="My Location"
+          >
+            📍
+          </button>
+          <button 
+            className="control-button"
+            onClick={resetView}
+            title="Global View"
+          >
+            🌍
+          </button>
+          <div className="filter-control-wrapper">
+            <button 
+              onClick={() => setShowFilterMenu(!showFilterMenu)} 
+              className={`control-button ${showFilterMenu || selectedCategory ? 'active' : ''}`}
+              title="Filter"
+            >
+              🏷️
+            </button>
+            {showFilterMenu && (
+              <div className="filter-menu">
+                <button 
+                  onClick={() => { setSelectedCategory(null); setShowFilterMenu(false); }} 
+                  className={!selectedCategory ? 'active' : ''}
+                >
+                  All
+                </button>
+                {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
+                  <button
+                    key={category}
+                    className={selectedCategory === category ? 'active' : ''}
+                    onClick={() => { setSelectedCategory(category); setShowFilterMenu(false); }}
+                  >
+                    {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          <button 
             className="theme-toggle" 
             onClick={toggleTheme}
             title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
@@ -450,51 +492,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         )}
         <div ref={mapRef} className="map-container" style={{ height: '100%', width: '100%' }} />
       
-      <div className="map-controls-bar">
-        <button 
-          className="control-button"
-          onClick={() => handleMyLocation(false)}
-          title="My Location"
-        >
-          📍
-        </button>
-        <button 
-          className="control-button"
-          onClick={resetView}
-          title="Global View"
-        >
-          🌍
-        </button>
-        <div className="filter-control-wrapper">
-          <button 
-            onClick={() => setShowFilterMenu(!showFilterMenu)} 
-            className={`control-button ${showFilterMenu || selectedCategory ? 'active' : ''}`}
-            title="Filter"
-          >
-            🏷️
-          </button>
-          {showFilterMenu && (
-            <div className="filter-menu">
-              <button 
-                onClick={() => { setSelectedCategory(null); setShowFilterMenu(false); }} 
-                className={!selectedCategory ? 'active' : ''}
-              >
-                All
-              </button>
-              {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
-                <button
-                  key={category}
-                  className={selectedCategory === category ? 'active' : ''}
-                  onClick={() => { setSelectedCategory(category); setShowFilterMenu(false); }}
-                >
-                  {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-
       <div className="map-footer-links">
         <a href="/about.html" target="_blank" rel="noopener noreferrer">About</a>
         <span className="separator">•</span>
