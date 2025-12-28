@@ -1630,5 +1630,95 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of the Nile River in Cairo.',
     provider: 'YouTube'
+  },
+  {
+    id: "zoo-sandiego-panda",
+    name: "Giant Panda Cam - San Diego Zoo",
+    coordinates: {
+      lat: 32.7353,
+      lng: -117.149
+    },
+    city: "San Diego",
+    country: "USA",
+    streamUrl: "https://zoo.sandiegozoo.org/cams/giant-panda-cam",
+    thumbnailUrl: "https://zoo.sandiegozoo.org/sites/default/files/styles/hero_mobile_1x/public/2024-08/panda-cam-hero-mobile.jpg",
+    category: "zoo",
+    isLive: true,
+    description: "Live view of the Giant Pandas at the San Diego Zoo."
+  },
+  {
+    id: "zoo-national-panda",
+    name: "Giant Panda Cam - National Zoo",
+    coordinates: {
+      lat: 38.9296,
+      lng: -77.0498
+    },
+    city: "Washington, D.C.",
+    country: "USA",
+    streamUrl: "https://nationalzoo.si.edu/webcams/panda-cam",
+    thumbnailUrl: "https://nationalzoo.si.edu/sites/default/files/styles/wide/public/2025-01/20250108-817A0742-13RP.jpg",
+    category: "zoo",
+    isLive: true,
+    description: "Watch the Smithsonian's National Zoo's giant pandas, Qing Bao and Bao Li."
+  },
+  {
+    id: "aq-pacific-shark",
+    name: "Shark Lagoon Cam - Aquarium of the Pacific",
+    coordinates: {
+      lat: 33.7621,
+      lng: -118.1969
+    },
+    city: "Long Beach",
+    country: "USA",
+    streamUrl: "https://www.aquariumofpacific.org/exhibits/webcams/webcam_shark_lagoon",
+    thumbnailUrl: "https://www.aquariumofpacific.org/images/exhibits/Shark_Lagoon_900.jpg",
+    category: "aquarium",
+    isLive: true,
+    description: "View of the large sharks and rays in the Shark Lagoon exhibit."
+  },
+  {
+    id: "aq-monterey-otter",
+    name: "Sea Otter Cam - Monterey Bay Aquarium",
+    coordinates: {
+      lat: 36.6183,
+      lng: -121.9015
+    },
+    city: "Monterey",
+    country: "USA",
+    streamUrl: "https://www.montereybayaquarium.org/animals/live-cams/sea-otter-cam",
+    thumbnailUrl: "https://www.montereybayaquarium.org/-/m/images/animal-guide/marine-mammals/sea-otter-mom-pup-sleeping-stomach-1600.jpg",
+    category: "aquarium",
+    isLive: true,
+    description: "Live cam featuring the playful sea otters at the Monterey Bay Aquarium."
+  },
+  {
+    id: "tp-universal-globe",
+    name: "Universal Studios Globe",
+    coordinates: {
+      lat: 28.4743,
+      lng: -81.4678
+    },
+    city: "Orlando",
+    country: "USA",
+    streamUrl: "https://www.earthcam.com/usa/florida/orlando/universalstudios/?cam=universal_studios_globe",
+    thumbnailUrl: "https://static.earthcam.com/images/thumbs/universal_studios_globe_1200x675.jpg",
+    category: "theme-park",
+    isLive: true,
+    description: "Live view of the iconic rotating globe at the entrance of Universal Studios Florida."
+  },
+  {
+    id: "tp-cedar-point",
+    name: "Cedar Point Live Video",
+    coordinates: {
+      lat: 41.4822,
+      lng: -82.6835
+    },
+    city: "Sandusky",
+    country: "USA",
+    streamUrl: "https://www.sixflags.com/cedarpoint/live-video",
+    thumbnailUrl: "https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cp-en-us/blogs/2022/april/webcams-blog.jpg",
+    category: "theme-park",
+    isLive: true,
+    description: "Live views of the roller coaster capital of the world."
   }
 ];

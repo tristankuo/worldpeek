@@ -20,7 +20,7 @@ export interface WebcamLocation {
   lastChecked?: string;
 }
 
-export type WebcamCategory = 'beach' | 'city' | 'nature' | 'landmark' | 'mountain' | 'other';
+export type WebcamCategory = 'beach' | 'city' | 'nature' | 'landmark' | 'mountain' | 'zoo' | 'aquarium' | 'theme-park' | 'other';
 
 export interface WebcamFilter {
   category?: WebcamCategory;

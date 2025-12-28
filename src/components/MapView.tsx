@@ -120,6 +120,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       nature: '🏞️',
       landmark: '🗼',
       mountain: '⛰️',
+      zoo: '🦁',
+      aquarium: '🐠',
+      'theme-park': '🎢',
       other: '📹'
     };
     return icons[category] || '📹';
@@ -132,6 +135,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       nature: '#4CAF50',
       landmark: '#FFA726',
       mountain: '#9575CD',
+      zoo: '#FFB74D',
+      aquarium: '#4DD0E1',
+      'theme-park': '#F06292',
       other: '#78909C'
     };
     return colors[category] || '#78909C';
@@ -420,13 +426,13 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       </div>
       
       <div className="map-legend">
-        {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
+        {['beach', 'city', 'landmark', 'nature', 'mountain', 'zoo', 'aquarium', 'theme-park'].map(category => (
           <button
             key={category}
             className={`legend-item ${selectedCategory === category ? 'active' : ''}`}
             onClick={() => setSelectedCategory(selectedCategory === category ? null : category)}
           >
-            {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+            {getCategoryIcon(category)} {category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
           </button>
         ))}
       </div>
