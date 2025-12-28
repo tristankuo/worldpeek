@@ -97,6 +97,42 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     }
   }, [webcams, isLoading, selectedCategory]);
 
+  const handleMyLocation = () => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        
+        if (googleMapRef.current && window.google) {
+          const geocoder = new window.google.maps.Geocoder();
+          geocoder.geocode({ location: { lat: latitude, lng: longitude } }, (results, status) => {
+            if (status === 'OK' && results) {
+              const countryResult = results.find(r => r.types.includes('country'));
+              
+              if (countryResult && countryResult.geometry.viewport) {
+                googleMapRef.current?.fitBounds(countryResult.geometry.viewport);
+              } else {
+                googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
+                googleMapRef.current?.setZoom(5);
+              }
+            } else {
+              googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
+              googleMapRef.current?.setZoom(5);
+            }
+          });
+        }
+      },
+      (error) => {
+        console.error("Error getting location:", error);
+        alert("Unable to retrieve your location. Please ensure you have granted location permissions.");
+      }
+    );
+  };
+
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
 
@@ -379,6 +415,14 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         </div>
         
         <div className="header-controls">
+          <button 
+            className="control-button"
+            onClick={handleMyLocation}
+            title="Zoom to My Location"
+          >
+            📍 My Location
+          </button>
+
           <button 
             className="control-button"
             onClick={resetView}
