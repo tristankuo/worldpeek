@@ -25,6 +25,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<WebcamLocation[]>([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
+  const [showFilterMenu, setShowFilterMenu] = useState(false);
 
   useEffect(() => {
     if (searchQuery.trim()) {
@@ -419,22 +420,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         
         <div className="header-controls">
           <button 
-            className="control-button"
-            onClick={() => handleMyLocation(false)}
-            title="Zoom to My Location"
-          >
-            📍 My Location
-          </button>
-
-          <button 
-            className="control-button"
-            onClick={resetView}
-            title="Show Global View"
-          >
-            🌍 Global View
-          </button>
-
-          <button 
             className="theme-toggle" 
             onClick={toggleTheme}
             title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
@@ -465,16 +450,49 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         )}
         <div ref={mapRef} className="map-container" style={{ height: '100%', width: '100%' }} />
       
-      <div className="map-legend">
-        {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
-          <button
-            key={category}
-            className={`legend-item ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(selectedCategory === category ? null : category)}
+      <div className="map-controls-bar">
+        <button 
+          className="control-button"
+          onClick={() => handleMyLocation(false)}
+          title="My Location"
+        >
+          📍
+        </button>
+        <button 
+          className="control-button"
+          onClick={resetView}
+          title="Global View"
+        >
+          🌍
+        </button>
+        <div className="filter-control-wrapper">
+          <button 
+            onClick={() => setShowFilterMenu(!showFilterMenu)} 
+            className={`control-button ${showFilterMenu || selectedCategory ? 'active' : ''}`}
+            title="Filter"
           >
-            {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+            🏷️
           </button>
-        ))}
+          {showFilterMenu && (
+            <div className="filter-menu">
+              <button 
+                onClick={() => { setSelectedCategory(null); setShowFilterMenu(false); }} 
+                className={!selectedCategory ? 'active' : ''}
+              >
+                All
+              </button>
+              {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
+                <button
+                  key={category}
+                  className={selectedCategory === category ? 'active' : ''}
+                  onClick={() => { setSelectedCategory(category); setShowFilterMenu(false); }}
+                >
+                  {getCategoryIcon(category)} {category.charAt(0).toUpperCase() + category.slice(1)}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="map-footer-links">

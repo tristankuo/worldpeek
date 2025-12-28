@@ -341,34 +341,103 @@
   transform: scale(1.05);
 }
 
-.legend-item {
-  font-size: 14px;
-  color: var(--text-secondary);
-  white-space: nowrap;
-  background: none;
-  border: 1px solid transparent;
-  padding: 6px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.2s;
+/* Map Controls Bar */
+.map-controls-bar {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-primary);
+  padding: 8px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 16px;
+  z-index: 1000;
+  align-items: center;
 }
 
-.legend-item:hover {
+.map-controls-bar .control-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--text-primary);
+}
+
+.map-controls-bar .control-button:hover {
   background: var(--bg-secondary);
 }
 
-.legend-item.active {
+.map-controls-bar .control-button.active {
   background: #e3f2fd;
   color: #1976d2;
-  border-color: #bbdefb;
-  font-weight: 600;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-[data-theme='dark'] .legend-item.active {
+[data-theme='dark'] .map-controls-bar .control-button.active {
   background: #1565c0;
   color: #e3f2fd;
-  border-color: #42a5f5;
+}
+
+/* Filter Menu */
+.filter-control-wrapper {
+  position: relative;
+}
+
+.filter-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 12px;
+  background: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.filter-menu button {
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 10px 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: background 0.2s;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.filter-menu button:hover {
+  background: var(--bg-secondary);
+}
+
+.filter-menu button.active {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .filter-menu button.active {
+  background: #1565c0;
+  color: #e3f2fd;
 }
 
 /* Responsive Design */
@@ -401,32 +470,19 @@
     height: calc(100vh - 180px) !important;
   }
 
-  .map-legend {
-    top: 10px;
-    bottom: auto;
-    right: 10px;
-    left: 10px;
-    padding: 8px 12px;
+  .map-controls-bar {
+    bottom: 20px;
+    padding: 6px 12px;
     gap: 12px;
-    font-size: 13px;
-    overflow-x: auto;
-    justify-content: flex-start;
-    z-index: 100;
+  }
+  
+  .map-controls-bar .control-button {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .map-footer-links {
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    white-space: nowrap;
-    padding: 6px 12px;
-    background: var(--bg-primary);
-    border-radius: 20px;
-    box-shadow: 0 2px 5px var(--shadow-color);
-  }
-
-  .legend-item {
-    font-size: 12px;
+    display: none;
   }
 }
