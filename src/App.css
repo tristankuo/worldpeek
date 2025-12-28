@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: var(--modal-overlay);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +18,13 @@
 }
 
 .video-modal-content {
-  background: white;
+  background: var(--modal-bg);
   padding: 20px;
   border-radius: 12px;
   width: 100%;
   max-width: 900px;
   position: relative;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px -12px var(--shadow-color);
 }
 
 .close-modal {
@@ -35,20 +35,20 @@
   border: none;
   font-size: 32px;
   cursor: pointer;
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1;
   z-index: 10;
 }
 
 .close-modal:hover {
-  color: #000;
+  color: var(--text-primary);
 }
 
 .video-modal-content h3 {
   margin: 0 0 15px 0;
   padding-right: 30px;
   font-size: 1.5rem;
-  color: #1a202c;
+  color: var(--text-primary);
 }
 
 .video-container {
@@ -70,7 +70,7 @@
 
 .modal-location {
   margin-top: 15px;
-  color: #4a5568;
+  color: var(--text-secondary);
   font-size: 0.95rem;
 }
 

@@ -1,15 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { WebcamLocation } from '../types/webcam';
 import { loadGoogleMapsScript } from '../utils/loadGoogleMaps';
+import { darkMapStyle, lightMapStyle } from '../utils/mapStyles';
 import './MapView.css';
 
 interface MapViewProps {
   webcams: WebcamLocation[];
   onWebcamSelect?: (webcam: WebcamLocation) => void;
   onBack?: () => void;
+  theme: 'light' | 'dark';
+  toggleTheme: () => void;
 }
 
-export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBack }) => {
+export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBack, theme, toggleTheme }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const googleMapRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
@@ -40,6 +43,14 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   }, [isScriptLoaded]);
 
   useEffect(() => {
+    if (googleMapRef.current) {
+      googleMapRef.current.setOptions({
+        styles: theme === 'dark' ? darkMapStyle : lightMapStyle
+      });
+    }
+  }, [theme]);
+
+  useEffect(() => {
     if (googleMapRef.current && !isLoading) {
       addWebcamMarkers();
     }
@@ -55,13 +66,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       mapTypeControl: true,
       streetViewControl: false,
       fullscreenControl: true,
-      styles: [
-        {
-          featureType: 'poi',
-          elementType: 'labels',
-          stylers: [{ visibility: 'off' }]
-        }
-      ]
+      styles: theme === 'dark' ? darkMapStyle : lightMapStyle
     });
 
     googleMapRef.current = map;
@@ -292,7 +297,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           >
             🌍 WorldPeek
           </h1>
-          <span style={{ color: '#666', fontSize: '14px', fontWeight: 500 }}>Explore {webcams.length} locations</span>
+          <span style={{ color: 'var(--text-secondary)', fontSize: '14px', fontWeight: 500 }}>Explore {webcams.length} locations</span>
         </div>
         
         {selectedWebcam && (
@@ -301,6 +306,14 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
             {selectedWebcam.isLive && <span className="live-badge">🔴 LIVE</span>}
           </div>
         )}
+
+        <button 
+          className="theme-toggle" 
+          onClick={toggleTheme}
+          title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+        >
+          {theme === 'light' ? '🌙' : '☀️'}
+        </button>
       </div>
       
       <div className="map-wrapper" style={{ position: 'relative', height: 'calc(100vh - 120px)' }}>

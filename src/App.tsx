@@ -6,11 +6,25 @@ import { WebcamLocation } from './types/webcam';
 
 function App() {
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
 
   useEffect(() => {
     // Clear crash retry flag on successful load
     sessionStorage.removeItem('app_crashed_retry');
   }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
 
   return (
     <div className="app">
@@ -19,6 +33,8 @@ function App() {
         onWebcamSelect={(webcam) => {
           setSelectedWebcam(webcam);
         }}
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
       
       {selectedWebcam && (
