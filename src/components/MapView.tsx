@@ -26,6 +26,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [searchResults, setSearchResults] = useState<WebcamLocation[]>([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (searchQuery.trim()) {
@@ -111,22 +120,28 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         const { latitude, longitude } = position.coords;
         
         if (googleMapRef.current && window.google) {
-          const geocoder = new window.google.maps.Geocoder();
-          geocoder.geocode({ location: { lat: latitude, lng: longitude } }, (results, status) => {
-            if (status === 'OK' && results) {
-              const countryResult = results.find(r => r.types.includes('country'));
-              
-              if (countryResult && countryResult.geometry.viewport) {
-                googleMapRef.current?.fitBounds(countryResult.geometry.viewport);
+          if (isMobile) {
+            // On mobile, zoom directly to user location with a closer view
+            googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
+            googleMapRef.current.setZoom(9);
+          } else {
+            const geocoder = new window.google.maps.Geocoder();
+            geocoder.geocode({ location: { lat: latitude, lng: longitude } }, (results, status) => {
+              if (status === 'OK' && results) {
+                const countryResult = results.find(r => r.types.includes('country'));
+                
+                if (countryResult && countryResult.geometry.viewport) {
+                  googleMapRef.current?.fitBounds(countryResult.geometry.viewport);
+                } else {
+                  googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
+                  googleMapRef.current?.setZoom(5);
+                }
               } else {
                 googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
                 googleMapRef.current?.setZoom(5);
               }
-            } else {
-              googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
-              googleMapRef.current?.setZoom(5);
-            }
-          });
+            });
+          }
         }
       },
       (error) => {
@@ -431,13 +446,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           >
             📍
           </button>
-          <button 
-            className="control-button"
-            onClick={resetView}
-            title="Global View"
-          >
-            🌍
-          </button>
+          {!isMobile && (
+            <button 
+              className="control-button"
+              onClick={resetView}
+              title="Global View"
+            >
+              🌍
+            </button>
+          )}
           <div className="filter-control-wrapper">
             <button 
               onClick={() => setShowFilterMenu(!showFilterMenu)} 
