@@ -1680,5 +1680,18 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of San Francisco Skyline and Golden Gate Bridge from Treasure Island',
     provider: 'YouTube'
+  },
+  {
+    id: 'zmiOmpo27F8',
+    name: 'Boston Green Line',
+    coordinates: { lat: 42.3601, lng: -71.0589 },
+    city: 'Boston',
+    country: 'United States',
+    streamUrl: 'https://www.youtube.com/embed/zmiOmpo27F8?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/zmiOmpo27F8/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view of the Green Line in Boston, MA',
+    provider: 'YouTube'
   }
 ];
