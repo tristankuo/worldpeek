@@ -7,9 +7,17 @@ import { WebcamLocation } from './types/webcam';
 function App() {
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+    } catch (e) {
+      console.warn('LocalStorage access denied:', e);
+    }
+    
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
   });
 
   useEffect(() => {
@@ -19,7 +27,11 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {
+      console.warn('LocalStorage access denied:', e);
+    }
   }, [theme]);
 
   const toggleTheme = () => {

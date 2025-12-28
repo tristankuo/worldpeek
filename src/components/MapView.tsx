@@ -50,13 +50,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       googleMapRef.current.setZoom(12);
       
       // Find and click the marker to open info window
-      const marker = markersRef.current.find(m => 
-        m.getPosition()?.lat() === webcam.coordinates.lat && 
-        m.getPosition()?.lng() === webcam.coordinates.lng
-      );
+      const marker = markersRef.current.find(m => {
+        const pos = m.getPosition();
+        return pos && 
+          Math.abs(pos.lat() - webcam.coordinates.lat) < 0.0001 && 
+          Math.abs(pos.lng() - webcam.coordinates.lng) < 0.0001;
+      });
       
       if (marker) {
-        google.maps.event.trigger(marker, 'click');
+        window.google.maps.event.trigger(marker, 'click');
       }
     }
   };
@@ -97,7 +99,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
 
-    const map = new google.maps.Map(mapRef.current, {
+    const map = new window.google.maps.Map(mapRef.current, {
       zoom: 3,
       center: { lat: 20, lng: 0 },
       mapTypeId: 'roadmap',
@@ -210,26 +212,26 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     markersRef.current = [];
 
     const map = googleMapRef.current;
-    const bounds = new google.maps.LatLngBounds();
+    const bounds = new window.google.maps.LatLngBounds();
 
     const filteredWebcams = selectedCategory 
       ? webcams.filter(w => w.category === selectedCategory)
       : webcams;
 
     filteredWebcams.forEach(webcam => {
-      const marker = new google.maps.Marker({
+      const marker = new window.google.maps.Marker({
         position: webcam.coordinates,
         map: map,
         title: webcam.name,
         icon: {
           url: createMarkerIcon(webcam),
-          scaledSize: new google.maps.Size(50, 50),
-          anchor: new google.maps.Point(25, 25)
+          scaledSize: new window.google.maps.Size(50, 50),
+          anchor: new window.google.maps.Point(25, 25)
         },
-        animation: webcam.isLive ? google.maps.Animation.DROP : undefined
+        animation: webcam.isLive ? window.google.maps.Animation.DROP : undefined
       });
 
-      const infoWindow = new google.maps.InfoWindow({
+      const infoWindow = new window.google.maps.InfoWindow({
         content: createInfoWindowContent(webcam)
       });
 
