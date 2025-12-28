@@ -9,6 +9,7 @@
     "build:staging": "GITHUB_PAGES=true vite build",
     "preview": "vite preview",
     "deploy:firebase": "npm run build && firebase deploy",
+    "deploy:production": "npm run deploy:firebase",
     "deploy:staging": "npm run build:staging && gh-pages -d dist"
   },
   "keywords": [
