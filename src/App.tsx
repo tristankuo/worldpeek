@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { MapView } from './components/MapView';
+import { FeaturedDestinations } from './components/FeaturedDestinations';
 import { WEBCAMS } from './data/webcams';
 import { WebcamLocation } from './types/webcam';
 
@@ -48,6 +49,8 @@ function App() {
         theme={theme}
         toggleTheme={toggleTheme}
       />
+      
+      <FeaturedDestinations />
       
       {selectedWebcam && (
         <div className="video-modal-overlay" onClick={() => setSelectedWebcam(null)}>

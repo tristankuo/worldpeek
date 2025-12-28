@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  /* Allow content to flow below if needed, but map takes full viewport initially */
+  min-height: 100vh;
 }
 
 .map-header {
