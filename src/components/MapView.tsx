@@ -21,7 +21,45 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const [isScriptLoaded, setIsScriptLoaded] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<WebcamLocation[]>([]);
+  const [showSearchResults, setShowSearchResults] = useState(false);
+
+  useEffect(() => {
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      const results = webcams.filter(w => 
+        w.name.toLowerCase().includes(query) || 
+        w.city.toLowerCase().includes(query) || 
+        w.country.toLowerCase().includes(query)
+      );
+      setSearchResults(results);
+      setShowSearchResults(true);
+    } else {
+      setSearchResults([]);
+      setShowSearchResults(false);
+    }
+  }, [searchQuery, webcams]);
+
+  const handleSearchSelect = (webcam: WebcamLocation) => {
+    setSearchQuery('');
+    setShowSearchResults(false);
+    
+    if (googleMapRef.current) {
+      googleMapRef.current.panTo(webcam.coordinates);
+      googleMapRef.current.setZoom(12);
+      
+      // Find and click the marker to open info window
+      const marker = markersRef.current.find(m => 
+        m.getPosition()?.lat() === webcam.coordinates.lat && 
+        m.getPosition()?.lng() === webcam.coordinates.lng
+      );
+      
+      if (marker) {
+        google.maps.event.trigger(marker, 'click');
+      }
+    }
+  };
 
   useEffect(() => {
     loadGoogleMapsScript()
@@ -282,41 +320,81 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   return (
     <div className="map-view">
       <div className="map-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginRight: 'auto' }}>
+        <div className="header-left">
           <h1 
             onClick={resetView}
             title="Reset to Global View"
-            style={{ 
-              fontSize: '24px', 
-              margin: 0, 
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-              WebkitBackgroundClip: 'text', 
-              WebkitTextFillColor: 'transparent',
-              cursor: 'pointer'
-            }}
+            className="app-title"
           >
             🌍 WorldPeek
           </h1>
-          <span style={{ color: 'var(--text-secondary)', fontSize: '14px', fontWeight: 500 }}>Explore {webcams.length} locations</span>
+          <span className="location-count">Explore {webcams.length} locations</span>
+        </div>
+
+        <div className="search-container">
+          <div className="search-input-wrapper">
+            <span className="search-icon">🔍</span>
+            <input
+              type="text"
+              placeholder="Search city, country, or destination..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="search-input"
+            />
+            {searchQuery && (
+              <button 
+                className="clear-search"
+                onClick={() => setSearchQuery('')}
+              >
+                ×
+              </button>
+            )}
+          </div>
+          
+          {showSearchResults && (
+            <div className="search-results">
+              {searchResults.length > 0 ? (
+                searchResults.map(webcam => (
+                  <div 
+                    key={webcam.id} 
+                    className="search-result-item"
+                    onClick={() => handleSearchSelect(webcam)}
+                  >
+                    <span className="result-icon">{getCategoryIcon(webcam.category)}</span>
+                    <div className="result-info">
+                      <div className="result-name">{webcam.name}</div>
+                      <div className="result-location">{webcam.city}, {webcam.country}</div>
+                    </div>
+                    {webcam.isLive && <span className="live-badge-small">LIVE</span>}
+                  </div>
+                ))
+              ) : (
+                <div className="no-results">No locations found</div>
+              )}
+            </div>
+          )}
         </div>
         
-        {selectedWebcam && (
-          <div className="selected-webcam-info">
-            <span>{selectedWebcam.name}</span>
-            {selectedWebcam.isLive && <span className="live-badge">🔴 LIVE</span>}
-          </div>
-        )}
+        <div className="header-controls">
+          <button 
+            className="control-button"
+            onClick={resetView}
+            title="Reset Map View"
+          >
+            🔄 Reset View
+          </button>
 
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙' : '☀️'}
-        </button>
+          <button 
+            className="theme-toggle" 
+            onClick={toggleTheme}
+            title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          >
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
+        </div>
       </div>
       
-      <div className="map-wrapper" style={{ position: 'relative', height: 'calc(100vh - 120px)' }}>
+      <div className="map-wrapper" style={{ position: 'relative', height: 'calc(100vh - 80px)' }}>
         {isLoading && (
           <div className="map-loading" style={{
             position: 'absolute',
