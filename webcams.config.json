@@ -1168,7 +1168,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "HeathrowPlaceholder",
+    "id": "fEXGqhx8DWY",
     "name": "Heathrow Airport",
     "coordinates": {
       "lat": 51.47,
@@ -1176,10 +1176,10 @@
     },
     "city": "London",
     "country": "United Kingdom",
-    "streamUrl": "https://www.youtube.com/embed/HeathrowPlaceholder?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/HeathrowPlaceholder/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/fEXGqhx8DWY?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fEXGqhx8DWY/mqdefault_live.jpg",
     "category": "other",
-    "isLive": false,
+    "isLive": true,
     "description": "Live view of Heathrow Airport",
     "provider": "YouTube"
   },
