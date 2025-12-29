@@ -18,6 +18,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const markersRef = useRef<google.maps.Marker[]>([]);
   const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedRegion, setSelectedRegion] = useState<string>('Global');
   const [isLoading, setIsLoading] = useState(true);
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -26,8 +27,19 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [searchResults, setSearchResults] = useState<WebcamLocation[]>([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
+  const [showRegionMenu, setShowRegionMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isLocating, setIsLocating] = useState(false);
+
+  const REGIONS = [
+    { id: 'Global', icon: '🌍', label: 'Global' },
+    { id: 'US', icon: '🇺🇸', label: 'US & Canada' },
+    { id: 'EU', icon: '🇪🇺', label: 'Europe' },
+    { id: 'JP', icon: '🇯🇵', label: 'Japan' },
+    { id: 'KR', icon: '🇰🇷', label: 'Korea' },
+    { id: 'TW', icon: '🇹🇼', label: 'Taiwan' },
+    { id: 'SG', icon: '🇸🇬', label: 'Singapore' },
+  ];
 
   useEffect(() => {
     const handleResize = () => {
@@ -108,7 +120,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     if (googleMapRef.current && !isLoading) {
       addWebcamMarkers();
     }
-  }, [webcams, isLoading, selectedCategory]);
+  }, [webcams, isLoading, selectedCategory, selectedRegion]);
 
   const handleMyLocation = (silent = false) => {
     if (!navigator.geolocation) {
@@ -286,9 +298,20 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     const map = googleMapRef.current;
     const bounds = new window.google.maps.LatLngBounds();
 
-    const filteredWebcams = selectedCategory 
-      ? webcams.filter(w => w.category === selectedCategory)
-      : webcams;
+    const filteredWebcams = webcams.filter(w => {
+      // Category filter
+      if (selectedCategory && w.category !== selectedCategory) return false;
+
+      // Region filter
+      if (selectedRegion === 'Global') return true;
+      if (selectedRegion === 'US') return ['United States', 'USA', 'Canada'].includes(w.country);
+      if (selectedRegion === 'EU') return ['United Kingdom', 'UK', 'France', 'Germany', 'Italy', 'Spain', 'Netherlands', 'Switzerland', 'Ireland', 'Greece', 'Austria', 'Belgium', 'Portugal', 'Sweden', 'Norway', 'Finland', 'Denmark', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Bulgaria', 'Croatia', 'Slovenia', 'Slovakia', 'Estonia', 'Latvia', 'Lithuania', 'Malta', 'Cyprus', 'Luxembourg', 'Iceland'].includes(w.country);
+      if (selectedRegion === 'JP') return w.country === 'Japan';
+      if (selectedRegion === 'KR') return ['South Korea', 'Korea'].includes(w.country);
+      if (selectedRegion === 'TW') return w.country === 'Taiwan';
+      if (selectedRegion === 'SG') return w.country === 'Singapore';
+      return true;
+    });
 
     filteredWebcams.forEach(webcam => {
       const marker = new window.google.maps.Marker({
@@ -357,6 +380,8 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   }, [webcams, onWebcamSelect]);
 
   const resetView = () => {
+    setSelectedRegion('Global');
+    setSelectedCategory(null);
     if (googleMapRef.current) {
       googleMapRef.current.setCenter({ lat: 20, lng: 0 });
       googleMapRef.current.setZoom(3);
@@ -458,15 +483,31 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
           >
             {isLocating ? '⏳' : '📍'}
           </button>
-          {!isMobile && (
+          <div className="filter-control-wrapper">
             <button 
-              className="control-button"
-              onClick={resetView}
-              title="Global View"
+              onClick={() => setShowRegionMenu(!showRegionMenu)} 
+              className={`control-button ${showRegionMenu || selectedRegion !== 'Global' ? 'active' : ''}`}
+              title="Select Region"
             >
-              🌍
+              {REGIONS.find(r => r.id === selectedRegion)?.icon || '🌍'}
             </button>
-          )}
+            {showRegionMenu && (
+              <div className="filter-menu region-menu">
+                {REGIONS.map(region => (
+                  <button
+                    key={region.id}
+                    className={selectedRegion === region.id ? 'active' : ''}
+                    onClick={() => { 
+                      setSelectedRegion(region.id); 
+                      setShowRegionMenu(false); 
+                    }}
+                  >
+                    {region.icon} {region.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <div className="filter-control-wrapper">
             <button 
               onClick={() => setShowFilterMenu(!showFilterMenu)} 
