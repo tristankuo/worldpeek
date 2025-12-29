@@ -804,16 +804,16 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: 'jbelc3fp9N8',
-    name: 'Kinkakuji (Golden Pavilion)',
-    coordinates: { lat: 35.0394, lng: 135.7292 },
+    id: 'AoRAAex6nBk',
+    name: 'Kyoto Higashi Honganji',
+    coordinates: { lat: 34.9910, lng: 135.7586 },
     city: 'Kyoto',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/jbelc3fp9N8?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/jbelc3fp9N8/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/AoRAAex6nBk?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/AoRAAex6nBk/mqdefault_live.jpg',
     category: 'landmark',
     isLive: true,
-    description: 'Live view of the Golden Pavilion (Kinkakuji), one of Kyoto\'s most iconic Zen Buddhist temples.',
+    description: 'Live view of Higashi Honganji Temple in Kyoto.',
     provider: 'YouTube'
   },
   {
@@ -921,13 +921,13 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: 'W6iWw1CZKP0',
+    id: 'IQKJPxjnjUw',
     name: 'Kyoto Tower',
     coordinates: { lat: 34.9875, lng: 135.7594 },
     city: 'Kyoto',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/W6iWw1CZKP0?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/W6iWw1CZKP0/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/IQKJPxjnjUw?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/IQKJPxjnjUw/mqdefault_live.jpg',
     category: 'landmark',
     isLive: true,
     description: 'Live view of Kyoto Tower, the tallest structure in Kyoto.',
