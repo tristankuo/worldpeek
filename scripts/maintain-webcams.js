@@ -95,22 +95,27 @@ async function maintainWebcams() {
             updatedCount++;
             fixedWebcams.push({ name: webcam.name, oldId: webcam.id, newId: newId });
         } else {
-          console.log(`       [FAILED] No replacement found.`);
+          console.log(`       [FAILED] No replacement found. Marking for removal.`);
+          webcam._remove = true;
           unfixableWebcams.push(webcam);
         }
       }
     }
   }
 
+  // Filter out removed webcams
+  const activeWebcams = webcams.filter(w => !w._remove);
+  const removedCount = webcams.length - activeWebcams.length;
+
   console.log(`\nSummary:`);
   console.log(`Checked: ${youtubeWebcams.length}`);
   console.log(`Dead: ${deadCount}`);
   console.log(`Repaired: ${updatedCount}`);
-  console.log(`Unfixable: ${unfixableWebcams.length}`);
+  console.log(`Removed: ${removedCount}`);
 
-  // Save updates
-  if (updatedCount > 0) {
-    fs.writeFileSync(CONFIG_PATH, JSON.stringify(webcams, null, 2));
+  // Save updates if there are repairs OR removals
+  if (updatedCount > 0 || removedCount > 0) {
+    fs.writeFileSync(CONFIG_PATH, JSON.stringify(activeWebcams, null, 2));
     console.log(`\n✅ Saved updates to webcams.config.json`);
   }
 
@@ -119,14 +124,14 @@ async function maintainWebcams() {
   
   if (unfixableWebcams.length > 0) {
     reportContent += `---
-title: Dead Webcams Report
+title: 🗑️ Removed Dead Webcams Report
 labels: maintenance
 assignees: tristan
 ---
 
-### ⚠️ Unfixable Webcams Detected
+### ⚠️ Webcams Removed from Production
 
-The following webcams are offline and no replacement could be found automatically. Please review them manually.
+The following webcams were found to be dead and no replacement could be found automatically. **They have been removed from the configuration file** to prevent broken links on the site.
 
 | Name | ID | City | Country |
 |------|----|------|---------|
