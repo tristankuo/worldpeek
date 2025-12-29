@@ -817,13 +817,13 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: '6QdU7Wd4ub0',
+    id: 'vSLXU7AbZAQ',
     name: 'Osaka Dotonbori (Ebisu Bridge)',
     coordinates: { lat: 34.6687, lng: 135.5013 },
     city: 'Osaka',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/6QdU7Wd4ub0?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/6QdU7Wd4ub0/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/vSLXU7AbZAQ?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/vSLXU7AbZAQ/mqdefault_live.jpg',
     category: 'city',
     isLive: true,
     description: 'Live view of the Dotonbori canal and the famous Glico Man sign area in Osaka.',
