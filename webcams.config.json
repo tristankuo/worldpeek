@@ -736,7 +736,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "HzYW9k3qkSs",
+    "id": "XSD5ptYisw8",
     "name": "Jiufen Old Street",
     "coordinates": {
       "lat": 25.1099,
@@ -744,8 +744,8 @@
     },
     "city": "New Taipei City",
     "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/HzYW9k3qkSs?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/HzYW9k3qkSs/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/XSD5ptYisw8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/XSD5ptYisw8/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Live view of the historic Jiufen Old Street, famous for its tea houses and lantern-lit alleyways.",
@@ -864,7 +864,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "a-DmMSV2Bb4",
+    "id": "V15Dx4ozpc8",
     "name": "Tokyo Tower",
     "coordinates": {
       "lat": 35.6586,
@@ -872,15 +872,15 @@
     },
     "city": "Tokyo",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/a-DmMSV2Bb4?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/a-DmMSV2Bb4/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/V15Dx4ozpc8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/V15Dx4ozpc8/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Live view of the iconic Tokyo Tower.",
     "provider": "YouTube"
   },
   {
-    "id": "Piac-qj2Mbg",
+    "id": "OxNDcU2etVc",
     "name": "Gwanghwamun Gate",
     "coordinates": {
       "lat": 37.5759,
@@ -888,15 +888,15 @@
     },
     "city": "Seoul",
     "country": "South Korea",
-    "streamUrl": "https://www.youtube.com/embed/Piac-qj2Mbg?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/Piac-qj2Mbg/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/OxNDcU2etVc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/OxNDcU2etVc/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "View of Gwanghwamun Gate and Gwanghwamun Square.",
     "provider": "YouTube"
   },
   {
-    "id": "bNOWG3jcOlQ",
+    "id": "PFOxSaZj874",
     "name": "Victoria Harbour",
     "coordinates": {
       "lat": 22.2933,
@@ -904,8 +904,8 @@
     },
     "city": "Hong Kong",
     "country": "Hong Kong",
-    "streamUrl": "https://www.youtube.com/embed/bNOWG3jcOlQ?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/bNOWG3jcOlQ/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/PFOxSaZj874?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/PFOxSaZj874/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Victoria Harbour and the Hong Kong skyline.",
@@ -944,7 +944,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "nXdp7DkqAcc",
+    "id": "oKBfpJGysmY",
     "name": "Marina Bay Sands",
     "coordinates": {
       "lat": 1.2834,
@@ -952,8 +952,8 @@
     },
     "city": "Singapore",
     "country": "Singapore",
-    "streamUrl": "https://www.youtube.com/embed/nXdp7DkqAcc?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/nXdp7DkqAcc/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/oKBfpJGysmY?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/oKBfpJGysmY/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Iconic view of Marina Bay Sands and the Singapore skyline.",
@@ -1008,7 +1008,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "10GcCC7tykM",
+    "id": "gIv9J38Dax8",
     "name": "Niagara Falls",
     "coordinates": {
       "lat": 43.0896,
@@ -1016,8 +1016,8 @@
     },
     "city": "Niagara Falls",
     "country": "Canada",
-    "streamUrl": "https://www.youtube.com/embed/10GcCC7tykM?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/10GcCC7tykM/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/gIv9J38Dax8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gIv9J38Dax8/mqdefault_live.jpg",
     "category": "nature",
     "isLive": true,
     "description": "Live view of the majestic Niagara Falls.",
@@ -1152,7 +1152,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "JE2PXYBv9FQ",
+    "id": "Ju3qoXiDGCo",
     "name": "Heathrow Airport",
     "coordinates": {
       "lat": 51.47,
@@ -1160,15 +1160,15 @@
     },
     "city": "London",
     "country": "United Kingdom",
-    "streamUrl": "https://www.youtube.com/embed/JE2PXYBv9FQ?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/JE2PXYBv9FQ/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/Ju3qoXiDGCo?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ju3qoXiDGCo/mqdefault_live.jpg",
     "category": "other",
     "isLive": true,
     "description": "Live view of Heathrow Airport",
     "provider": "YouTube"
   },
   {
-    "id": "xIDzfP2Pjks",
+    "id": "T_n7tlMUOoA",
     "name": "LAX Airport",
     "coordinates": {
       "lat": 33.9416,
@@ -1176,8 +1176,8 @@
     },
     "city": "Los Angeles",
     "country": "United States",
-    "streamUrl": "https://www.youtube.com/embed/xIDzfP2Pjks?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/xIDzfP2Pjks/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/T_n7tlMUOoA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/T_n7tlMUOoA/mqdefault_live.jpg",
     "category": "other",
     "isLive": true,
     "description": "Live view of LAX Airport",
@@ -1200,7 +1200,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "6QoLEltTzIM",
+    "id": "gn-vU9Ehe38",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9068,
@@ -1208,8 +1208,8 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/6QoLEltTzIM?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/6QoLEltTzIM/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/gn-vU9Ehe38?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gn-vU9Ehe38/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Rio de Janeiro, Brazil.",
@@ -1312,7 +1312,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "5VV4SEGHnck",
+    "id": "ydYDqZQpim8",
     "name": "Mount Kilimanjaro",
     "coordinates": {
       "lat": -3.3437,
@@ -1320,8 +1320,8 @@
     },
     "city": "Moshi",
     "country": "Tanzania",
-    "streamUrl": "https://www.youtube.com/embed/5VV4SEGHnck?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/5VV4SEGHnck/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/ydYDqZQpim8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ydYDqZQpim8/mqdefault_live.jpg",
     "category": "nature",
     "isLive": true,
     "description": "Live view of Mount Kilimanjaro.",
@@ -1712,7 +1712,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "qs4wcA8c8A4",
+    "id": "TObte08ESr0",
     "name": "Kabukicho, Shinjuku",
     "coordinates": {
       "lat": 35.694,
@@ -1720,8 +1720,8 @@
     },
     "city": "Tokyo",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/qs4wcA8c8A4?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/qs4wcA8c8A4/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/TObte08ESr0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/TObte08ESr0/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "The neon-lit entrance and streets of Kabukicho, Tokyo's major entertainment and red-light district.",
@@ -1968,7 +1968,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "_D5KAIXTlug",
+    "id": "Q71sLS8h9a4",
     "name": "Bangkok - Asoke Intersection",
     "coordinates": {
       "lat": 13.737,
@@ -1976,15 +1976,15 @@
     },
     "city": "Bangkok",
     "country": "Thailand",
-    "streamUrl": "https://www.youtube.com/embed/_D5KAIXTlug?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/_D5KAIXTlug/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/Q71sLS8h9a4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Q71sLS8h9a4/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live traffic and city view of the busy Asoke intersection in Bangkok.",
     "provider": "YouTube"
   },
   {
-    "id": "H-h4vyKVHrQ",
+    "id": "GxFmo1U9BCs",
     "name": "Pattaya Beach Road",
     "coordinates": {
       "lat": 12.9346,
@@ -1992,15 +1992,15 @@
     },
     "city": "Pattaya",
     "country": "Thailand",
-    "streamUrl": "https://www.youtube.com/embed/H-h4vyKVHrQ?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/H-h4vyKVHrQ/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/GxFmo1U9BCs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/GxFmo1U9BCs/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of the bustling Pattaya Beach Road.",
     "provider": "YouTube"
   },
   {
-    "id": "wPfTFOzj0k4",
+    "id": "jUzwycndmc8",
     "name": "Manila Skyline",
     "coordinates": {
       "lat": 14.5547,
@@ -2008,8 +2008,8 @@
     },
     "city": "Manila",
     "country": "Philippines",
-    "streamUrl": "https://www.youtube.com/embed/wPfTFOzj0k4?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/wPfTFOzj0k4/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/jUzwycndmc8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/jUzwycndmc8/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Metro Manila skyline.",
@@ -2304,7 +2304,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "NTh2QJ1JIpU",
+    "id": "HulZt8d9Qzc",
     "name": "Cusco (Plaza de Armas)",
     "coordinates": {
       "lat": -13.5167,
@@ -2312,8 +2312,8 @@
     },
     "city": "Cusco",
     "country": "Peru",
-    "streamUrl": "https://www.youtube.com/embed/NTh2QJ1JIpU?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/NTh2QJ1JIpU/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/HulZt8d9Qzc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/HulZt8d9Qzc/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Live view of the historic Plaza de Armas in Cusco.",
@@ -2528,7 +2528,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "LeW7CWPR3F4",
+    "id": "AaDrz_Dp3Vw",
     "name": "Yokohama Kishamichi Promenade",
     "coordinates": {
       "lat": 35.4533,
@@ -2536,8 +2536,8 @@
     },
     "city": "Yokohama",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/LeW7CWPR3F4?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/LeW7CWPR3F4/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/AaDrz_Dp3Vw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AaDrz_Dp3Vw/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Kishamichi Promenade and Minato Mirai skyline in Yokohama.",
