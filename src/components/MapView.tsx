@@ -38,7 +38,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     { id: 'JP', icon: '🇯🇵', label: 'Japan' },
     { id: 'KR', icon: '🇰🇷', label: 'Korea' },
     { id: 'TW', icon: '🇹🇼', label: 'Taiwan' },
-    { id: 'ASEAN', icon: '🇸🇬🇹🇭🇵🇭', label: 'ASEAN' },
+    { id: 'SG', icon: '🇸🇬', label: 'Singapore' },
   ];
 
   useEffect(() => {
@@ -136,7 +136,10 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         const { latitude, longitude } = position.coords;
         
         if (googleMapRef.current && window.google) {
-          if (isMobile) {
+          // Check window width directly to ensure we have the latest value
+          const isMobileView = window.innerWidth <= 768;
+          
+          if (isMobileView) {
             // On mobile, zoom directly to user location with a closer view
             googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
             googleMapRef.current.setZoom(9);
@@ -183,7 +186,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     if (!mapRef.current || !window.google) return;
 
     const map = new window.google.maps.Map(mapRef.current, {
-      zoom: 3,
+      zoom: 4,
       center: { lat: 20, lng: 0 },
       mapTypeId: 'roadmap',
       mapTypeControl: false,
@@ -309,7 +312,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       if (selectedRegion === 'JP') return w.country === 'Japan';
       if (selectedRegion === 'KR') return ['South Korea', 'Korea'].includes(w.country);
       if (selectedRegion === 'TW') return w.country === 'Taiwan';
-      if (selectedRegion === 'ASEAN') return ['Singapore', 'Thailand', 'Philippines', 'Vietnam', 'Malaysia', 'Indonesia', 'Cambodia', 'Laos', 'Myanmar', 'Brunei'].includes(w.country);
+      if (selectedRegion === 'SG') return w.country === 'Singapore';
       return true;
     });
 
