@@ -1153,6 +1153,22 @@
   },
   {
     "id": "cn8_34TuMaM",
+    "name": "Las Vegas Airport",
+    "coordinates": {
+      "lat": 36.084,
+      "lng": -115.1537
+    },
+    "city": "Las Vegas",
+    "country": "USA",
+    "streamUrl": "https://www.youtube.com/embed/cn8_34TuMaM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/cn8_34TuMaM/mqdefault_live.jpg",
+    "category": "other",
+    "isLive": true,
+    "description": "Live view of Harry Reid International Airport (Las Vegas).",
+    "provider": "YouTube"
+  },
+  {
+    "id": "HeathrowPlaceholder",
     "name": "Heathrow Airport",
     "coordinates": {
       "lat": 51.47,
@@ -1160,10 +1176,10 @@
     },
     "city": "London",
     "country": "United Kingdom",
-    "streamUrl": "https://www.youtube.com/embed/cn8_34TuMaM?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/cn8_34TuMaM/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/HeathrowPlaceholder?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/HeathrowPlaceholder/mqdefault_live.jpg",
     "category": "other",
-    "isLive": true,
+    "isLive": false,
     "description": "Live view of Heathrow Airport",
     "provider": "YouTube"
   },
