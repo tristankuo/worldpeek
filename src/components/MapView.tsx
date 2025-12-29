@@ -118,6 +118,11 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       return;
     }
 
+    // Reset region to Global so user can see webcams near them regardless of previous filter
+    if (!silent) {
+      setSelectedRegion('Global');
+    }
+
     setIsLocating(true);
 
     navigator.geolocation.getCurrentPosition(
