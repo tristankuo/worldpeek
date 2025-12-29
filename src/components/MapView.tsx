@@ -172,11 +172,17 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     );
   };
 
+  const getGlobalZoomLevel = () => {
+    const width = window.innerWidth;
+    if (width > 1024) return 3;
+    return 2;
+  };
+
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
 
     const map = new window.google.maps.Map(mapRef.current, {
-      zoom: 2,
+      zoom: getGlobalZoomLevel(),
       center: { lat: 30, lng: 140 },
       mapTypeId: 'roadmap',
       mapTypeControl: false,
@@ -378,7 +384,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     setSelectedCategory(null);
     if (googleMapRef.current) {
       googleMapRef.current.setCenter({ lat: 30, lng: 140 });
-      googleMapRef.current.setZoom(2);
+      googleMapRef.current.setZoom(getGlobalZoomLevel());
       
       // Close any open info windows
       markersRef.current.forEach(m => {
@@ -494,7 +500,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
                       if (region.id === 'Global') {
                         if (googleMapRef.current) {
                           googleMapRef.current.setCenter({ lat: 30, lng: 140 });
-                          googleMapRef.current.setZoom(2);
+                          googleMapRef.current.setZoom(getGlobalZoomLevel());
                         }
                         setSelectedRegion('Global');
                       } else {
