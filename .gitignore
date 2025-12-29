@@ -3,3 +3,4 @@ node_modules/
 dist/
 .firebase/
 *.tsbuildinfo
+dead_streams_report.md

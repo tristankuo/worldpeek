@@ -6,10 +6,11 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  update:
+  validate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+      issues: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,13 +20,18 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Run update script
+      - name: Run validation script
+        id: check
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: node scripts/update-webcams.js
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Create Issue for Dead Streams
+        if: steps.check.outputs.has_dead_streams == 'true'
+        uses: peter-evans/create-issue-from-file@v5
         with:
-          commit_message: "chore: update webcam IDs [skip ci]"
-          file_pattern: webcams.config.json
+          title: "🚨 Invalid Webcam Streams Report"
+          content-filepath: ./dead_streams_report.md
+          labels: |
+            automated
+            maintenance
