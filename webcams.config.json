@@ -2992,5 +2992,149 @@
     "isLive": true,
     "description": "Live view from Huoshan Biyun Temple in Baihe.",
     "provider": "YouTube"
+  },
+  {
+    "id": "ZjfFGJlkjmE",
+    "name": "Grote Markt Live",
+    "coordinates": {
+      "lat": 53.2194,
+      "lng": 6.5665
+    },
+    "city": "Groningen",
+    "country": "Netherlands",
+    "streamUrl": "https://www.youtube.com/embed/ZjfFGJlkjmE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZjfFGJlkjmE/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live view of the Grote Markt, the main square in the center of Groningen.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Cp4RRAEgpeU",
+    "name": "Santa Claus Village Live",
+    "coordinates": {
+      "lat": 66.5433,
+      "lng": 25.8475
+    },
+    "city": "Rovaniemi",
+    "country": "Finland",
+    "streamUrl": "https://www.youtube.com/embed/Cp4RRAEgpeU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Cp4RRAEgpeU/mqdefault_live.jpg",
+    "category": "landmark",
+    "isLive": true,
+    "description": "Live stream from Santa Claus Village in the Arctic Circle.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "nnXatGDN6OE",
+    "name": "Les Arcs - Mont Blanc View",
+    "coordinates": {
+      "lat": 45.5717,
+      "lng": 6.8078
+    },
+    "city": "Les Arcs",
+    "country": "France",
+    "streamUrl": "https://www.youtube.com/embed/nnXatGDN6OE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/nnXatGDN6OE/mqdefault_live.jpg",
+    "category": "mountain",
+    "isLive": true,
+    "description": "Panoramic live view of Mont Blanc from the Les Arcs ski resort.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "nWFcWooDAxI",
+    "name": "Tossa de Mar Beach & Castle",
+    "coordinates": {
+      "lat": 41.7206,
+      "lng": 2.9322
+    },
+    "city": "Tossa de Mar",
+    "country": "Spain",
+    "streamUrl": "https://www.youtube.com/embed/nWFcWooDAxI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/nWFcWooDAxI/mqdefault_live.jpg",
+    "category": "beach",
+    "isLive": true,
+    "description": "Scenic view of the beach and the medieval castle of Tossa de Mar.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "asO_10T0k2k",
+    "name": "Cannes - Quai Laubeuf",
+    "coordinates": {
+      "lat": 43.5475,
+      "lng": 7.0136
+    },
+    "city": "Cannes",
+    "country": "France",
+    "streamUrl": "https://www.youtube.com/embed/asO_10T0k2k?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/asO_10T0k2k/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live webcam overlooking Quai Laubeuf and the harbor in Cannes.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "ZN4gh5IOowM",
+    "name": "Tokyo Station Marunouchi Exit",
+    "coordinates": {
+      "lat": 35.6812,
+      "lng": 139.7671
+    },
+    "city": "Tokyo",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/ZN4gh5IOowM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZN4gh5IOowM/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live view of the busy Marunouchi Exit at Tokyo Station.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "CkNeltsc5ps",
+    "name": "Assisi - Piazza del Comune",
+    "coordinates": {
+      "lat": 43.0708,
+      "lng": 12.6175
+    },
+    "city": "Assisi",
+    "country": "Italy",
+    "streamUrl": "https://www.youtube.com/embed/CkNeltsc5ps?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/CkNeltsc5ps/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live webcam of the historic Piazza del Comune in Assisi.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "80s06q41pMo",
+    "name": "Saint-Malo - Les Thermes",
+    "coordinates": {
+      "lat": 48.6558,
+      "lng": -2.0042
+    },
+    "city": "Saint-Malo",
+    "country": "France",
+    "streamUrl": "https://www.youtube.com/embed/80s06q41pMo?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/80s06q41pMo/mqdefault_live.jpg",
+    "category": "beach",
+    "isLive": true,
+    "description": "Live view of the beach and sea near Les Thermes Marins in Saint-Malo.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "OFVpXuZOlPc",
+    "name": "Fisherman's Village",
+    "coordinates": {
+      "lat": 9.5586,
+      "lng": 100.0303
+    },
+    "city": "Koh Samui",
+    "country": "Thailand",
+    "streamUrl": "https://www.youtube.com/embed/OFVpXuZOlPc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/OFVpXuZOlPc/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live street view from The Shack in Fisherman's Village, Bophut.",
+    "provider": "YouTube"
   }
 ]
