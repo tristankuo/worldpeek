@@ -39,6 +39,15 @@ jobs:
           git commit -m "fix(webcams): auto-repair broken streams"
           git push
 
+      - name: Deploy to Production
+        if: steps.git-check.outputs.changes == 'true'
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          npm ci
+          npm install -g firebase-tools
+          npm run deploy:production
+
       - name: Check for unfixable streams
         id: check-report
         run: |
