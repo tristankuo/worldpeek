@@ -16,7 +16,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const mapRef = useRef<HTMLDivElement>(null);
   const googleMapRef = useRef<google.maps.Map | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
-  const [selectedWebcam, setSelectedWebcam] = useState<WebcamLocation | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string>('Global');
   const [isLoading, setIsLoading] = useState(true);
@@ -28,7 +27,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [showFilterMenu, setShowFilterMenu] = useState(false);
   const [showRegionMenu, setShowRegionMenu] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isLocating, setIsLocating] = useState(false);
 
   const REGIONS = [
@@ -40,14 +38,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     { id: 'TW', icon: '🇹🇼', label: 'Taiwan' },
     { id: 'SG', icon: '🇸🇬', label: 'Singapore' },
   ];
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     if (searchQuery.trim()) {
@@ -341,7 +331,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         });
 
         infoWindow.open(map, marker);
-        setSelectedWebcam(webcam);
         
         map.panTo(webcam.coordinates);
         if (map.getZoom()! < 12) {
@@ -396,7 +385,6 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         const iw = (m as any).infoWindow;
         if (iw) iw.close();
       });
-      setSelectedWebcam(null);
     }
   };
 
