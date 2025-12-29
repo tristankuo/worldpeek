@@ -3136,5 +3136,69 @@
     "isLive": true,
     "description": "Live street view from The Shack in Fisherman's Village, Bophut.",
     "provider": "YouTube"
+  },
+  {
+    "id": "Iv2VUE_UhRQ",
+    "name": "Kamikochi Kappa-bashi",
+    "coordinates": {
+      "lat": 36.2493,
+      "lng": 137.6379
+    },
+    "city": "Matsumoto",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/Iv2VUE_UhRQ?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Iv2VUE_UhRQ/mqdefault_live.jpg",
+    "category": "nature",
+    "isLive": true,
+    "description": "Live view of Kappa Bridge in Kamikochi, a scenic highland valley in the Hida Mountains.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "B_Sc1v1qR-g",
+    "name": "Kusatsu Onsen Yubatake",
+    "coordinates": {
+      "lat": 36.6228,
+      "lng": 138.5961
+    },
+    "city": "Kusatsu",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/B_Sc1v1qR-g?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/B_Sc1v1qR-g/mqdefault_live.jpg",
+    "category": "landmark",
+    "isLive": true,
+    "description": "Live stream of the Yubatake (hot water field), the symbol of Kusatsu Onsen and one of Japan's most famous hot springs.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "s--MDmshT3I",
+    "name": "Mt. Hakodate Night View",
+    "coordinates": {
+      "lat": 41.7608,
+      "lng": 140.707
+    },
+    "city": "Hakodate",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/s--MDmshT3I?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/s--MDmshT3I/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Spectacular night view from Mount Hakodate, considered one of the best night views in Japan.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "VEMrst44fy8",
+    "name": "Tateyama Mountain Range",
+    "coordinates": {
+      "lat": 36.576,
+      "lng": 137.596
+    },
+    "city": "Tateyama",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/VEMrst44fy8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/VEMrst44fy8/mqdefault_live.jpg",
+    "category": "mountain",
+    "isLive": true,
+    "description": "Live view of the Tateyama Mountain Range, part of the Northern Japan Alps.",
+    "provider": "YouTube"
   }
 ]
