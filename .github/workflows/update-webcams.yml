@@ -6,10 +6,10 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  validate:
+  maintain:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       issues: write
     steps:
       - name: Checkout code
@@ -20,18 +20,38 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Run validation script
-        id: check
+      - name: Run maintenance script
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/update-webcams.js
+        run: node scripts/maintain-webcams.js
 
-      - name: Create Issue for Dead Streams
-        if: steps.check.outputs.has_dead_streams == 'true'
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code webcams.config.json || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and Push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add webcams.config.json
+          git commit -m "fix(webcams): auto-repair broken streams"
+          git push
+
+      - name: Check for unfixable streams
+        id: check-report
+        run: |
+          if [ -f maintenance_report.md ] && grep -q "Unfixable Webcams Detected" maintenance_report.md; then
+            echo "has_issues=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Issue for Unfixable Streams
+        if: steps.check-report.outputs.has_issues == 'true'
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: "🚨 Invalid Webcam Streams Report"
-          content-filepath: ./dead_streams_report.md
+          title: "⚠️ Unfixable Webcam Streams Report"
+          content-filepath: ./maintenance_report.md
           labels: |
             automated
             maintenance

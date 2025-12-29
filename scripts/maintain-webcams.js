@@ -6,11 +6,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const CONFIG_PATH = path.join(__dirname, '../webcams.config.json');
+const REPORT_PATH = path.join(__dirname, '../maintenance_report.md');
 const API_KEY = process.env.YOUTUBE_API_KEY;
 
 if (!API_KEY) {
   console.error('Error: YOUTUBE_API_KEY is not set');
-  console.error('Usage: export YOUTUBE_API_KEY=your_key && node scripts/repair-webcams.js');
   process.exit(1);
 }
 
@@ -34,7 +34,6 @@ async function batchCheckStatus(ids) {
 }
 
 async function searchNewVideo(query) {
-  // Search for live videos matching the query
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&type=video&q=${encodeURIComponent(query)}&key=${API_KEY}`;
   
   try {
@@ -53,8 +52,8 @@ async function searchNewVideo(query) {
   return null;
 }
 
-async function repairWebcams() {
-  console.log(`Starting repair check for ${webcams.length} webcams...`);
+async function maintainWebcams() {
+  console.log(`Starting maintenance for ${webcams.length} webcams...`);
   
   const youtubeWebcams = webcams.filter(w => w.provider === 'YouTube');
   
@@ -66,12 +65,12 @@ async function repairWebcams() {
 
   let updatedCount = 0;
   let deadCount = 0;
+  const unfixableWebcams = [];
+  const fixedWebcams = [];
 
   for (const chunk of chunks) {
     const ids = chunk.map(w => w.id);
     const videos = await batchCheckStatus(ids);
-    
-    // Create a map of found videos
     const videoMap = new Map(videos.map(v => [v.id, v]));
 
     for (const webcam of chunk) {
@@ -82,24 +81,22 @@ async function repairWebcams() {
         console.log(`[DEAD] ${webcam.name} (${webcam.id})`);
         deadCount++;
         
-        // Try to find a replacement
         const searchQuery = `${webcam.name} live cam`;
         console.log(`       Searching replacement: "${searchQuery}"...`);
         
         const newId = await searchNewVideo(searchQuery);
         
-        if (newId) {
-          if (newId === webcam.id) {
-             console.log(`       [SKIP] Search returned same ID (still offline).`);
-          } else {
+        if (newId && newId !== webcam.id) {
             console.log(`       [FIXED] Found new ID: ${newId}`);
             webcam.id = newId;
             webcam.streamUrl = `https://www.youtube.com/embed/${newId}?autoplay=1&mute=1`;
             webcam.thumbnailUrl = `https://i.ytimg.com/vi/${newId}/mqdefault_live.jpg`;
+            webcam.updatedAt = new Date().toISOString();
             updatedCount++;
-          }
+            fixedWebcams.push({ name: webcam.name, oldId: webcam.id, newId: newId });
         } else {
           console.log(`       [FAILED] No replacement found.`);
+          unfixableWebcams.push(webcam);
         }
       }
     }
@@ -109,14 +106,53 @@ async function repairWebcams() {
   console.log(`Checked: ${youtubeWebcams.length}`);
   console.log(`Dead: ${deadCount}`);
   console.log(`Repaired: ${updatedCount}`);
+  console.log(`Unfixable: ${unfixableWebcams.length}`);
 
+  // Save updates
   if (updatedCount > 0) {
     fs.writeFileSync(CONFIG_PATH, JSON.stringify(webcams, null, 2));
-    console.log(`\n✅ Saved ${updatedCount} updates to webcams.config.json`);
-    console.log(`Run 'git diff' to review changes, then commit.`);
+    console.log(`\n✅ Saved updates to webcams.config.json`);
+  }
+
+  // Generate Report
+  let reportContent = '';
+  
+  if (unfixableWebcams.length > 0) {
+    reportContent += `---
+title: Dead Webcams Report
+labels: maintenance
+assignees: tristan
+---
+
+### ⚠️ Unfixable Webcams Detected
+
+The following webcams are offline and no replacement could be found automatically. Please review them manually.
+
+| Name | ID | City | Country |
+|------|----|------|---------|
+${unfixableWebcams.map(w => `| ${w.name} | \`${w.id}\` | ${w.city} | ${w.country} |`).join('\n')}
+
+`;
+  }
+
+  if (fixedWebcams.length > 0) {
+      reportContent += `
+### ✅ Automatically Repaired Webcams
+
+| Name | Old ID | New ID |
+|------|--------|--------|
+${fixedWebcams.map(w => `| ${w.name} | \`${w.oldId}\` | \`${w.newId}\` |`).join('\n')}
+`;
+  }
+
+  if (reportContent) {
+      fs.writeFileSync(REPORT_PATH, reportContent);
+      console.log(`Report generated at ${REPORT_PATH}`);
   } else {
-    console.log(`\nNo repairs made.`);
+      if (fs.existsSync(REPORT_PATH)) {
+          fs.unlinkSync(REPORT_PATH);
+      }
   }
 }
 
-repairWebcams();
+maintainWebcams();

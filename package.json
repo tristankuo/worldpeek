@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "deploy:firebase": "npm run build && firebase deploy",
     "deploy:production": "npm run deploy:firebase",
-    "deploy:staging": "npm run build:staging && gh-pages -d dist"
+    "deploy:staging": "npm run build:staging && gh-pages -d dist",
+    "maintain": "node scripts/maintain-webcams.js"
   },
   "keywords": [
     "webcam",
