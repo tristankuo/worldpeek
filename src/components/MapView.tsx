@@ -516,7 +516,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
                   onClick={() => { setSelectedCategory(null); setShowFilterMenu(false); }} 
                   className={!selectedCategory ? 'active' : ''}
                 >
-                  All
+                  🌐 All
                 </button>
                 {['beach', 'city', 'landmark', 'nature', 'mountain'].map(category => (
                   <button
