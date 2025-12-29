@@ -975,6 +975,19 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
+    id: 'ZpzNv_hNxPE',
+    name: 'Kenrokuen Garden',
+    coordinates: { lat: 36.5621, lng: 136.6627 },
+    city: 'Kanazawa',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/ZpzNv_hNxPE?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/ZpzNv_hNxPE/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Live view of Kenrokuen Garden in Kanazawa, one of the Three Great Gardens of Japan.',
+    provider: 'YouTube'
+  },
+  {
     id: 'Gn2CJjzY068',
     name: 'Hotel Mt. Fuji View',
     coordinates: { lat: 35.4385, lng: 138.8655 },
