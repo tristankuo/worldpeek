@@ -491,6 +491,10 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
                         }
                         setSelectedRegion('Global');
                       } else {
+                        // If clicking the already selected region, force a re-fit of bounds
+                        if (selectedRegion === region.id) {
+                          addWebcamMarkers();
+                        }
                         setSelectedRegion(region.id); 
                       }
                       setShowRegionMenu(false); 
