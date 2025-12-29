@@ -1901,5 +1901,31 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view of the Green Line in Boston, MA',
     provider: 'YouTube'
+  },
+  {
+    id: 'jxG3qZd6xKo',
+    name: 'Sunport Takamatsu',
+    coordinates: { lat: 34.3529, lng: 134.0465 },
+    city: 'Takamatsu',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/jxG3qZd6xKo?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/jxG3qZd6xKo/mqdefault_live.jpg',
+    category: 'city',
+    isLive: true,
+    description: 'Live view from Sunport Takamatsu Symbol Tower.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'n55NxABUsVg',
+    name: 'Setouchi Golf Resort',
+    coordinates: { lat: 34.3167, lng: 132.9667 },
+    city: 'Takehara',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/n55NxABUsVg?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/n55NxABUsVg/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Live view from Setouchi Golf Resort.',
+    provider: 'YouTube'
   }
 ];
