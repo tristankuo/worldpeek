@@ -175,8 +175,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
   const initializeMap = () => {
     if (!mapRef.current || !window.google) return;
 
+    const isMobile = window.innerWidth <= 768;
     const map = new window.google.maps.Map(mapRef.current, {
-      zoom: 2,
+      zoom: isMobile ? 2 : 1,
       center: { lat: 30, lng: 140 },
       mapTypeId: 'roadmap',
       mapTypeControl: false,
@@ -377,8 +378,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     setSelectedRegion('Global');
     setSelectedCategory(null);
     if (googleMapRef.current) {
+      const isMobile = window.innerWidth <= 768;
       googleMapRef.current.setCenter({ lat: 30, lng: 140 });
-      googleMapRef.current.setZoom(2);
+      googleMapRef.current.setZoom(isMobile ? 2 : 1);
       
       // Close any open info windows
       markersRef.current.forEach(m => {
@@ -493,8 +495,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
                     onClick={() => { 
                       if (region.id === 'Global') {
                         if (googleMapRef.current) {
+                          const isMobile = window.innerWidth <= 768;
                           googleMapRef.current.setCenter({ lat: 30, lng: 140 });
-                          googleMapRef.current.setZoom(2);
+                          googleMapRef.current.setZoom(isMobile ? 2 : 1);
                         }
                         setSelectedRegion('Global');
                       } else {
