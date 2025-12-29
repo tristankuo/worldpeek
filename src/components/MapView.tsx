@@ -131,31 +131,13 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
         const { latitude, longitude } = position.coords;
         
         if (googleMapRef.current && window.google) {
-          // Check window width directly to ensure we have the latest value
-          const isMobileView = window.innerWidth <= 768;
+          // Simply zoom to user location for both mobile and desktop
+          // This avoids issues with geocoding bounds causing grey areas or zooming out too far
+          googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
+          googleMapRef.current.setZoom(9);
           
-          if (isMobileView) {
-            // On mobile, zoom directly to user location with a closer view
-            googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
-            googleMapRef.current.setZoom(9);
-          } else {
-            const geocoder = new window.google.maps.Geocoder();
-            geocoder.geocode({ location: { lat: latitude, lng: longitude } }, (results, status) => {
-              if (status === 'OK' && results) {
-                const countryResult = results.find(r => r.types.includes('country'));
-                
-                if (countryResult && countryResult.geometry.viewport) {
-                  googleMapRef.current?.fitBounds(countryResult.geometry.viewport);
-                } else {
-                  googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
-                  googleMapRef.current?.setZoom(5);
-                }
-              } else {
-                googleMapRef.current?.setCenter({ lat: latitude, lng: longitude });
-                googleMapRef.current?.setZoom(5);
-              }
-            });
-          }
+          // Trigger resize to ensure tiles load correctly
+          window.google.maps.event.trigger(googleMapRef.current, 'resize');
         }
       },
       (error) => {
