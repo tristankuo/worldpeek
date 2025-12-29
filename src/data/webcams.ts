@@ -804,13 +804,13 @@ export const WEBCAMS: WebcamLocation[] = [
     provider: 'YouTube'
   },
   {
-    id: 'AoRAAex6nBk',
+    id: 'Y1XxYLwpJy4',
     name: 'Kyoto Higashi Honganji',
     coordinates: { lat: 34.9910, lng: 135.7586 },
     city: 'Kyoto',
     country: 'Japan',
-    streamUrl: 'https://www.youtube.com/embed/AoRAAex6nBk?autoplay=1&mute=1',
-    thumbnailUrl: 'https://i.ytimg.com/vi/AoRAAex6nBk/mqdefault_live.jpg',
+    streamUrl: 'https://www.youtube.com/embed/Y1XxYLwpJy4?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Y1XxYLwpJy4/mqdefault_live.jpg',
     category: 'landmark',
     isLive: true,
     description: 'Live view of Higashi Honganji Temple in Kyoto.',
