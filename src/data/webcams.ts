@@ -1927,5 +1927,83 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Live view from Setouchi Golf Resort.',
     provider: 'YouTube'
+  },
+  {
+    id: '-nyTOqcRDIQ',
+    name: 'Wulai Suspension Bridge',
+    coordinates: { lat: 24.8639, lng: 121.5514 },
+    city: 'New Taipei City',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/-nyTOqcRDIQ?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/-nyTOqcRDIQ/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Live view of the Wulai Suspension Bridge and Old Street area.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'aWIeVanMFD0',
+    name: 'Hualien Coast - Wangyou Pavilion',
+    coordinates: { lat: 23.9739, lng: 121.6133 },
+    city: 'Hualien',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/aWIeVanMFD0?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/aWIeVanMFD0/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Scenic view of the Hualien coast from Wangyou Pavilion in Pacific Landscape Park.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'qg-aHp2mvS8',
+    name: 'Qixingtan - Beipu',
+    coordinates: { lat: 24.0305, lng: 121.6285 },
+    city: 'Hualien',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/qg-aHp2mvS8?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/qg-aHp2mvS8/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Live cam at Qixingtan Beach near the Beipu Inspection Station.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'uCXgNUJO9e8',
+    name: 'Tainan Golden Coast',
+    coordinates: { lat: 22.9361, lng: 120.1736 },
+    city: 'Tainan',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/uCXgNUJO9e8?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/uCXgNUJO9e8/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Stunning view of the Golden Coast in Tainan, known for its beautiful sunsets.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'OQnwVN5lzsk',
+    name: 'Hualien Coast - Nanbin',
+    coordinates: { lat: 23.9689, lng: 121.6111 },
+    city: 'Hualien',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/OQnwVN5lzsk?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/OQnwVN5lzsk/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Coastal view from the Nanbin Watchtower area, overlooking the Pacific Ocean.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'j3l32VFi5M8',
+    name: 'Qixingtan - Inspection Station',
+    coordinates: { lat: 24.0244, lng: 121.6322 },
+    city: 'Hualien',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/j3l32VFi5M8?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/j3l32VFi5M8/mqdefault_live.jpg',
+    category: 'beach',
+    isLive: true,
+    description: 'Another perspective of the famous Qixingtan Beach from the Qixingtan Inspection Station.',
+    provider: 'YouTube'
   }
 ];
