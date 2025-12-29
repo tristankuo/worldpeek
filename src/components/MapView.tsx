@@ -38,7 +38,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     { id: 'JP', icon: '🇯🇵', label: 'Japan' },
     { id: 'KR', icon: '🇰🇷', label: 'Korea' },
     { id: 'TW', icon: '🇹🇼', label: 'Taiwan' },
-    { id: 'SG', icon: '🇸🇬', label: 'Singapore' },
+    { id: 'ASEAN', icon: '🇸🇬🇹🇭🇵🇭', label: 'ASEAN' },
   ];
 
   useEffect(() => {
@@ -309,7 +309,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       if (selectedRegion === 'JP') return w.country === 'Japan';
       if (selectedRegion === 'KR') return ['South Korea', 'Korea'].includes(w.country);
       if (selectedRegion === 'TW') return w.country === 'Taiwan';
-      if (selectedRegion === 'SG') return w.country === 'Singapore';
+      if (selectedRegion === 'ASEAN') return ['Singapore', 'Thailand', 'Philippines', 'Vietnam', 'Malaysia', 'Indonesia', 'Cambodia', 'Laos', 'Myanmar', 'Brunei'].includes(w.country);
       return true;
     });
 
