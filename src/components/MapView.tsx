@@ -355,7 +355,9 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     });
 
     if (filteredWebcams.length > 0) {
-      map.fitBounds(bounds);
+      if (selectedRegion !== 'Global') {
+        map.fitBounds(bounds);
+      }
     }
   };
 
@@ -387,7 +389,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
     setSelectedCategory(null);
     if (googleMapRef.current) {
       googleMapRef.current.setCenter({ lat: 20, lng: 0 });
-      googleMapRef.current.setZoom(3);
+      googleMapRef.current.setZoom(4);
       
       // Close any open info windows
       markersRef.current.forEach(m => {
@@ -501,7 +503,15 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
                     key={region.id}
                     className={selectedRegion === region.id ? 'active' : ''}
                     onClick={() => { 
-                      setSelectedRegion(region.id); 
+                      if (region.id === 'Global') {
+                        if (googleMapRef.current) {
+                          googleMapRef.current.setCenter({ lat: 20, lng: 0 });
+                          googleMapRef.current.setZoom(4);
+                        }
+                        setSelectedRegion('Global');
+                      } else {
+                        setSelectedRegion(region.id); 
+                      }
                       setShowRegionMenu(false); 
                     }}
                   >
