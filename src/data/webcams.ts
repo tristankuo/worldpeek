@@ -2006,5 +2006,44 @@ export const WEBCAMS: WebcamLocation[] = [
     isLive: true,
     description: 'Another perspective of the famous Qixingtan Beach from the Qixingtan Inspection Station.',
     provider: 'YouTube'
+  },
+  {
+    id: 'l5Hvxzv-7jA',
+    name: 'Sun Moon Lake - Ci\'en Pagoda',
+    coordinates: { lat: 23.8420, lng: 120.9208 },
+    city: 'Nantou',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/l5Hvxzv-7jA?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/l5Hvxzv-7jA/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Panoramic views of Sun Moon Lake from Ci\'en Pagoda.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'g_QvD-keP6Q',
+    name: 'Sun Moon Lake - Wenwu Temple',
+    coordinates: { lat: 23.8700, lng: 120.9275 },
+    city: 'Nantou',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/g_QvD-keP6Q?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/g_QvD-keP6Q/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Grand view of Sun Moon Lake from Wenwu Temple.',
+    provider: 'YouTube'
+  },
+  {
+    id: 'gBGZu-V6Q_c',
+    name: 'Sun Moon Lake - Takrahaz Bikeway',
+    coordinates: { lat: 23.8511, lng: 120.9021 },
+    city: 'Nantou',
+    country: 'Taiwan',
+    streamUrl: 'https://www.youtube.com/embed/gBGZu-V6Q_c?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/gBGZu-V6Q_c/mqdefault_live.jpg',
+    category: 'nature',
+    isLive: true,
+    description: 'Scenic view of the Takrahaz Bikeway over Sun Moon Lake.',
+    provider: 'YouTube'
   }
 ];
