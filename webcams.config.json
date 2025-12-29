@@ -1968,19 +1968,19 @@
     "provider": "YouTube"
   },
   {
-    "id": "_D5KAIXTlug",
-    "name": "Bangkok - Asoke Intersection",
+    "id": "a_bUVExv_Cg",
+    "name": "Bangkok - Petchaburi Road",
     "coordinates": {
-      "lat": 13.737,
-      "lng": 100.5604
+      "lat": 13.7495,
+      "lng": 100.5578
     },
     "city": "Bangkok",
     "country": "Thailand",
-    "streamUrl": "https://www.youtube.com/embed/_D5KAIXTlug?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/_D5KAIXTlug/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/a_bUVExv_Cg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/a_bUVExv_Cg/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
-    "description": "Live traffic and city view of the busy Asoke intersection in Bangkok.",
+    "description": "Live traffic view of Petchaburi Road in Bangkok.",
     "provider": "YouTube"
   },
   {
@@ -2303,22 +2303,7 @@
     "description": "Live view of Santiago skyline and Costanera Center.",
     "provider": "YouTube"
   },
-  {
-    "id": "NTh2QJ1JIpU",
-    "name": "Cusco (Plaza de Armas)",
-    "coordinates": {
-      "lat": -13.5167,
-      "lng": -71.9781
-    },
-    "city": "Cusco",
-    "country": "Peru",
-    "streamUrl": "https://www.youtube.com/embed/NTh2QJ1JIpU?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/NTh2QJ1JIpU/mqdefault_live.jpg",
-    "category": "landmark",
-    "isLive": true,
-    "description": "Live view of the historic Plaza de Armas in Cusco.",
-    "provider": "YouTube"
-  },
+
   {
     "id": "HfgIFGbdGJ0",
     "name": "Bogotá Downtown",
@@ -2399,22 +2384,7 @@
     "description": "Live wildlife camera from Skukuza, Kruger National Park.",
     "provider": "YouTube"
   },
-  {
-    "id": "7jJgF9rIWJI",
-    "name": "Nile River Cairo",
-    "coordinates": {
-      "lat": 30.0444,
-      "lng": 31.2357
-    },
-    "city": "Cairo",
-    "country": "Egypt",
-    "streamUrl": "https://www.youtube.com/embed/7jJgF9rIWJI?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/7jJgF9rIWJI/mqdefault_live.jpg",
-    "category": "city",
-    "isLive": true,
-    "description": "Live view of the Nile River in Cairo.",
-    "provider": "YouTube"
-  },
+
   {
     "id": "abbR-Ttd-cA",
     "name": "Monterey Bay Aquarium",
