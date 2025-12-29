@@ -933,6 +933,19 @@ export const WEBCAMS: WebcamLocation[] = [
     description: 'Live view of Kyoto Tower, the tallest structure in Kyoto.',
     provider: 'YouTube'
   },
+  {
+    id: '6QAZgweLc9A',
+    name: 'Miyama Kayabuki no Sato',
+    coordinates: { lat: 35.3366, lng: 135.5656 },
+    city: 'Nantan',
+    country: 'Japan',
+    streamUrl: 'https://www.youtube.com/embed/6QAZgweLc9A?autoplay=1&mute=1',
+    thumbnailUrl: 'https://i.ytimg.com/vi/6QAZgweLc9A/mqdefault_live.jpg',
+    category: 'landmark',
+    isLive: true,
+    description: 'Live view of the traditional thatched-roof village of Miyama Kayabuki no Sato in Kyoto Prefecture.',
+    provider: 'YouTube'
+  },
   /*
   {
     id: '-nSBtuB98FM',
