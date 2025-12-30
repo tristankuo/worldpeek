@@ -944,7 +944,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "cRaD28UUCKY",
+    "id": "loHbMM9JfCs",
     "name": "Marina Bay Sands",
     "coordinates": {
       "lat": 1.2834,
@@ -952,12 +952,13 @@
     },
     "city": "Singapore",
     "country": "Singapore",
-    "streamUrl": "https://www.youtube.com/embed/cRaD28UUCKY?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/cRaD28UUCKY/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/loHbMM9JfCs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/loHbMM9JfCs/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Iconic view of Marina Bay Sands and the Singapore skyline.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-30T00:21:37.928Z"
   },
   {
     "id": "LwihxyJ4V20",
@@ -1168,7 +1169,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "fEXGqhx8DWY",
+    "id": "cn8_34TuMaM",
     "name": "Heathrow Airport",
     "coordinates": {
       "lat": 51.47,
@@ -1176,12 +1177,13 @@
     },
     "city": "London",
     "country": "United Kingdom",
-    "streamUrl": "https://www.youtube.com/embed/fEXGqhx8DWY?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/fEXGqhx8DWY/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/cn8_34TuMaM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/cn8_34TuMaM/mqdefault_live.jpg",
     "category": "other",
     "isLive": true,
     "description": "Live view of Heathrow Airport",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-30T00:21:38.209Z"
   },
   {
     "id": "UQaSS4_VAV4",
@@ -2256,7 +2258,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "LzoqdE76sqI",
+    "id": "G8qCephZb9U",
     "name": "Auckland Skyline",
     "coordinates": {
       "lat": -36.8485,
@@ -2264,12 +2266,13 @@
     },
     "city": "Auckland",
     "country": "New Zealand",
-    "streamUrl": "https://www.youtube.com/embed/LzoqdE76sqI?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/LzoqdE76sqI/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/G8qCephZb9U?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/G8qCephZb9U/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Auckland city and harbour.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-30T00:21:38.604Z"
   },
   {
     "id": "gn-vU9Ehe38",
@@ -2288,7 +2291,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "MBnE7UNYuXg",
+    "id": "rqBfiegG5qU",
     "name": "Buenos Aires (Obelisco)",
     "coordinates": {
       "lat": -34.6037,
@@ -2296,12 +2299,13 @@
     },
     "city": "Buenos Aires",
     "country": "Argentina",
-    "streamUrl": "https://www.youtube.com/embed/MBnE7UNYuXg?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/MBnE7UNYuXg/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/rqBfiegG5qU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rqBfiegG5qU/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Obelisco and 9 de Julio Avenue.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-30T00:21:38.882Z"
   },
   {
     "id": "8Vn3fQnY_J0",
@@ -2319,7 +2323,6 @@
     "description": "Live view of Santiago skyline and Costanera Center.",
     "provider": "YouTube"
   },
-
   {
     "id": "HfgIFGbdGJ0",
     "name": "Bogotá Downtown",
@@ -2400,7 +2403,6 @@
     "description": "Live wildlife camera from Skukuza, Kruger National Park.",
     "provider": "YouTube"
   },
-
   {
     "id": "abbR-Ttd-cA",
     "name": "Monterey Bay Aquarium",
