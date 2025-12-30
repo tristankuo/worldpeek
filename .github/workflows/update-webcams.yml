@@ -1,6 +1,9 @@
 name: Update Webcams
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0 * * *' # Run daily at midnight
   workflow_dispatch: # Allow manual trigger
@@ -40,7 +43,7 @@ jobs:
           git push
 
       - name: Deploy to Production
-        if: steps.git-check.outputs.changes == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.git-check.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           VITE_GOOGLE_MAPS_API_KEY: ${{ secrets.VITE_GOOGLE_MAPS_API_KEY }}
