@@ -1218,7 +1218,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "DoW48fPILPc",
+    "id": "S5AtCYytWtE",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9068,
@@ -1226,12 +1226,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/DoW48fPILPc?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/DoW48fPILPc/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/S5AtCYytWtE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/S5AtCYytWtE/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Rio de Janeiro, Brazil.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-31T00:22:01.108Z"
   },
   {
     "id": "u4UZ4UvZXrg",
@@ -2275,7 +2276,7 @@
     "updatedAt": "2025-12-30T00:21:38.604Z"
   },
   {
-    "id": "gn-vU9Ehe38",
+    "id": "S5AtCYytWtE",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9838,
@@ -2283,12 +2284,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/gn-vU9Ehe38?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/gn-vU9Ehe38/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/S5AtCYytWtE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/S5AtCYytWtE/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of Copacabana Beach, Posto 6.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-31T00:22:01.589Z"
   },
   {
     "id": "rqBfiegG5qU",
@@ -2516,7 +2518,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "tJGAjfOfUCo",
+    "id": "YuAjM2Kx4uI",
     "name": "Yokohama Kishamichi Promenade",
     "coordinates": {
       "lat": 35.4533,
@@ -2524,12 +2526,13 @@
     },
     "city": "Yokohama",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/tJGAjfOfUCo?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/tJGAjfOfUCo/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/YuAjM2Kx4uI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/YuAjM2Kx4uI/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Kishamichi Promenade and Minato Mirai skyline in Yokohama.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-31T00:22:01.951Z"
   },
   {
     "id": "1ksmiy6EsDo",
@@ -2932,7 +2935,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "qNcu45kDLNk",
+    "id": "C03Itx8iSC0",
     "name": "Kaohsiung Music Center",
     "coordinates": {
       "lat": 22.6184,
@@ -2940,12 +2943,13 @@
     },
     "city": "Kaohsiung",
     "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/qNcu45kDLNk?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/qNcu45kDLNk/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/C03Itx8iSC0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/C03Itx8iSC0/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Live view of the Kaohsiung Music Center and Love River Bay.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2025-12-31T00:22:02.253Z"
   },
   {
     "id": "TrWoNJ-wcq8",
