@@ -624,7 +624,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "_zU8K43Twus",
+    "id": "ajRhCBhxpL8",
     "name": "【LIVE】新宿駅前のライブカメラ 現在の様子は？ Shinjuku, Tokyo JAPAN | TBS NEWS DIG",
     "coordinates": {
       "lat": 35.6762,
@@ -632,12 +632,13 @@
     },
     "city": "Tokyo",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/_zU8K43Twus?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/_zU8K43Twus/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/ajRhCBhxpL8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ajRhCBhxpL8/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "【LIVE】新宿駅前のライブカメラ 現在の様子は？ Shinjuku, Tokyo JAPAN | TBS NEWS DIG",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-01T00:24:37.957Z"
   },
   {
     "id": "x3P3N3VGvtU",
@@ -1218,7 +1219,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "S5AtCYytWtE",
+    "id": "-zRYTsQycns",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9068,
@@ -1226,13 +1227,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/S5AtCYytWtE?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/S5AtCYytWtE/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/-zRYTsQycns?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/-zRYTsQycns/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Rio de Janeiro, Brazil.",
     "provider": "YouTube",
-    "updatedAt": "2025-12-31T00:22:01.108Z"
+    "updatedAt": "2026-01-01T00:24:38.543Z"
   },
   {
     "id": "u4UZ4UvZXrg",
@@ -2276,7 +2277,7 @@
     "updatedAt": "2025-12-30T00:21:38.604Z"
   },
   {
-    "id": "S5AtCYytWtE",
+    "id": "x011kwh8qZs",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9838,
@@ -2284,13 +2285,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/S5AtCYytWtE?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/S5AtCYytWtE/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/x011kwh8qZs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/x011kwh8qZs/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of Copacabana Beach, Posto 6.",
     "provider": "YouTube",
-    "updatedAt": "2025-12-31T00:22:01.589Z"
+    "updatedAt": "2026-01-01T00:24:39.026Z"
   },
   {
     "id": "rqBfiegG5qU",
@@ -2820,38 +2821,6 @@
     "category": "beach",
     "isLive": true,
     "description": "Another perspective of the famous Qixingtan Beach from the Qixingtan Inspection Station.",
-    "provider": "YouTube"
-  },
-  {
-    "id": "l5Hvxzv-7jA",
-    "name": "Sun Moon Lake - Ci'en Pagoda",
-    "coordinates": {
-      "lat": 23.842,
-      "lng": 120.9208
-    },
-    "city": "Nantou",
-    "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/l5Hvxzv-7jA?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/l5Hvxzv-7jA/mqdefault_live.jpg",
-    "category": "landmark",
-    "isLive": true,
-    "description": "Panoramic views of Sun Moon Lake from Ci'en Pagoda.",
-    "provider": "YouTube"
-  },
-  {
-    "id": "g_QvD-keP6Q",
-    "name": "Sun Moon Lake - Wenwu Temple",
-    "coordinates": {
-      "lat": 23.87,
-      "lng": 120.9275
-    },
-    "city": "Nantou",
-    "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/g_QvD-keP6Q?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/g_QvD-keP6Q/mqdefault_live.jpg",
-    "category": "landmark",
-    "isLive": true,
-    "description": "Grand view of Sun Moon Lake from Wenwu Temple.",
     "provider": "YouTube"
   },
   {
