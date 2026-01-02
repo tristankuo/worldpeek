@@ -624,7 +624,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "ajRhCBhxpL8",
+    "id": "glJu8snzi78",
     "name": "【LIVE】新宿駅前のライブカメラ 現在の様子は？ Shinjuku, Tokyo JAPAN | TBS NEWS DIG",
     "coordinates": {
       "lat": 35.6762,
@@ -632,13 +632,13 @@
     },
     "city": "Tokyo",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/ajRhCBhxpL8?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/ajRhCBhxpL8/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/glJu8snzi78?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/glJu8snzi78/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "【LIVE】新宿駅前のライブカメラ 現在の様子は？ Shinjuku, Tokyo JAPAN | TBS NEWS DIG",
     "provider": "YouTube",
-    "updatedAt": "2026-01-01T00:24:37.957Z"
+    "updatedAt": "2026-01-02T00:21:50.397Z"
   },
   {
     "id": "x3P3N3VGvtU",
@@ -2004,7 +2004,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "7QwzKXw8t30",
+    "id": "Si55u2EDNws",
     "name": "Pattaya Beach Road",
     "coordinates": {
       "lat": 12.9346,
@@ -2012,12 +2012,13 @@
     },
     "city": "Pattaya",
     "country": "Thailand",
-    "streamUrl": "https://www.youtube.com/embed/7QwzKXw8t30?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/7QwzKXw8t30/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/Si55u2EDNws?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Si55u2EDNws/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of the bustling Pattaya Beach Road.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-02T00:21:50.919Z"
   },
   {
     "id": "uvNosrM4muQ",
@@ -2068,7 +2069,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "HTJHww2IpRs",
+    "id": "olxK73SMnak",
     "name": "South Beach",
     "coordinates": {
       "lat": 25.7826,
@@ -2076,12 +2077,13 @@
     },
     "city": "Miami",
     "country": "USA",
-    "streamUrl": "https://www.youtube.com/embed/HTJHww2IpRs?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/HTJHww2IpRs/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/olxK73SMnak?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/olxK73SMnak/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "LIVE 4K South Beach, Miami Beach 24/7 Street Cam on Collins Ave.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-02T00:21:51.265Z"
   },
   {
     "id": "jtvmwjzZY0c",
@@ -2260,7 +2262,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "G8qCephZb9U",
+    "id": "MnKW4DDB2LE",
     "name": "Auckland Skyline",
     "coordinates": {
       "lat": -36.8485,
@@ -2268,16 +2270,16 @@
     },
     "city": "Auckland",
     "country": "New Zealand",
-    "streamUrl": "https://www.youtube.com/embed/G8qCephZb9U?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/G8qCephZb9U/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/MnKW4DDB2LE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/MnKW4DDB2LE/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Auckland city and harbour.",
     "provider": "YouTube",
-    "updatedAt": "2025-12-30T00:21:38.604Z"
+    "updatedAt": "2026-01-02T00:21:51.473Z"
   },
   {
-    "id": "x011kwh8qZs",
+    "id": "XvZ9zfUIDdU",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9838,
@@ -2285,13 +2287,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/x011kwh8qZs?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/x011kwh8qZs/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/XvZ9zfUIDdU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/XvZ9zfUIDdU/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of Copacabana Beach, Posto 6.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-01T00:24:39.026Z"
+    "updatedAt": "2026-01-02T00:21:51.777Z"
   },
   {
     "id": "rqBfiegG5qU",
@@ -2519,7 +2521,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "YuAjM2Kx4uI",
+    "id": "g8UZPoWzrYM",
     "name": "Yokohama Kishamichi Promenade",
     "coordinates": {
       "lat": 35.4533,
@@ -2527,13 +2529,13 @@
     },
     "city": "Yokohama",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/YuAjM2Kx4uI?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/YuAjM2Kx4uI/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/g8UZPoWzrYM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/g8UZPoWzrYM/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Kishamichi Promenade and Minato Mirai skyline in Yokohama.",
     "provider": "YouTube",
-    "updatedAt": "2025-12-31T00:22:01.951Z"
+    "updatedAt": "2026-01-02T00:21:52.197Z"
   },
   {
     "id": "1ksmiy6EsDo",
