@@ -115,8 +115,8 @@
     "id": "xHLEKR3_8iI",
     "name": "EarthCam Live:  Coney Island (New York City)",
     "coordinates": {
-      "lat": 40.7128,
-      "lng": -74.006
+      "lat": 40.71035329848474,
+      "lng": -74.00549769857403
     },
     "city": "New York",
     "country": "USA",
@@ -131,8 +131,8 @@
     "id": "ph1vpnYIxJk",
     "name": "🔴 LIVE 24/7  Rolling Cam Venice - Live Cam in Venice Italy - Livecam en direct #venice",
     "coordinates": {
-      "lat": 45.4408,
-      "lng": 12.3155
+      "lat": 45.442671475245284,
+      "lng": 12.313493240639966
     },
     "city": "Venice",
     "country": "Italy",
@@ -179,8 +179,8 @@
     "id": "VR-x3HdhKLQ",
     "name": "🔴 Live Camera Stream | Bondi Aussie Bar & Grill | Chaweng | Koh Samui | Thailand | 2160p 4K",
     "coordinates": {
-      "lat": 9.512,
-      "lng": 100.0136
+      "lat": 9.510427598216232,
+      "lng": 100.01528523654441
     },
     "city": "Samui",
     "country": "Thailand",
@@ -227,8 +227,8 @@
     "id": "UemFRPrl1hk",
     "name": "🔴 El Gaucho | Soi 11 | Sukhumvit Road | Bangkok | Thailand | Live Street Webcam | 2160p 4K",
     "coordinates": {
-      "lat": 13.7563,
-      "lng": 100.5018
+      "lat": 13.758617957788946,
+      "lng": 100.50326031031071
     },
     "city": "Bangkok",
     "country": "Thailand",
@@ -259,8 +259,8 @@
     "id": "dY2cRNr5Buw",
     "name": "Live cam-Alishan【阿里山美景直播】-太平雲梯 Taiping Suspension Bridge",
     "coordinates": {
-      "lat": 23.51,
-      "lng": 120.8051
+      "lat": 23.508078753372004,
+      "lng": 120.80715973247243
     },
     "city": "Alishan",
     "country": "Taiwan",
@@ -275,8 +275,8 @@
     "id": "zDt8FBPozZQ",
     "name": "Live cam-Alishan【阿里山美景直播】-里佳資訊站 Lijia Information station",
     "coordinates": {
-      "lat": 23.51,
-      "lng": 120.8051
+      "lat": 23.510685098683226,
+      "lng": 120.80264917402295
     },
     "city": "Alishan",
     "country": "Taiwan",
@@ -291,8 +291,8 @@
     "id": "agEzlv9n9Eg",
     "name": "Live cam-Alishan【阿里山美景直播】-生力農場 Sheng-Li Farm",
     "coordinates": {
-      "lat": 23.51,
-      "lng": 120.8051
+      "lat": 23.510641392608534,
+      "lng": 120.80428812307028
     },
     "city": "Alishan",
     "country": "Taiwan",
@@ -307,8 +307,8 @@
     "id": "8KnqJBf_dow",
     "name": "Live cam-Alishan【阿里山美景直播】-阿里山國家風景區管理處(觸口遊客中心)Alishan National Scenic Area Administration",
     "coordinates": {
-      "lat": 23.51,
-      "lng": 120.8051
+      "lat": 23.508975733887176,
+      "lng": 120.80603161256305
     },
     "city": "Alishan",
     "country": "Taiwan",
@@ -323,8 +323,8 @@
     "id": "j2L_559nCjc",
     "name": "4K Live cam-Alishan【阿里山美景4K直播】-二延平步道 Eryanping Trail",
     "coordinates": {
-      "lat": 23.51,
-      "lng": 120.8051
+      "lat": 23.509006628085533,
+      "lng": 120.8069222616919
     },
     "city": "Alishan",
     "country": "Taiwan",
@@ -435,8 +435,8 @@
     "id": "5GTFLN9gZrc",
     "name": "【Live】赤科山-花東縱谷即時影像｜Hualien Chike Mountain｜Live Camera",
     "coordinates": {
-      "lat": 23.9872,
-      "lng": 121.6011
+      "lat": 23.9888823681691,
+      "lng": 121.59955435105523
     },
     "city": "Hualien",
     "country": "Taiwan",
@@ -451,8 +451,8 @@
     "id": "rvc1klNIgQc",
     "name": "【4K Live】鹿野高台-花東縱谷即時影像｜Taitung Luye Highland｜4K Live Camera",
     "coordinates": {
-      "lat": 22.7613,
-      "lng": 121.1431
+      "lat": 22.76028006972772,
+      "lng": 121.14558999394697
     },
     "city": "Taitung",
     "country": "Taiwan",
@@ -483,8 +483,8 @@
     "id": "DjdUEyjx8GM",
     "name": "【 LIVE 】東京都 新宿 歌舞伎町 24時間 ライブ / Tokyo Shinjuku Kabukicho Live",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.6742180614372,
+      "lng": 139.64902313762985
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -515,8 +515,8 @@
     "id": "EHkMjfMw7oU",
     "name": "【LIVE】歌舞伎町ライブカメラ Shinjuku Kabukicho Live Camera",
     "coordinates": {
-      "lat": 35.6938,
-      "lng": 139.7034
+      "lat": 35.69556864016094,
+      "lng": 139.70498524002562
     },
     "city": "Shinjuku",
     "country": "Japan",
@@ -531,8 +531,8 @@
     "id": "GsD9QQEKSzQ",
     "name": "【LIVE】静岡市さった峠　広重の富士山 / Mt. Fuji (World Heritage Site): Live Streaming in Shizuoka City",
     "coordinates": {
-      "lat": 35.3606,
-      "lng": 138.7274
+      "lat": 35.36297593667501,
+      "lng": 138.72882519859647
     },
     "city": "Fuji",
     "country": "Japan",
@@ -547,8 +547,8 @@
     "id": "6dp-bvQ7RWo",
     "name": "【LIVE】2024 Tokyo Shinjuku 新宿 大ガード交差点 Live Ch",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67861436633259,
+      "lng": 139.6481191524573
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -563,8 +563,8 @@
     "id": "lA6TaaMGgDo",
     "name": "【 LIVE 】東京都 新宿 24時間 ライブカメラ / 西武新宿駅 pepe前広場 交差点 （YUNIKA VISION前） Tokyo Shinjuku Live camera",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67732023103352,
+      "lng": 139.64869950336393
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -579,8 +579,8 @@
     "id": "GLQhbRGv5qU",
     "name": "【LIVE】Tokyo Shinjuku JR Live Cam東京 新宿 鉄道 ライブカメラ OmoideYokocho 2024",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67525886569494,
+      "lng": 139.64803129846104
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -595,8 +595,8 @@
     "id": "n3B8fp-Henc",
     "name": "Tokyo Odaiba Live Camera 東京 お台場 ライブカメラ 配信",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67800191622371,
+      "lng": 139.64783282985923
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -611,8 +611,8 @@
     "id": "ErHJBXTmm2Q",
     "name": "【24Ｈ：LIVE】東京 新宿 歌舞伎町 交差点 ライブカメラ  / Tokyo  Shinjuku Kabukicho Live Camera【テイケイ屋上カメラ】　#靖国通り #４K #歌舞伎町",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.6776150082613,
+      "lng": 139.6516797919718
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -627,8 +627,8 @@
     "id": "glJu8snzi78",
     "name": "【LIVE】新宿駅前のライブカメラ 現在の様子は？ Shinjuku, Tokyo JAPAN | TBS NEWS DIG",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67743029912844,
+      "lng": 139.64911174495552
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -660,8 +660,8 @@
     "id": "qMDxy_qbdtE",
     "name": "【東京湾ライブカメラ】 LIVE Tokyo Bay, Traffic between ships and planes - Sea and Sky / japan travel / Live cam",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.675574520207576,
+      "lng": 139.6514455293657
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -676,8 +676,8 @@
     "id": "_ByNEL0Ton4",
     "name": "【有明ライブカメラ】 LIVE Scenery overlooking land, sea and sky, Tokyo JAPAN / Tokyo Bay / Live cam",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67738641224414,
+      "lng": 139.6510133376412
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -708,8 +708,8 @@
     "id": "LnrmP3Z1M-s",
     "name": "【LIVE】浅草・雷門前の様子 Asakusa, Tokyo JAPAN 【ライブカメラ】 | TBS NEWS DIG",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67796575475716,
+      "lng": 139.65158801376282
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -724,8 +724,8 @@
     "id": "KsoxRtx01KE",
     "name": "【お台場ライブカメラ】 Live Beach Cam - Obaiba Beach, Tokyo JAPAN / Houseboat / japan travel / Live cam",
     "coordinates": {
-      "lat": 35.6762,
-      "lng": 139.6503
+      "lat": 35.67447912920408,
+      "lng": 139.6493063817927
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -981,8 +981,8 @@
     "id": "HpZAez2oYsA",
     "name": "Venice Grand Canal",
     "coordinates": {
-      "lat": 45.4408,
-      "lng": 12.3155
+      "lat": 45.439197047835194,
+      "lng": 12.31354018849357
     },
     "city": "Venice",
     "country": "Italy",
@@ -1255,8 +1255,8 @@
     "id": "gIv9J38Dax8",
     "name": "Niagara Falls Panorama",
     "coordinates": {
-      "lat": 43.0896,
-      "lng": -79.0849
+      "lat": 43.090351098048785,
+      "lng": -79.08678812306378
     },
     "city": "Niagara Falls",
     "country": "Canada",
@@ -1687,8 +1687,8 @@
     "id": "dfVK7ld38Ys",
     "name": "Shibuya Scramble Crossing (Alt)",
     "coordinates": {
-      "lat": 35.6595,
-      "lng": 139.7005
+      "lat": 35.65744145767204,
+      "lng": 139.69883779044045
     },
     "city": "Tokyo",
     "country": "Japan",
@@ -2137,8 +2137,8 @@
     "id": "VGnFLdQW39A",
     "name": "NYC Skyline & Streets",
     "coordinates": {
-      "lat": 40.7128,
-      "lng": -74.006
+      "lat": 40.71497346441647,
+      "lng": -74.00490504216654
     },
     "city": "New York City",
     "country": "USA",
@@ -2217,8 +2217,8 @@
     "id": "WKGK_hYnlGE",
     "name": "London Street View",
     "coordinates": {
-      "lat": 51.5074,
-      "lng": -0.1278
+      "lat": 51.50821676999239,
+      "lng": -0.12871485300979066
     },
     "city": "London",
     "country": "United Kingdom",
@@ -3216,8 +3216,8 @@
     "id": "gCu45mPX77Y",
     "name": "Kyoto Yasaka Shrine Live",
     "coordinates": {
-      "lat": 35.0037,
-      "lng": 135.7785
+      "lat": 35.002550813846376,
+      "lng": 135.77755714936657
     },
     "city": "Kyoto",
     "country": "Japan",
@@ -3250,8 +3250,8 @@
     "id": "1IB96p46tjE",
     "name": "Osaka Dotonbori Live Stream",
     "coordinates": {
-      "lat": 34.6687,
-      "lng": 135.5013
+      "lat": 34.66814907535028,
+      "lng": 135.50263568312903
     },
     "city": "Osaka",
     "country": "Japan",
