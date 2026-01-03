@@ -32,16 +32,17 @@ function cleanQuery(text) {
   if (!text) return '';
   // Remove emojis
   text = text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '');
-  // Remove brackets
-  text = text.replace(/【.*?】/g, ' ').replace(/\[.*?\]/g, ' ').replace(/\(.*?\)/g, ' ');
+  // Remove brackets (including full-width)
+  text = text.replace(/【.*?】/g, ' ').replace(/\[.*?\]/g, ' ').replace(/\(.*?\)/g, ' ').replace(/（.*?）/g, ' ');
   // Remove specific keywords
-  text = text.replace(/Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News/gi, ' ');
+  text = text.replace(/Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News|Stream|View/gi, ' ');
   return text.replace(/\s+/g, ' ').trim();
 }
 
 async function geocode(query) {
-  if (!MAPS_API_KEY) return null;
+  if (!MAPS_API_KEY || !query || query.length < 2) return null;
   try {
+    // console.log(`      Searching: "${query}"`);
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(query)}&key=${MAPS_API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
@@ -158,13 +159,46 @@ async function maintainWebcams() {
       }
 
       // 2. Check/Fix Geolocation (if MAPS API KEY present)
-      if (MAPS_API_KEY && webcam.coordinates.lat === 0 && webcam.coordinates.lng === 0) {
+      const needsGeo = (webcam.coordinates.lat === 0 && webcam.coordinates.lng === 0) || !webcam.city || webcam.city === 'Unknown';
+      
+      if (MAPS_API_KEY && needsGeo) {
         console.log(`[GEO] Fixing location for: ${webcam.name}`);
 
-        let query = cleanQuery(webcam.name);
-        if (query.length < 5 && webcam.description) query += " " + cleanQuery(webcam.description);
+        let result = null;
+        let usedQuery = '';
 
-        const result = await geocode(query);
+        // Strategy 1: Cleaned Name
+        let query = cleanQuery(webcam.name);
+        if (query.length > 2) {
+          result = await geocode(query);
+          usedQuery = query;
+        }
+
+        // Strategy 2: Split by separators (often English part is separated)
+        if (!result && webcam.name.match(/[|\/／\-]/)) {
+           const parts = webcam.name.split(/[|\/／\-]/);
+           // Try parts from end to start (often English is at the end)
+           for (let i = parts.length - 1; i >= 0; i--) {
+             const partQuery = cleanQuery(parts[i]);
+             if (partQuery.length > 3) {
+               result = await geocode(partQuery);
+               if (result) {
+                 usedQuery = partQuery;
+                 break;
+               }
+             }
+           }
+        }
+
+        // Strategy 3: Use description if name failed
+        if (!result && webcam.description) {
+           const descQuery = cleanQuery(webcam.description).substring(0, 50); // Limit length
+           if (descQuery.length > 5) {
+             result = await geocode(descQuery);
+             usedQuery = descQuery;
+           }
+        }
+
         if (result) {
           const loc = result.geometry.location;
           webcam.coordinates.lat = loc.lat;
@@ -181,7 +215,7 @@ async function maintainWebcams() {
           if (country) webcam.country = country;
 
           // Adjust Category if needed
-          if (webcam.category === 'added-automatically') {
+          if (webcam.category === 'added-automatically' || !webcam.category) {
             const types = result.types;
             if (types.includes('natural_feature') || types.includes('park')) webcam.category = 'nature';
             else if (types.includes('point_of_interest')) webcam.category = 'landmark';
@@ -190,14 +224,14 @@ async function maintainWebcams() {
 
           // Fix Description if needed
           if (!webcam.description || webcam.description === webcam.name) {
-            webcam.description = `Live view of ${query} in ${webcam.city || 'Unknown'}, ${webcam.country || 'Unknown'}.`;
+            webcam.description = `Live view of ${usedQuery} in ${webcam.city || 'Unknown'}, ${webcam.country || 'Unknown'}.`;
           }
 
-          console.log(`      -> Found: ${result.formatted_address}`);
+          console.log(`      -> Found: ${result.formatted_address} (via "${usedQuery}")`);
           geolocatedCount++;
           updatedCount++;
           // Sleep slightly to be polite
-          await sleep(100);
+          await sleep(200);
         } else {
           console.log(`      -> Could not find location.`);
         }
