@@ -2262,7 +2262,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "MnKW4DDB2LE",
+    "id": "eglZKYNuVdU",
     "name": "Auckland Skyline",
     "coordinates": {
       "lat": -36.8485,
@@ -2270,16 +2270,16 @@
     },
     "city": "Auckland",
     "country": "New Zealand",
-    "streamUrl": "https://www.youtube.com/embed/MnKW4DDB2LE?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/MnKW4DDB2LE/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/eglZKYNuVdU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/eglZKYNuVdU/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Auckland city and harbour.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-02T00:21:51.473Z"
+    "updatedAt": "2026-01-03T00:20:52.086Z"
   },
   {
-    "id": "XvZ9zfUIDdU",
+    "id": "LDmo-aR7ZUo",
     "name": "Rio de Janeiro (Copacabana)",
     "coordinates": {
       "lat": -22.9838,
@@ -2287,13 +2287,13 @@
     },
     "city": "Rio de Janeiro",
     "country": "Brazil",
-    "streamUrl": "https://www.youtube.com/embed/XvZ9zfUIDdU?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/XvZ9zfUIDdU/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/LDmo-aR7ZUo?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/LDmo-aR7ZUo/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "Live view of Copacabana Beach, Posto 6.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-02T00:21:51.777Z"
+    "updatedAt": "2026-01-03T00:20:52.374Z"
   },
   {
     "id": "rqBfiegG5qU",
