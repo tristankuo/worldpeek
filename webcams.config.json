@@ -2069,7 +2069,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "olxK73SMnak",
+    "id": "i7jO93wD9vU",
     "name": "South Beach",
     "coordinates": {
       "lat": 25.7826,
@@ -2077,13 +2077,13 @@
     },
     "city": "Miami",
     "country": "USA",
-    "streamUrl": "https://www.youtube.com/embed/olxK73SMnak?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/olxK73SMnak/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/i7jO93wD9vU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/i7jO93wD9vU/mqdefault_live.jpg",
     "category": "beach",
     "isLive": true,
     "description": "LIVE 4K South Beach, Miami Beach 24/7 Street Cam on Collins Ave.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-02T00:21:51.265Z"
+    "updatedAt": "2026-01-03T13:12:25.991Z"
   },
   {
     "id": "jtvmwjzZY0c",
