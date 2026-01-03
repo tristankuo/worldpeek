@@ -211,6 +211,18 @@ async function maintainWebcams() {
            }
         }
 
+        // Strategy 2.5: Extract English Text (for mixed language titles)
+        if (!result) {
+           const englishText = webcam.name.replace(/[^\x00-\x7F]+/g, ' ').trim();
+           const englishQuery = cleanQuery(englishText);
+           if (englishQuery.length > 3) {
+             result = await geocode(englishQuery);
+             if (result) {
+               usedQuery = englishQuery;
+             }
+           }
+        }
+
         // Strategy 3: Use description if name failed
         if (!result && webcam.description) {
            const descQuery = cleanQuery(webcam.description).substring(0, 50); // Limit length

@@ -48,11 +48,15 @@ async function geocode(query) {
 
 async function debug() {
     const testCases = [
+        "International Space Station",
         "レインボーブリッジ①　お台場東京　ライブ配信【ちんあなご】Livestream- RainbowBridge tokyo Japan",
         "善光寺LIVEカメラ（Zenkoji Live Cam)　INC長野ケーブルテレビ",
         "成田山新勝寺ライブカメラ",
         "【LIVE】京都 北野天満宮前付近ライブ中継カメラ（京都市観光協会公式）／Kitano Tenmangu Shrine, Kyoto Live camera",
-        "錦帯橋ライブカメラ　Kintaikyo Bridge Live Stream"
+        "錦帯橋ライブカメラ　Kintaikyo Bridge Live Stream",
+        "ライブカメラ　輪島市（石川県）Wajima , Ishikawa , Japan - Live Camera #輪島市 #輪島 #石川県 #石川",
+        "【LIVE】出雲市内カメラ",
+        "[4K Live] 桜島 ライブカメラ 鹿児島県 垂水市 Sakurajima Living Volcano Kagoshima Japan"
     ];
 
     for (const name of testCases) {
@@ -67,12 +71,12 @@ async function debug() {
             const parts = name.split(/[|\/／\-｜]/);
             console.log("Split Parts:", parts.map(p => cleanQuery(p)));
         }
-        
-        // Test Bracket Extraction (New Idea)
-        // Extract text inside brackets as potential queries
-        const bracketMatches = name.match(/[（\(](.*?)[）\)]/g);
-        if (bracketMatches) {
-             console.log("Bracket Content:", bracketMatches.map(m => m.slice(1, -1)));
+
+        // Test English Extraction Strategy
+        const englishText = name.replace(/[^\x00-\x7F]+/g, ' ').trim();
+        const cleanedEnglish = cleanQuery(englishText);
+        if (cleanedEnglish.length > 3) {
+            console.log("English Strategy:", cleanedEnglish);
         }
     }
 }
