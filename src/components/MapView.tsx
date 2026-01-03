@@ -135,14 +135,50 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       }
     };
 
+    const fallbackToGoogleGeolocation = async () => {
+      try {
+        const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+        if (!apiKey) throw new Error("No API Key");
+
+        console.log("Falling back to Google Geolocation API...");
+        const response = await fetch(`https://www.googleapis.com/geolocation/v1/geolocate?key=${apiKey}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ considerIp: true })
+        });
+
+        if (!response.ok) throw new Error(`Status ${response.status}`);
+
+        const data = await response.json();
+        if (data.location) {
+          const { lat, lng } = data.location;
+          if (googleMapRef.current) {
+            googleMapRef.current.setCenter({ lat, lng });
+            googleMapRef.current.setZoom(9);
+            window.google.maps.event.trigger(googleMapRef.current, 'resize');
+          }
+          setIsLocating(false);
+        }
+      } catch (err) {
+        console.error("Fallback failed:", err);
+        setIsLocating(false);
+        if (!silent) alert("Location unavailable. Please check your GPS signal.");
+      }
+    };
+
     const errorCallback = (error: GeolocationPositionError) => {
-      setIsLocating(false);
       console.error("Error getting location:", error);
+      // If browser fails with unavailable/timeout, try Google API
+      if (error.code === 2 || error.code === 3) {
+        fallbackToGoogleGeolocation();
+        return;
+      }
+      
+      setIsLocating(false);
       if (!silent) {
         let errorMessage = "Unable to retrieve your location.";
         if (error.code === 1) errorMessage = "Location permission denied. Please enable location services for this site.";
-        else if (error.code === 2) errorMessage = "Location unavailable. Please check your GPS signal.";
-        else if (error.code === 3) errorMessage = "Location request timed out. Please try again.";
+        else errorMessage = `Location error: ${error.message}`;
         alert(errorMessage);
       }
     };
