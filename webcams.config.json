@@ -3182,7 +3182,7 @@
     "id": "6F-hJjYy_kM",
     "name": "Dadaocheng Wharf Live View",
     "coordinates": {
-      "lat": 25.0560,
+      "lat": 25.056,
       "lng": 121.5076
     },
     "city": "Taipei",
@@ -3230,7 +3230,7 @@
     "id": "tKj0w0-x1-0",
     "name": "Kyoto Nishiki Market",
     "coordinates": {
-      "lat": 35.0050,
+      "lat": 35.005,
       "lng": 135.7649
     },
     "city": "Kyoto",
@@ -3272,6 +3272,1574 @@
     "category": "city",
     "isLive": true,
     "description": "World famous Shibuya Crossing live view.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "fGOCRGXPgRY",
+    "name": "レインボーブリッジ①　お台場東京　ライブ配信【ちんあなご】Livestream- RainbowBridge tokyo Japan",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/fGOCRGXPgRY?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fGOCRGXPgRY/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "レインボーブリッジ①　お台場東京　ライブ配信【ちんあなご】Livestream- RainbowBridge tokyo Japan",
+    "provider": "YouTube"
+  },
+  {
+    "id": "HvJdPF46kak",
+    "name": "善光寺LIVEカメラ（Zenkoji Live Cam)　INC長野ケーブルテレビ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/HvJdPF46kak?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/HvJdPF46kak/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "善光寺LIVEカメラ（Zenkoji Live Cam)　INC長野ケーブルテレビ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "g9Y-Bkq5O0Q",
+    "name": "成田山新勝寺ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/g9Y-Bkq5O0Q?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/g9Y-Bkq5O0Q/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "成田山新勝寺ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "qM_kliIiAOs",
+    "name": "富士山ライブカメラ 山梨県富士吉田市 Yaamanashi Fujiyoshida Live camera.world.cam",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/qM_kliIiAOs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/qM_kliIiAOs/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "富士山ライブカメラ 山梨県富士吉田市 Yaamanashi Fujiyoshida Live camera.world.cam",
+    "provider": "YouTube"
+  },
+  {
+    "id": "KHglGodzQ9g",
+    "name": "【LIVE】京都 北野天満宮前付近ライブ中継カメラ（京都市観光協会公式）／Kitano Tenmangu Shrine, Kyoto Live camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/KHglGodzQ9g?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/KHglGodzQ9g/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】京都 北野天満宮前付近ライブ中継カメラ（京都市観光協会公式）／Kitano Tenmangu Shrine, Kyoto Live camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "tHwWcSdBjjY",
+    "name": "錦帯橋ライブカメラ　Kintaikyo Bridge Live Stream",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/tHwWcSdBjjY?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/tHwWcSdBjjY/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "錦帯橋ライブカメラ　Kintaikyo Bridge Live Stream",
+    "provider": "YouTube"
+  },
+  {
+    "id": "vjp_8TKQRhw",
+    "name": "ライブカメラ　輪島市（石川県）Wajima , Ishikawa , Japan - Live Camera #輪島市 #輪島 #石川県 #石川",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/vjp_8TKQRhw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/vjp_8TKQRhw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "ライブカメラ　輪島市（石川県）Wajima , Ishikawa , Japan - Live Camera #輪島市 #輪島 #石川県 #石川",
+    "provider": "YouTube"
+  },
+  {
+    "id": "c-dZM2mHc7c",
+    "name": "【LIVE】出雲市内カメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/c-dZM2mHc7c?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/c-dZM2mHc7c/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】出雲市内カメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "NfR1Y-mYEtg",
+    "name": "[4K Live] 桜島 ライブカメラ 鹿児島県 垂水市 Sakurajima Living Volcano Kagoshima Japan",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/NfR1Y-mYEtg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/NfR1Y-mYEtg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "[4K Live] 桜島 ライブカメラ 鹿児島県 垂水市 Sakurajima Living Volcano Kagoshima Japan",
+    "provider": "YouTube"
+  },
+  {
+    "id": "CyVr8fBBRGQ",
+    "name": "【LIVE】鹿児島・桜島ライブカメラ   SAKURAJIMA - The Active volcano in Japan",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/CyVr8fBBRGQ?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/CyVr8fBBRGQ/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】鹿児島・桜島ライブカメラ   SAKURAJIMA - The Active volcano in Japan",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Ov02yBZVvbk",
+    "name": "Volcan Popocatepetl San Pedro Benito Juarez, Atlixco Full Color  Diegoxx-AfarTv",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Ov02yBZVvbk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ov02yBZVvbk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Volcan Popocatepetl San Pedro Benito Juarez, Atlixco Full Color  Diegoxx-AfarTv",
+    "provider": "YouTube"
+  },
+  {
+    "id": "rayKu7F6Ub4",
+    "name": "Volcán Popocatépetl En Vivo | Vista Altzomoni, Estado de México",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/rayKu7F6Ub4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rayKu7F6Ub4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Volcán Popocatépetl En Vivo | Vista Altzomoni, Estado de México",
+    "provider": "YouTube"
+  },
+  {
+    "id": "AR_QQnpmoW4",
+    "name": "Transmisión Volcán Popocatépetl Enero 2026",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/AR_QQnpmoW4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AR_QQnpmoW4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Transmisión Volcán Popocatépetl Enero 2026",
+    "provider": "YouTube"
+  },
+  {
+    "id": "0KMeH_vh0Bk",
+    "name": "FUJISAN ROOFTOP TERRACE 富士山駅屋上ライブカメラ／“FUJISAN ROOFTOP TERRACE”,Fujikyu Railway Mt.Fuji Station",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/0KMeH_vh0Bk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/0KMeH_vh0Bk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "FUJISAN ROOFTOP TERRACE 富士山駅屋上ライブカメラ／“FUJISAN ROOFTOP TERRACE”,Fujikyu Railway Mt.Fuji Station",
+    "provider": "YouTube"
+  },
+  {
+    "id": "brIITSyoFns",
+    "name": "道の駅「越前おおの 荒島の郷」のライブ配信",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/brIITSyoFns?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/brIITSyoFns/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "道の駅「越前おおの 荒島の郷」のライブ配信",
+    "provider": "YouTube"
+  },
+  {
+    "id": "68jI13YUms0",
+    "name": "美ヶ原高原・長和町町営駐車場（山本小屋ふる里館前）ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/68jI13YUms0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/68jI13YUms0/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "美ヶ原高原・長和町町営駐車場（山本小屋ふる里館前）ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "lEU6y-zan84",
+    "name": "信州・美ヶ原　ライブカメラ１",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/lEU6y-zan84?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/lEU6y-zan84/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "信州・美ヶ原　ライブカメラ１",
+    "provider": "YouTube"
+  },
+  {
+    "id": "_Upz1dlQgpg",
+    "name": "&quot;Shirahama Ohama Beach&quot; 白浜大浜海水浴場（静岡県下田市）",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/_Upz1dlQgpg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_Upz1dlQgpg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "&quot;Shirahama Ohama Beach&quot; 白浜大浜海水浴場（静岡県下田市）",
+    "provider": "YouTube"
+  },
+  {
+    "id": "rB_nzP76ktc",
+    "name": "【LIVE】伊豆下田港",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/rB_nzP76ktc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rB_nzP76ktc/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】伊豆下田港",
+    "provider": "YouTube"
+  },
+  {
+    "id": "JGyGoXlKZmw",
+    "name": "富士本栖湖リゾート（富士芝桜まつり会場）ライブカメラ / Live Camera ”Fuji Motosuko Resort”",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/JGyGoXlKZmw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/JGyGoXlKZmw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "富士本栖湖リゾート（富士芝桜まつり会場）ライブカメラ / Live Camera ”Fuji Motosuko Resort”",
+    "provider": "YouTube"
+  },
+  {
+    "id": "yo5XnIR5RRg",
+    "name": "【ライブカメラ】山形県 大蔵村 肘折温泉",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/yo5XnIR5RRg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/yo5XnIR5RRg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【ライブカメラ】山形県 大蔵村 肘折温泉",
+    "provider": "YouTube"
+  },
+  {
+    "id": "trSGa-eTSrk",
+    "name": "十和田湖ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/trSGa-eTSrk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/trSGa-eTSrk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "十和田湖ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "qMs_uynkM54",
+    "name": "青森駅前ライブ配信　Live Camera at Aomori Station",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/qMs_uynkM54?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/qMs_uynkM54/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "青森駅前ライブ配信　Live Camera at Aomori Station",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Ado_7_DMTdc",
+    "name": "仙台城跡 Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Ado_7_DMTdc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ado_7_DMTdc/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "仙台城跡 Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "lhXXhDyjFtI",
+    "name": "【4K Live Camera】台中望高寮4K即時影像｜Taichung Wang Gao Liao 4K Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/lhXXhDyjFtI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/lhXXhDyjFtI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K Live Camera】台中望高寮4K即時影像｜Taichung Wang Gao Liao 4K Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "6kUEK3LVrro",
+    "name": "【4K】台東池上天堂路即時影像 Taitung Chihshang Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/6kUEK3LVrro?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6kUEK3LVrro/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K】台東池上天堂路即時影像 Taitung Chihshang Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "AKl3F6cAY2Q",
+    "name": "【Live Cam】東海岸即時影像 - 加路蘭遊憩區｜Jialulan｜加路蘭休憩区 2160p",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/AKl3F6cAY2Q?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AKl3F6cAY2Q/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 加路蘭遊憩區｜Jialulan｜加路蘭休憩区 2160p",
+    "provider": "YouTube"
+  },
+  {
+    "id": "nV-DKquUjFs",
+    "name": "Taoyuan Baling Live Cam 上巴陵即時影像",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/nV-DKquUjFs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/nV-DKquUjFs/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Taoyuan Baling Live Cam 上巴陵即時影像",
+    "provider": "YouTube"
+  },
+  {
+    "id": "AE1wiaqDZjw",
+    "name": "【獅頭山美景4K Live cam】峨眉湖即時影像｜彌勒大佛｜大埔水庫",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/AE1wiaqDZjw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AE1wiaqDZjw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【獅頭山美景4K Live cam】峨眉湖即時影像｜彌勒大佛｜大埔水庫",
+    "provider": "YouTube"
+  },
+  {
+    "id": "TY4qQElcUrA",
+    "name": "【4K】台東華源曙光觀景台即時影像 Taitung Huayuan Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/TY4qQElcUrA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/TY4qQElcUrA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K】台東華源曙光觀景台即時影像 Taitung Huayuan Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "ZdqHgQwvZOw",
+    "name": "【Live Cam】東海岸即時影像 - 金樽遊憩區｜Jinzun｜金樽休憩エリア 2160p",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/ZdqHgQwvZOw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZdqHgQwvZOw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 金樽遊憩區｜Jinzun｜金樽休憩エリア 2160p",
+    "provider": "YouTube"
+  },
+  {
+    "id": "uh_yNAE01w8",
+    "name": "【Kinmen Live】金門建功嶼即時影像｜Kinmen Jiangong Islet 4K Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/uh_yNAE01w8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/uh_yNAE01w8/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Kinmen Live】金門建功嶼即時影像｜Kinmen Jiangong Islet 4K Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "M4EJtf_iP8s",
+    "name": "【Kinmen Live】金門麒麟山森林公園即時影像｜Kinmen Qilin Mountain Forest Park 4K Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/M4EJtf_iP8s?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/M4EJtf_iP8s/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Kinmen Live】金門麒麟山森林公園即時影像｜Kinmen Qilin Mountain Forest Park 4K Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "fjhg3gAnMFg",
+    "name": "【4K Live Camera】台中高美濕地4K即時影像 | Taichung Gaomei Wetland 4K Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/fjhg3gAnMFg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/fjhg3gAnMFg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K Live Camera】台中高美濕地4K即時影像 | Taichung Gaomei Wetland 4K Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "RaTbGYKMUtk",
+    "name": "【八卦山美景4K Live cam】彰化平原即時影像｜夕陽美景｜彰化夜景",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/RaTbGYKMUtk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/RaTbGYKMUtk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【八卦山美景4K Live cam】彰化平原即時影像｜夕陽美景｜彰化夜景",
+    "provider": "YouTube"
+  },
+  {
+    "id": "D945F_dauls",
+    "name": "【4K】台東富岡漁港即時影像 Taitung Fugang Fishing Port Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/D945F_dauls?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/D945F_dauls/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K】台東富岡漁港即時影像 Taitung Fugang Fishing Port Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "wTHhv7M0vCI",
+    "name": "【Live Cam】東海岸即時影像 - 綠島南寮漁港｜Green Island Nanliao Fishing Harbor｜緑島南寮漁港 2160p｜台東綠島｜石朗潛水區",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/wTHhv7M0vCI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/wTHhv7M0vCI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 綠島南寮漁港｜Green Island Nanliao Fishing Harbor｜緑島南寮漁港 2160p｜台東綠島｜石朗潛水區",
+    "provider": "YouTube"
+  },
+  {
+    "id": "a8nJQr5rBGs",
+    "name": "【Live Cam】東海岸即時影像 - 綠島柴口浮潛區｜Chaikou Snorkeling Area｜柴口スノーケリングスポット 2160p｜台東綠島｜Green Island",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/a8nJQr5rBGs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/a8nJQr5rBGs/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 綠島柴口浮潛區｜Chaikou Snorkeling Area｜柴口スノーケリングスポット 2160p｜台東綠島｜Green Island",
+    "provider": "YouTube"
+  },
+  {
+    "id": "JkoXcXI04Qk",
+    "name": "【Live Cam】東海岸即時影像 - 大石鼻山｜Dashshibi Hill｜大石鼻山 2160p",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/JkoXcXI04Qk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/JkoXcXI04Qk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 大石鼻山｜Dashshibi Hill｜大石鼻山 2160p",
+    "provider": "YouTube"
+  },
+  {
+    "id": "JhQuR77AR7U",
+    "name": "【Live Cam】東海岸即時影像 - 都歷遊客中心｜Torik Visitor Center｜都歷ビジターセンター 2160p",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/JhQuR77AR7U?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/JhQuR77AR7U/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 都歷遊客中心｜Torik Visitor Center｜都歷ビジターセンター 2160p",
+    "provider": "YouTube"
+  },
+  {
+    "id": "YkIUZjVlhv4",
+    "name": "Lala Mountain Live Cam 拉拉山遊客中心即時影像",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/YkIUZjVlhv4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/YkIUZjVlhv4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Lala Mountain Live Cam 拉拉山遊客中心即時影像",
+    "provider": "YouTube"
+  },
+  {
+    "id": "PJWye36lEj4",
+    "name": "Xiao Wulai Panoramic Lookout Live Cam 小烏來寰宇平台即時影像",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/PJWye36lEj4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/PJWye36lEj4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Xiao Wulai Panoramic Lookout Live Cam 小烏來寰宇平台即時影像",
+    "provider": "YouTube"
+  },
+  {
+    "id": "VqS_Y8ZCj6M",
+    "name": "【4K】台東杉原灣即時影像 Taitung Shanyuan Bay Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/VqS_Y8ZCj6M?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/VqS_Y8ZCj6M/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K】台東杉原灣即時影像 Taitung Shanyuan Bay Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "ZayKvJKDPWc",
+    "name": "【梨山美景4K Live cam】德基水庫即時影像｜梨山佳陽沖積扇｜Techi Dam Live Cam",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/ZayKvJKDPWc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ZayKvJKDPWc/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【梨山美景4K Live cam】德基水庫即時影像｜梨山佳陽沖積扇｜Techi Dam Live Cam",
+    "provider": "YouTube"
+  },
+  {
+    "id": "aaKOV4qkDHw",
+    "name": "【4K Live】鯉魚潭-花東縱谷即時影像｜Hualien Liyu Lake｜4K Live Camera｜Lofi Music/Study/Relax",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/aaKOV4qkDHw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/aaKOV4qkDHw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K Live】鯉魚潭-花東縱谷即時影像｜Hualien Liyu Lake｜4K Live Camera｜Lofi Music/Study/Relax",
+    "provider": "YouTube"
+  },
+  {
+    "id": "5YDXZ1aiR5Y",
+    "name": "Three Swimming Turtles Live Cam 三龜戲水觀景平台即時影像",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/5YDXZ1aiR5Y?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/5YDXZ1aiR5Y/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Three Swimming Turtles Live Cam 三龜戲水觀景平台即時影像",
+    "provider": "YouTube"
+  },
+  {
+    "id": "a0i1Kg6fROg",
+    "name": "Northern Lights powered by EXPLORE.org",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/a0i1Kg6fROg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/a0i1Kg6fROg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Northern Lights powered by EXPLORE.org",
+    "provider": "YouTube"
+  },
+  {
+    "id": "O52zDyxg5QI",
+    "name": "Fairbanks Aurora Camera powered by EXPLORE.org",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/O52zDyxg5QI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/O52zDyxg5QI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Fairbanks Aurora Camera powered by EXPLORE.org",
+    "provider": "YouTube"
+  },
+  {
+    "id": "ccTVAhJU5lg",
+    "name": "Northern Light Live Kilpisjärvi, Finland. North view",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/ccTVAhJU5lg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/ccTVAhJU5lg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Northern Light Live Kilpisjärvi, Finland. North view",
+    "provider": "YouTube"
+  },
+  {
+    "id": "wAdTV6Uc5eA",
+    "name": "Geiranger Live",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/wAdTV6Uc5eA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/wAdTV6Uc5eA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Geiranger Live",
+    "provider": "YouTube"
+  },
+  {
+    "id": "RDchI1SLh4Q",
+    "name": "LIVE St. Petersburg Nevskiy ave. Sadovaya str. Невский проспект Садовая улица Санкт-Петербург онлайн",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/RDchI1SLh4Q?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/RDchI1SLh4Q/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "LIVE St. Petersburg Nevskiy ave. Sadovaya str. Невский проспект Садовая улица Санкт-Петербург онлайн",
+    "provider": "YouTube"
+  },
+  {
+    "id": "yslIWiEjRXw",
+    "name": "Live Geirangerfjord - Geiranger",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/yslIWiEjRXw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/yslIWiEjRXw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Live Geirangerfjord - Geiranger",
+    "provider": "YouTube"
+  },
+  {
+    "id": "jPwf4_MVpuE",
+    "name": "Port og Nordfjordeid",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/jPwf4_MVpuE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/jPwf4_MVpuE/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Port og Nordfjordeid",
+    "provider": "YouTube"
+  },
+  {
+    "id": "iXLaEkB3J0I",
+    "name": "Nordkapp Havfiske Live",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/iXLaEkB3J0I?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/iXLaEkB3J0I/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Nordkapp Havfiske Live",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Wr9b5aYA4mI",
+    "name": "Levi Glacier Express lift and slopes | Levi Ski Resort | Finland",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Wr9b5aYA4mI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Wr9b5aYA4mI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Levi Glacier Express lift and slopes | Levi Ski Resort | Finland",
+    "provider": "YouTube"
+  },
+  {
+    "id": "CjtIYbmVfck",
+    "name": "4K video LIVE CAMERA Saint Petersburg, Russia. Palace Bridge Дворцовый мост, навигация на Неве",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/CjtIYbmVfck?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/CjtIYbmVfck/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "4K video LIVE CAMERA Saint Petersburg, Russia. Palace Bridge Дворцовый мост, навигация на Неве",
+    "provider": "YouTube"
+  },
+  {
+    "id": "X7tdyNFpp1g",
+    "name": "Kylänäkymä / Village view | Levi Ski Resort | Finland",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/X7tdyNFpp1g?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/X7tdyNFpp1g/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Kylänäkymä / Village view | Levi Ski Resort | Finland",
+    "provider": "YouTube"
+  },
+  {
+    "id": "hfF9bhaBuvw",
+    "name": "Tasiilaq Heliport",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/hfF9bhaBuvw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/hfF9bhaBuvw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Tasiilaq Heliport",
+    "provider": "YouTube"
+  },
+  {
+    "id": "C83AXUplYb4",
+    "name": "【Live-Japan】函館駅前ライブカメラ② ※20秒ごとにアングルが変わります #JR函館駅 #函館 #路面電車 #HAKODATE",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/C83AXUplYb4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/C83AXUplYb4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live-Japan】函館駅前ライブカメラ② ※20秒ごとにアングルが変わります #JR函館駅 #函館 #路面電車 #HAKODATE",
+    "provider": "YouTube"
+  },
+  {
+    "id": "xxMRjVwCQ3o",
+    "name": "烘爐地即時影像 Hunglodei Live Camera | 新北觀光即時影像",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/xxMRjVwCQ3o?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/xxMRjVwCQ3o/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "烘爐地即時影像 Hunglodei Live Camera | 新北觀光即時影像",
+    "provider": "YouTube"
+  },
+  {
+    "id": "LSkq-wHMxQY",
+    "name": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/LSkq-wHMxQY?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/LSkq-wHMxQY/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【4K】台東南橫埡口即時影像 Taitung Southern Cross-Island Yakou Live Camera",
+    "provider": "YouTube"
+  },
+  {
+    "id": "dQ7Sd6PGLdA",
+    "name": "【Live Cam】東海岸即時影像 - 三仙台｜Sanxiantai｜三仙台（さんせんたい）風景区 2160p",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/dQ7Sd6PGLdA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/dQ7Sd6PGLdA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【Live Cam】東海岸即時影像 - 三仙台｜Sanxiantai｜三仙台（さんせんたい）風景区 2160p",
+    "provider": "YouTube"
+  },
+  {
+    "id": "gaNLXSEUVRw",
+    "name": "いまのJR札幌駅／Live streaming from JR Sapporo Station 北海道ｏｎ天気カメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/gaNLXSEUVRw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gaNLXSEUVRw/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "いまのJR札幌駅／Live streaming from JR Sapporo Station 北海道ｏｎ天気カメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "kfIQBC0hrII",
+    "name": "【LIVE &amp; BGM♪】いまの札幌／さっぽろ創世スクエア　LIVE　streaming　SAPPORO-city",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/kfIQBC0hrII?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/kfIQBC0hrII/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE &amp; BGM♪】いまの札幌／さっぽろ創世スクエア　LIVE　streaming　SAPPORO-city",
+    "provider": "YouTube"
+  },
+  {
+    "id": "rCXqDE9G53A",
+    "name": "【氷見市】お天気カメラライブ配信【富山県】",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/rCXqDE9G53A?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rCXqDE9G53A/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【氷見市】お天気カメラライブ配信【富山県】",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Is8U7W-IjmI",
+    "name": "［4K］安曇野ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Is8U7W-IjmI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Is8U7W-IjmI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "［4K］安曇野ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "X5Ew8btlVbQ",
+    "name": "北海道の絶景を詰め込んだ天空の贅沢「小樽天狗山」",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/X5Ew8btlVbQ?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/X5Ew8btlVbQ/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "北海道の絶景を詰め込んだ天空の贅沢「小樽天狗山」",
+    "provider": "YouTube"
+  },
+  {
+    "id": "WUN-183KH7M",
+    "name": "いまの札幌 ライブカメラ（STV札幌テレビ放送）北海道札幌市中央区 /Live Camera Sapporo , Hokkaido",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/WUN-183KH7M?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/WUN-183KH7M/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "いまの札幌 ライブカメラ（STV札幌テレビ放送）北海道札幌市中央区 /Live Camera Sapporo , Hokkaido",
+    "provider": "YouTube"
+  },
+  {
+    "id": "IQms8zArI7w",
+    "name": "【ライブカメラ】長岡市、上越市、佐渡市、新潟駅前　県内4地点ループ　Niigata, Japan",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/IQms8zArI7w?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IQms8zArI7w/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【ライブカメラ】長岡市、上越市、佐渡市、新潟駅前　県内4地点ループ　Niigata, Japan",
+    "provider": "YouTube"
+  },
+  {
+    "id": "sm3xXTfDtGE",
+    "name": "富士山ライブカメラ(忍野八海から)[4K] - [4K]Mount Fuji webcams (Oshino Hakkai) from Japan. 【LiveFujigokoTV】",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/sm3xXTfDtGE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/sm3xXTfDtGE/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "富士山ライブカメラ(忍野八海から)[4K] - [4K]Mount Fuji webcams (Oshino Hakkai) from Japan. 【LiveFujigokoTV】",
+    "provider": "YouTube"
+  },
+  {
+    "id": "icMG4FEFg9w",
+    "name": "【LIVE】北海道神宮 頓宮",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/icMG4FEFg9w?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/icMG4FEFg9w/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】北海道神宮 頓宮",
+    "provider": "YouTube"
+  },
+  {
+    "id": "74OOcuVMDzE",
+    "name": "小樽市　”marina scape””",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/74OOcuVMDzE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/74OOcuVMDzE/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "小樽市　”marina scape””",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Ng-ApqGu30Q",
+    "name": "【LIVE】札幌藻岩山 山頂標高看板前ライブカメラ／Live camera of SAPPORO Mt.MOIWA in front of the summit altitude signboard",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Ng-ApqGu30Q?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ng-ApqGu30Q/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】札幌藻岩山 山頂標高看板前ライブカメラ／Live camera of SAPPORO Mt.MOIWA in front of the summit altitude signboard",
+    "provider": "YouTube"
+  },
+  {
+    "id": "cSCXEW0tda8",
+    "name": "Boston, MA Live Cam - City of Boston",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/cSCXEW0tda8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/cSCXEW0tda8/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Boston, MA Live Cam - City of Boston",
+    "provider": "YouTube"
+  },
+  {
+    "id": "IFfE7Ex3NgA",
+    "name": "Subaru of Portland&#39;s KOIN Tower Northeast view",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/IFfE7Ex3NgA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/IFfE7Ex3NgA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Subaru of Portland&#39;s KOIN Tower Northeast view",
+    "provider": "YouTube"
+  },
+  {
+    "id": "MAuXQgZsq3Y",
+    "name": "🟢 GOMV.COM Menemsha Harbor Fishing Dock Martha&#39;s Vineyard Webcam",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/MAuXQgZsq3Y?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/MAuXQgZsq3Y/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "🟢 GOMV.COM Menemsha Harbor Fishing Dock Martha&#39;s Vineyard Webcam",
+    "provider": "YouTube"
+  },
+  {
+    "id": "S3rx8s-ltwI",
+    "name": "Moosehead Lake, Maine - LIVE cam",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/S3rx8s-ltwI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/S3rx8s-ltwI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Moosehead Lake, Maine - LIVE cam",
+    "provider": "YouTube"
+  },
+  {
+    "id": "tBNCeoHxXN4",
+    "name": "【４Kライブ】絶景日本海ゆうひライブカメラ新潟市西区　Sunset Live Cam – Sea of Japan  Nishi-ku, Niigata",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/tBNCeoHxXN4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/tBNCeoHxXN4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【４Kライブ】絶景日本海ゆうひライブカメラ新潟市西区　Sunset Live Cam – Sea of Japan  Nishi-ku, Niigata",
+    "provider": "YouTube"
+  },
+  {
+    "id": "RManbLSTXuc",
+    "name": "Boston, Massachusetts - Live Cam - Charles River",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/RManbLSTXuc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/RManbLSTXuc/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Boston, Massachusetts - Live Cam - Charles River",
+    "provider": "YouTube"
+  },
+  {
+    "id": "7dE4IjDQJmE",
+    "name": "Fairmont The Palm",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/7dE4IjDQJmE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/7dE4IjDQJmE/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "Fairmont The Palm",
+    "provider": "YouTube"
+  },
+  {
+    "id": "8ir0mYl8Fpo",
+    "name": "金剛山ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/8ir0mYl8Fpo?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/8ir0mYl8Fpo/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "金剛山ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "g-tfZ65pdn4",
+    "name": "【熊本】湯島「猫島」定点ライブカメラ / Yushima Island in Kumamoto Live Camera【湯島猫島ありのまま】",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/g-tfZ65pdn4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/g-tfZ65pdn4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【熊本】湯島「猫島」定点ライブカメラ / Yushima Island in Kumamoto Live Camera【湯島猫島ありのまま】",
+    "provider": "YouTube"
+  },
+  {
+    "id": "qYGbAnBDxYI",
+    "name": "【熊本市動植物園】アフリカゾウ | 定点ライブカメラ / Kumamoto City Zoo and Botanical Garden Live Camera(Elephant)",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/qYGbAnBDxYI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/qYGbAnBDxYI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【熊本市動植物園】アフリカゾウ | 定点ライブカメラ / Kumamoto City Zoo and Botanical Garden Live Camera(Elephant)",
+    "provider": "YouTube"
+  },
+  {
+    "id": "8RyR0J8zbbU",
+    "name": "【ライブカメラ】ＪＲ博多駅前　【福岡市】Hakata Station in FUKUOKA",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/8RyR0J8zbbU?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/8RyR0J8zbbU/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【ライブカメラ】ＪＲ博多駅前　【福岡市】Hakata Station in FUKUOKA",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Bxvp5bQ7Qa4",
+    "name": "現在の大津港の様子 ライブカメラ　【生配信】【裏】 滋賀県 琵琶湖 【LIVE CAMERA】【琵琶湖花噴水】",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Bxvp5bQ7Qa4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Bxvp5bQ7Qa4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "現在の大津港の様子 ライブカメラ　【生配信】【裏】 滋賀県 琵琶湖 【LIVE CAMERA】【琵琶湖花噴水】",
+    "provider": "YouTube"
+  },
+  {
+    "id": "_r-g8wU-0o8",
+    "name": "関門海峡【LIVE CAMERA】癒しの空間、関門海峡を（門司港から）ライブ配信中！ 船の汽笛が聴けるように生音での配信※チャット参加の方は概要欄一読を🙏",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/_r-g8wU-0o8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/_r-g8wU-0o8/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "関門海峡【LIVE CAMERA】癒しの空間、関門海峡を（門司港から）ライブ配信中！ 船の汽笛が聴けるように生音での配信※チャット参加の方は概要欄一読を🙏",
+    "provider": "YouTube"
+  },
+  {
+    "id": "6HYjCFkmDPA",
+    "name": "【LIVE】沖縄ライブカメラ　那覇市内の現在の様子　眼下には「ゆいレール」　Okinawa, Naha　 오키나와、 나하",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/6HYjCFkmDPA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6HYjCFkmDPA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】沖縄ライブカメラ　那覇市内の現在の様子　眼下には「ゆいレール」　Okinawa, Naha　 오키나와、 나하",
+    "provider": "YouTube"
+  },
+  {
+    "id": "vALZRyqT_Jg",
+    "name": "【NEW】宮古島 お天気カメラ ライブ配信（OTV沖縄テレビ）",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/vALZRyqT_Jg?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/vALZRyqT_Jg/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【NEW】宮古島 お天気カメラ ライブ配信（OTV沖縄テレビ）",
+    "provider": "YouTube"
+  },
+  {
+    "id": "TCAY1XZwMrs",
+    "name": "【2025】宮古島ライブ配信｜エメラルドコーストゴルフリンクス",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/TCAY1XZwMrs?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/TCAY1XZwMrs/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【2025】宮古島ライブ配信｜エメラルドコーストゴルフリンクス",
+    "provider": "YouTube"
+  },
+  {
+    "id": "gJkI89hErsI",
+    "name": "新冠町　”Breeding Farm Scape”",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/gJkI89hErsI?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gJkI89hErsI/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "新冠町　”Breeding Farm Scape”",
+    "provider": "YouTube"
+  },
+  {
+    "id": "Zhfodg0io7M",
+    "name": "国際通り牧志交番前定点カメラLIVE（OKINAWA)",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/Zhfodg0io7M?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Zhfodg0io7M/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "国際通り牧志交番前定点カメラLIVE（OKINAWA)",
+    "provider": "YouTube"
+  },
+  {
+    "id": "AhQErfreEOE",
+    "name": "沖縄かりゆしビーチリゾート・オーシャンスパ ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/AhQErfreEOE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AhQErfreEOE/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "沖縄かりゆしビーチリゾート・オーシャンスパ ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "PxvOdMbj6gA",
+    "name": "岡田港（大島）",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/PxvOdMbj6gA?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/PxvOdMbj6gA/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "岡田港（大島）",
+    "provider": "YouTube"
+  },
+  {
+    "id": "6xzPVxf67m8",
+    "name": "下田プリンスホテル　白浜中央海水浴場（ライブカメラより）",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/6xzPVxf67m8?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6xzPVxf67m8/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "下田プリンスホテル　白浜中央海水浴場（ライブカメラより）",
+    "provider": "YouTube"
+  },
+  {
+    "id": "AoRAAex6nBk",
+    "name": "🔴【LIVE】京都ライブカメラ 東本願寺前の市民緑地「お東さん広場」から生中継 KYOTO JAPAN  京都ライブカメラ Livecam",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/AoRAAex6nBk?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/AoRAAex6nBk/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "🔴【LIVE】京都ライブカメラ 東本願寺前の市民緑地「お東さん広場」から生中継 KYOTO JAPAN  京都ライブカメラ Livecam",
+    "provider": "YouTube"
+  },
+  {
+    "id": "rTViPLUmYAc",
+    "name": "【LIVE】松江・宍道湖ライブカメラ",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/rTViPLUmYAc?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/rTViPLUmYAc/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "【LIVE】松江・宍道湖ライブカメラ",
+    "provider": "YouTube"
+  },
+  {
+    "id": "aVGYOlIzV0A",
+    "name": "阿蘇ライブカメラ～阿蘇火山博物館・草千里～",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/aVGYOlIzV0A?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/aVGYOlIzV0A/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "阿蘇ライブカメラ～阿蘇火山博物館・草千里～",
+    "provider": "YouTube"
+  },
+  {
+    "id": "E12mQwi93s4",
+    "name": "富士山ライブ配信 ふもとっぱらキャンプサイトから - Mount Fuji Live from Fumotoppara (Shizuoka Japan)",
+    "coordinates": {
+      "lat": 0,
+      "lng": 0
+    },
+    "city": "Unknown",
+    "country": "Unknown",
+    "streamUrl": "https://www.youtube.com/embed/E12mQwi93s4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/E12mQwi93s4/mqdefault_live.jpg",
+    "category": "added-automatically",
+    "isLive": true,
+    "description": "富士山ライブ配信 ふもとっぱらキャンプサイトから - Mount Fuji Live from Fumotoppara (Shizuoka Japan)",
     "provider": "YouTube"
   }
 ]
