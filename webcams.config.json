@@ -4754,98 +4754,98 @@
   },
   {
     "id": "PxvOdMbj6gA",
-    "name": "岡田港（大島）",
+    "name": "Okada Port (Oshima)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 34.764,
+      "lng": 139.382
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Oshima",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/PxvOdMbj6gA?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/PxvOdMbj6gA/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "city",
     "isLive": true,
-    "description": "岡田港（大島）",
+    "description": "Live view of Okada Port in Oshima Island.",
     "provider": "YouTube"
   },
   {
     "id": "6xzPVxf67m8",
-    "name": "下田プリンスホテル　白浜中央海水浴場（ライブカメラより）",
+    "name": "Shimoda Prince Hotel (Shirahama)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 34.6962,
+      "lng": 138.9731
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Shimoda",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/6xzPVxf67m8?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/6xzPVxf67m8/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "beach",
     "isLive": true,
-    "description": "下田プリンスホテル　白浜中央海水浴場（ライブカメラより）",
+    "description": "Live view of Shirahama Chuo Beach from Shimoda Prince Hotel.",
     "provider": "YouTube"
   },
   {
     "id": "AoRAAex6nBk",
-    "name": "🔴【LIVE】京都ライブカメラ 東本願寺前の市民緑地「お東さん広場」から生中継 KYOTO JAPAN  京都ライブカメラ Livecam",
+    "name": "Higashi Honganji (Kyoto)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 34.991,
+      "lng": 135.7585
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Kyoto",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/AoRAAex6nBk?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/AoRAAex6nBk/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "landmark",
     "isLive": true,
-    "description": "🔴【LIVE】京都ライブカメラ 東本願寺前の市民緑地「お東さん広場」から生中継 KYOTO JAPAN  京都ライブカメラ Livecam",
+    "description": "Live view from 'O-Higashi-san Hiroba' in front of Higashi Honganji Temple.",
     "provider": "YouTube"
   },
   {
     "id": "rTViPLUmYAc",
-    "name": "【LIVE】松江・宍道湖ライブカメラ",
+    "name": "Lake Shinji (Matsue)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 35.45,
+      "lng": 132.967
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Matsue",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/rTViPLUmYAc?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/rTViPLUmYAc/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "nature",
     "isLive": true,
-    "description": "【LIVE】松江・宍道湖ライブカメラ",
+    "description": "Live view of Lake Shinji in Matsue.",
     "provider": "YouTube"
   },
   {
     "id": "aVGYOlIzV0A",
-    "name": "阿蘇ライブカメラ～阿蘇火山博物館・草千里～",
+    "name": "Mt. Aso (Kusasenri)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 32.8853,
+      "lng": 131.0519
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Aso",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/aVGYOlIzV0A?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/aVGYOlIzV0A/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "mountain",
     "isLive": true,
-    "description": "阿蘇ライブカメラ～阿蘇火山博物館・草千里～",
+    "description": "Live view of Mt. Aso from Aso Volcano Museum (Kusasenri).",
     "provider": "YouTube"
   },
   {
     "id": "E12mQwi93s4",
-    "name": "富士山ライブ配信 ふもとっぱらキャンプサイトから - Mount Fuji Live from Fumotoppara (Shizuoka Japan)",
+    "name": "Mt. Fuji (Fumotoppara)",
     "coordinates": {
-      "lat": 0,
-      "lng": 0
+      "lat": 35.403,
+      "lng": 138.556
     },
-    "city": "Unknown",
-    "country": "Unknown",
+    "city": "Fujinomiya",
+    "country": "Japan",
     "streamUrl": "https://www.youtube.com/embed/E12mQwi93s4?autoplay=1&mute=1",
     "thumbnailUrl": "https://i.ytimg.com/vi/E12mQwi93s4/mqdefault_live.jpg",
-    "category": "added-automatically",
+    "category": "nature",
     "isLive": true,
-    "description": "富士山ライブ配信 ふもとっぱらキャンプサイトから - Mount Fuji Live from Fumotoppara (Shizuoka Japan)",
+    "description": "Live view of Mt. Fuji from Fumotoppara Camping Site.",
     "provider": "YouTube"
   }
 ]
