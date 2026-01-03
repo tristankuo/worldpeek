@@ -134,6 +134,14 @@ async function maintainWebcams() {
       const video = videoMap.get(webcam.id);
       const isLive = video && video.snippet.liveBroadcastContent === 'live';
 
+      // 1.5 Update Metadata for New Webcams
+      if (video && webcam.name.startsWith('New Webcam')) {
+        console.log(`[UPDATE] Fetching details for new webcam: ${webcam.id}`);
+        webcam.name = video.snippet.title;
+        webcam.description = video.snippet.description;
+        updatedCount++;
+      }
+
       if (!isLive) {
         console.log(`[DEAD] ${webcam.name} (${webcam.id})`);
         deadCount++;
