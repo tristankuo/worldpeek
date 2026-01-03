@@ -159,8 +159,8 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
              errorCallback,
              {
                enableHighAccuracy: false,
-               timeout: 10000,
-               maximumAge: 300000
+               timeout: 30000, // Increased timeout for fallback
+               maximumAge: Infinity // Accept any cached position
              }
            );
         } else {
@@ -169,7 +169,7 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
       },
       {
         enableHighAccuracy: true,
-        timeout: 10000, // Reduced timeout for first attempt
+        timeout: 10000,
         maximumAge: 0
       }
     );
