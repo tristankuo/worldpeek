@@ -261,6 +261,35 @@ async function maintainWebcams() {
   const activeWebcams = webcams.filter(w => !w._remove);
   const removedCount = webcams.length - activeWebcams.length;
 
+  // 3. Deduplicate Coordinates
+  console.log('\nChecking for duplicate coordinates...');
+  const coordMap = new Map();
+  let jitterCount = 0;
+
+  for (const webcam of activeWebcams) {
+    // Skip if 0,0 (failed geolocation)
+    if (webcam.coordinates.lat === 0 && webcam.coordinates.lng === 0) continue;
+
+    // Use 4 decimal places for collision detection (approx 11m precision)
+    const key = `${webcam.coordinates.lat.toFixed(4)},${webcam.coordinates.lng.toFixed(4)}`;
+    
+    if (coordMap.has(key)) {
+      // Collision detected! Jitter it.
+      // Offset by +/- 0.0005 to 0.0025 (approx 50m to 250m)
+      const latOffset = (Math.random() * 0.002 + 0.0005) * (Math.random() > 0.5 ? 1 : -1);
+      const lngOffset = (Math.random() * 0.002 + 0.0005) * (Math.random() > 0.5 ? 1 : -1);
+      
+      webcam.coordinates.lat += latOffset;
+      webcam.coordinates.lng += lngOffset;
+      
+      jitterCount++;
+      updatedCount++; // Ensure we save
+    } else {
+      coordMap.set(key, true);
+    }
+  }
+  console.log(`Jittered ${jitterCount} overlapping locations.`);
+
   console.log(`\nSummary:`);
   console.log(`Checked: ${youtubeWebcams.length}`);
   console.log(`Dead: ${deadCount}`);
