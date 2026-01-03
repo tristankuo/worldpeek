@@ -124,36 +124,53 @@ export const MapView: React.FC<MapViewProps> = ({ webcams, onWebcamSelect, onBac
 
     setIsLocating(true);
 
+    const successCallback = (position: GeolocationPosition) => {
+      setIsLocating(false);
+      const { latitude, longitude } = position.coords;
+      
+      if (googleMapRef.current && window.google) {
+        googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
+        googleMapRef.current.setZoom(9);
+        window.google.maps.event.trigger(googleMapRef.current, 'resize');
+      }
+    };
+
+    const errorCallback = (error: GeolocationPositionError) => {
+      setIsLocating(false);
+      console.error("Error getting location:", error);
+      if (!silent) {
+        let errorMessage = "Unable to retrieve your location.";
+        if (error.code === 1) errorMessage = "Location permission denied. Please enable location services for this site.";
+        else if (error.code === 2) errorMessage = "Location unavailable. Please check your GPS signal.";
+        else if (error.code === 3) errorMessage = "Location request timed out. Please try again.";
+        alert(errorMessage);
+      }
+    };
+
+    // Try high accuracy first
     navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setIsLocating(false);
-        const { latitude, longitude } = position.coords;
-        
-        if (googleMapRef.current && window.google) {
-          // Simply zoom to user location for both mobile and desktop
-          // This avoids issues with geocoding bounds causing grey areas or zooming out too far
-          googleMapRef.current.setCenter({ lat: latitude, lng: longitude });
-          googleMapRef.current.setZoom(9);
-          
-          // Trigger resize to ensure tiles load correctly
-          window.google.maps.event.trigger(googleMapRef.current, 'resize');
-        }
-      },
+      successCallback,
       (error) => {
-        setIsLocating(false);
-        console.error("Error getting location:", error);
-        if (!silent) {
-          let errorMessage = "Unable to retrieve your location.";
-          if (error.code === 1) errorMessage = "Location permission denied. Please enable location services for this site.";
-          else if (error.code === 2) errorMessage = "Location unavailable. Please check your GPS signal.";
-          else if (error.code === 3) errorMessage = "Location request timed out. Please try again.";
-          alert(errorMessage);
+        // If high accuracy fails (timeout or unavailable), try low accuracy
+        if (error.code === 3 || error.code === 2) {
+           console.log("High accuracy failed, trying low accuracy...");
+           navigator.geolocation.getCurrentPosition(
+             successCallback,
+             errorCallback,
+             {
+               enableHighAccuracy: false,
+               timeout: 10000,
+               maximumAge: 300000
+             }
+           );
+        } else {
+          errorCallback(error);
         }
       },
       {
         enableHighAccuracy: true,
-        timeout: 20000,
-        maximumAge: 300000 // Allow cached position up to 5 minutes old
+        timeout: 10000, // Reduced timeout for first attempt
+        maximumAge: 0
       }
     );
   };

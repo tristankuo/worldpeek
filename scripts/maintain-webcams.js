@@ -71,16 +71,16 @@ async function batchCheckStatus(ids) {
   try {
     const response = await fetch(url);
     if (!response.ok) {
-      // If 4xx or 5xx, logging it creates noise in CI, so we handle gracefully
       const txt = await response.text();
       console.error(`API Error: ${response.status} ${txt}`);
-      return [];
+      // Return null to indicate failure, not empty list (which means all dead)
+      return null;
     }
     const data = await response.json();
     return data.items || [];
   } catch (error) {
     console.error('Failed to fetch video status:', error);
-    return [];
+    return null;
   }
 }
 
@@ -120,6 +120,13 @@ async function maintainWebcams() {
   for (const chunk of chunks) {
     const ids = chunk.map(w => w.id);
     const videos = await batchCheckStatus(ids);
+    
+    // If API failed, skip this chunk to avoid deleting valid webcams
+    if (videos === null) {
+      console.warn(`Skipping chunk of ${ids.length} webcams due to API error.`);
+      continue;
+    }
+
     const videoMap = new Map(videos.map(v => [v.id, v]));
 
     for (const webcam of chunk) {
