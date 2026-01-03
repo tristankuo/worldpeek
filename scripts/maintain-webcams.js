@@ -32,12 +32,15 @@ function cleanQuery(text) {
   if (!text) return '';
   // Remove emojis
   text = text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '');
-  // Remove brackets (including full-width)
-  text = text.replace(/【.*?】/g, ' ').replace(/\[.*?\]/g, ' ').replace(/\(.*?\)/g, ' ').replace(/（.*?）/g, ' ');
+  
   // Remove specific keywords (English, Japanese, Chinese)
-  text = text.replace(/Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News|Stream|View/gi, ' ');
+  // Order matters! Longer phrases first to avoid partial matches (e.g. "Live Camera" vs "Live Cam")
+  text = text.replace(/Live Camera|Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News|Stream|View/gi, ' ');
   text = text.replace(/ライブカメラ|ライブ配信|生中継|実況|配信|カメラ/g, ' ');
   text = text.replace(/即時影像|直播|實況|攝影機/g, ' ');
+
+  // Replace brackets with spaces (keep content) - this helps preserve English names inside brackets
+  text = text.replace(/[【】\[\]\(\)（）]/g, ' ');
   
   return text.replace(/\s+/g, ' ').trim();
 }

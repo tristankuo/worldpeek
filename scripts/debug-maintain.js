@@ -13,9 +13,17 @@ const webcams = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'));
 
 function cleanQuery(text) {
   if (!text) return '';
+  // Remove emojis
   text = text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '');
-  text = text.replace(/【.*?】/g, ' ').replace(/\[.*?\]/g, ' ').replace(/\(.*?\)/g, ' ').replace(/（.*?）/g, ' ');
+  
+  // Remove specific keywords (English, Japanese, Chinese)
   text = text.replace(/Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News|Stream|View/gi, ' ');
+  text = text.replace(/ライブカメラ|ライブ配信|生中継|実況|配信|カメラ/g, ' ');
+  text = text.replace(/即時影像|直播|實況|攝影機/g, ' ');
+
+  // Replace brackets with spaces (keep content)
+  text = text.replace(/[【】\[\]\(\)（）]/g, ' ');
+  
   return text.replace(/\s+/g, ' ').trim();
 }
 
@@ -39,47 +47,33 @@ async function geocode(query) {
 }
 
 async function debug() {
-    const targetId = "fGOCRGXPgRY";
-    const webcam = webcams.find(w => w.id === targetId);
-    
-    if (!webcam) {
-        console.log("Webcam not found");
-        return;
-    }
+    const testCases = [
+        "レインボーブリッジ①　お台場東京　ライブ配信【ちんあなご】Livestream- RainbowBridge tokyo Japan",
+        "善光寺LIVEカメラ（Zenkoji Live Cam)　INC長野ケーブルテレビ",
+        "成田山新勝寺ライブカメラ",
+        "【LIVE】京都 北野天満宮前付近ライブ中継カメラ（京都市観光協会公式）／Kitano Tenmangu Shrine, Kyoto Live camera",
+        "錦帯橋ライブカメラ　Kintaikyo Bridge Live Stream"
+    ];
 
-    console.log("Processing:", webcam.name);
-    
-    let result = null;
-    let usedQuery = '';
+    for (const name of testCases) {
+        console.log("\n--- Testing:", name);
+        
+        // Test Clean Query
+        let query = cleanQuery(name);
+        console.log("Cleaned:", query);
 
-    // Strategy 1: Cleaned Name
-    let query = cleanQuery(webcam.name);
-    console.log("Strategy 1 Query:", query);
-    if (query.length > 2) {
-        result = await geocode(query);
-        usedQuery = query;
-    }
-
-    // Strategy 2: Split by separators
-    if (!result && webcam.name.match(/[|\/／\-]/)) {
-        const parts = webcam.name.split(/[|\/／\-]/);
-        for (let i = parts.length - 1; i >= 0; i--) {
-            const partQuery = cleanQuery(parts[i]);
-            console.log("Strategy 2 Part:", partQuery);
-            if (partQuery.length > 3) {
-                result = await geocode(partQuery);
-                if (result) {
-                    usedQuery = partQuery;
-                    break;
-                }
-            }
+        // Test Split Strategy
+        if (name.match(/[|\/／\-｜]/)) {
+            const parts = name.split(/[|\/／\-｜]/);
+            console.log("Split Parts:", parts.map(p => cleanQuery(p)));
         }
-    }
-    
-    if (result) {
-        console.log("Found location:", result.formatted_address);
-    } else {
-        console.log("Failed to find location");
+        
+        // Test Bracket Extraction (New Idea)
+        // Extract text inside brackets as potential queries
+        const bracketMatches = name.match(/[（\(](.*?)[）\)]/g);
+        if (bracketMatches) {
+             console.log("Bracket Content:", bracketMatches.map(m => m.slice(1, -1)));
+        }
     }
 }
 
