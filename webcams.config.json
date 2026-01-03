@@ -3177,5 +3177,101 @@
     "isLive": true,
     "description": "Live view of the Tateyama Mountain Range, part of the Northern Japan Alps.",
     "provider": "YouTube"
+  },
+  {
+    "id": "6F-hJjYy_kM",
+    "name": "Dadaocheng Wharf Live View",
+    "coordinates": {
+      "lat": 25.0560,
+      "lng": 121.5076
+    },
+    "city": "Taipei",
+    "country": "Taiwan",
+    "streamUrl": "https://www.youtube.com/embed/6F-hJjYy_kM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6F-hJjYy_kM/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live view of Dadaocheng Wharf in Taipei.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "JzN8fR9a1mQ",
+    "name": "Elephant Mountain - Taipei 101 View",
+    "coordinates": {
+      "lat": 25.0267,
+      "lng": 121.5753
+    },
+    "city": "Taipei",
+    "country": "Taiwan",
+    "streamUrl": "https://www.youtube.com/embed/JzN8fR9a1mQ?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/JzN8fR9a1mQ/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Stunning view of Taipei 101 and the city skyline from Elephant Mountain.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "nK6m4i2i9-0",
+    "name": "Kyoto Yasaka Shrine Live",
+    "coordinates": {
+      "lat": 35.0037,
+      "lng": 135.7785
+    },
+    "city": "Kyoto",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/nK6m4i2i9-0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/nK6m4i2i9-0/mqdefault_live.jpg",
+    "category": "landmark",
+    "isLive": true,
+    "description": "Live cam at Yasaka Shrine in Gion, Kyoto.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "tKj0w0-x1-0",
+    "name": "Kyoto Nishiki Market",
+    "coordinates": {
+      "lat": 35.0050,
+      "lng": 135.7649
+    },
+    "city": "Kyoto",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/tKj0w0-x1-0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/tKj0w0-x1-0/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live view of the bustling Nishiki Market in Kyoto.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "CoXGj_6G5-0",
+    "name": "Osaka Dotonbori Live Stream",
+    "coordinates": {
+      "lat": 34.6687,
+      "lng": 135.5013
+    },
+    "city": "Osaka",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/CoXGj_6G5-0?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/CoXGj_6G5-0/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "Live view of the Dotonbori canal area in Osaka.",
+    "provider": "YouTube"
+  },
+  {
+    "id": "HpdO5Kq3o7Y",
+    "name": "Shibuya Crossing Live",
+    "coordinates": {
+      "lat": 35.6595,
+      "lng": 139.7004
+    },
+    "city": "Tokyo",
+    "country": "Japan",
+    "streamUrl": "https://www.youtube.com/embed/HpdO5Kq3o7Y?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/HpdO5Kq3o7Y/mqdefault_live.jpg",
+    "category": "city",
+    "isLive": true,
+    "description": "World famous Shibuya Crossing live view.",
+    "provider": "YouTube"
   }
 ]
