@@ -3179,7 +3179,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "6F-hJjYy_kM",
+    "id": "Ndo_8RuefH4",
     "name": "Dadaocheng Wharf Live View",
     "coordinates": {
       "lat": 25.056,
@@ -3187,15 +3187,16 @@
     },
     "city": "Taipei",
     "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/6F-hJjYy_kM?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/6F-hJjYy_kM/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/Ndo_8RuefH4?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Ndo_8RuefH4/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Dadaocheng Wharf in Taipei.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:41.610Z"
   },
   {
-    "id": "JzN8fR9a1mQ",
+    "id": "z_fY1pj1VBw",
     "name": "Elephant Mountain - Taipei 101 View",
     "coordinates": {
       "lat": 25.0267,
@@ -3203,15 +3204,16 @@
     },
     "city": "Taipei",
     "country": "Taiwan",
-    "streamUrl": "https://www.youtube.com/embed/JzN8fR9a1mQ?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/JzN8fR9a1mQ/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/z_fY1pj1VBw?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/z_fY1pj1VBw/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Stunning view of Taipei 101 and the city skyline from Elephant Mountain.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:41.859Z"
   },
   {
-    "id": "nK6m4i2i9-0",
+    "id": "gCu45mPX77Y",
     "name": "Kyoto Yasaka Shrine Live",
     "coordinates": {
       "lat": 35.0037,
@@ -3219,15 +3221,16 @@
     },
     "city": "Kyoto",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/nK6m4i2i9-0?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/nK6m4i2i9-0/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/gCu45mPX77Y?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/gCu45mPX77Y/mqdefault_live.jpg",
     "category": "landmark",
     "isLive": true,
     "description": "Live cam at Yasaka Shrine in Gion, Kyoto.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:42.111Z"
   },
   {
-    "id": "tKj0w0-x1-0",
+    "id": "wuC8wRvXock",
     "name": "Kyoto Nishiki Market",
     "coordinates": {
       "lat": 35.005,
@@ -3235,15 +3238,16 @@
     },
     "city": "Kyoto",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/tKj0w0-x1-0?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/tKj0w0-x1-0/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/wuC8wRvXock?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/wuC8wRvXock/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the bustling Nishiki Market in Kyoto.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:42.350Z"
   },
   {
-    "id": "CoXGj_6G5-0",
+    "id": "1IB96p46tjE",
     "name": "Osaka Dotonbori Live Stream",
     "coordinates": {
       "lat": 34.6687,
@@ -3251,15 +3255,16 @@
     },
     "city": "Osaka",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/CoXGj_6G5-0?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/CoXGj_6G5-0/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/1IB96p46tjE?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/1IB96p46tjE/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Dotonbori canal area in Osaka.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:42.593Z"
   },
   {
-    "id": "HpdO5Kq3o7Y",
+    "id": "dfVK7ld38Ys",
     "name": "Shibuya Crossing Live",
     "coordinates": {
       "lat": 35.6595,
@@ -3267,12 +3272,13 @@
     },
     "city": "Tokyo",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/HpdO5Kq3o7Y?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/HpdO5Kq3o7Y/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/dfVK7ld38Ys?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/dfVK7ld38Ys/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "World famous Shibuya Crossing live view.",
-    "provider": "YouTube"
+    "provider": "YouTube",
+    "updatedAt": "2026-01-03T06:49:42.835Z"
   },
   {
     "id": "fGOCRGXPgRY",
