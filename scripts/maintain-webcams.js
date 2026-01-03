@@ -34,8 +34,11 @@ function cleanQuery(text) {
   text = text.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '');
   // Remove brackets (including full-width)
   text = text.replace(/【.*?】/g, ' ').replace(/\[.*?\]/g, ' ').replace(/\(.*?\)/g, ' ').replace(/（.*?）/g, ' ');
-  // Remove specific keywords
+  // Remove specific keywords (English, Japanese, Chinese)
   text = text.replace(/Live Cam|Live Stream|Webcam|4K|24\/7|HD|High Definition|Live|Camera|Ramen|News|Stream|View/gi, ' ');
+  text = text.replace(/ライブカメラ|ライブ配信|生中継|実況|配信|カメラ/g, ' ');
+  text = text.replace(/即時影像|直播|實況|攝影機/g, ' ');
+  
   return text.replace(/\s+/g, ' ').trim();
 }
 
@@ -190,12 +193,12 @@ async function maintainWebcams() {
         }
 
         // Strategy 2: Split by separators (often English part is separated)
-        if (!result && webcam.name.match(/[|\/／\-]/)) {
-           const parts = webcam.name.split(/[|\/／\-]/);
+        if (!result && webcam.name.match(/[|\/／\-｜]/)) {
+           const parts = webcam.name.split(/[|\/／\-｜]/);
            // Try parts from end to start (often English is at the end)
            for (let i = parts.length - 1; i >= 0; i--) {
              const partQuery = cleanQuery(parts[i]);
-             if (partQuery.length > 3) {
+             if (partQuery.length > 2) { // Reduced min length to 2 for short names like "Fuji"
                result = await geocode(partQuery);
                if (result) {
                  usedQuery = partQuery;
