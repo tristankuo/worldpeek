@@ -2262,7 +2262,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "eglZKYNuVdU",
+    "id": "BQR800Gu28g",
     "name": "Auckland Skyline",
     "coordinates": {
       "lat": -36.8485,
@@ -2270,13 +2270,13 @@
     },
     "city": "Auckland",
     "country": "New Zealand",
-    "streamUrl": "https://www.youtube.com/embed/eglZKYNuVdU?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/eglZKYNuVdU/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/BQR800Gu28g?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/BQR800Gu28g/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of Auckland city and harbour.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-03T00:20:52.086Z"
+    "updatedAt": "2026-01-04T00:24:29.013Z"
   },
   {
     "id": "LDmo-aR7ZUo",
@@ -2521,7 +2521,7 @@
     "provider": "YouTube"
   },
   {
-    "id": "g8UZPoWzrYM",
+    "id": "oGl-pLPlnRM",
     "name": "Yokohama Kishamichi Promenade",
     "coordinates": {
       "lat": 35.4533,
@@ -2529,13 +2529,13 @@
     },
     "city": "Yokohama",
     "country": "Japan",
-    "streamUrl": "https://www.youtube.com/embed/g8UZPoWzrYM?autoplay=1&mute=1",
-    "thumbnailUrl": "https://i.ytimg.com/vi/g8UZPoWzrYM/mqdefault_live.jpg",
+    "streamUrl": "https://www.youtube.com/embed/oGl-pLPlnRM?autoplay=1&mute=1",
+    "thumbnailUrl": "https://i.ytimg.com/vi/oGl-pLPlnRM/mqdefault_live.jpg",
     "category": "city",
     "isLive": true,
     "description": "Live view of the Kishamichi Promenade and Minato Mirai skyline in Yokohama.",
     "provider": "YouTube",
-    "updatedAt": "2026-01-02T00:21:52.197Z"
+    "updatedAt": "2026-01-04T00:24:29.491Z"
   },
   {
     "id": "1ksmiy6EsDo",
